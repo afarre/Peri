@@ -1,0 +1,129 @@
+/**
+  ******************************************************************************
+  * @file    main.c
+  * @author  Ac6
+  * @version V1.0
+  * @date    01-December-2013
+  * @brief   Default main function.
+  ******************************************************************************
+*/
+
+#include "stm32f4xx.h"
+#include "stm32f4xx_rcc.h"
+#include "stm32f4xx_gpio.h"
+#include "stm32f4xx_tim.h"
+#include "misc.h"
+#include "delay.h"
+#include "clock.h"
+#include "tm_stm32f4_disco.h"
+
+int rcPWM1 = 150;
+int rcPWM0 = 850;
+
+int act_rcPWM1 = 0;
+int act_rcPWM0 = 0;
+
+int PMW1Done = 0;
+
+void delay(int counter){
+ int i;
+ for (i = 0; i < counter * 10000; i++) {}
+}
+
+void ConfigTimer4(void) {
+/* Definimos variables*/
+TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
+uint32_t PrescalerValue;
+/* Habilitamos reloj Timer4 */
+  RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
+
+  /*Suponemos TIM4 input clock (TIM4CLK) es igual a  2 * APB1 clock (PCLK1),
+Como el prescaler APB1 es diferente de 1 (APB1 Prescaler = 4 tenemos que
+  TIM4CLK = 2 * PCLK1  y   PCLK1 = HCLK / 4
+      => TIM4CLK = 2*(HCLK / 4) = HCLK/2 = SystemCoreClock/2
+Para conseguir TIM4 a 100 KHz, el prescaler se calcula como:
+       Prescaler = (TIM4CLK / TIM1 counter clock) ‐ 1
+       Prescaler = (168 MHz/(2 * 100 KHz)) ‐ 1 = 839
+La variable SystemCoreClock esta definida en CMSIS y mantiene la frecuencia de HCLK.*/
+
+  /* Calculo del prescaler */
+  PrescalerValue = (uint16_t) (((SystemCoreClock /2) / 100000) - 1);
+
+  /* Configuracion de la base de tiempos */
+  TIM_TimeBaseStructure.TIM_Period = 1999;
+  TIM_TimeBaseStructure.TIM_Prescaler = PrescalerValue;
+  TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;
+
+/*Inicializamos la base de tiempos*/
+  TIM_TimeBaseInit(TIM4, &TIM_TimeBaseStructure);
+/*Habilitamos Tim4 en NVIC  */
+  NVIC_EnableIRQ(TIM4_IRQn);
+/*Habilitamos interrupción de actualización en tim4*/
+  TIM_ITConfig(TIM4, TIM_IT_Update, ENABLE);
+
+  /* Ponemos en marcha TIM4 */
+  TIM_Cmd(TIM4, ENABLE);
+  }
+
+int main(void){
+
+	ConfigTimer4();
+	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOG, ENABLE);
+
+	//Config LED4
+ 	GPIO_InitTypeDef gpio14;
+ 	GPIO_StructInit(&gpio14);
+ 	gpio14.GPIO_Pin = GPIO_Pin_14;
+ 	gpio14.GPIO_Mode = GPIO_Mode_OUT;
+    GPIO_Init(GPIOG, &gpio14);
+    GPIO_SetBits(GPIOG, GPIO_Pin_14);
+
+    //CONFIG Pin G15
+    GPIO_InitTypeDef gpio15;
+    GPIO_StructInit(&gpio15);
+    gpio15.GPIO_Pin = GPIO_Pin_15;
+    gpio15.GPIO_Mode = GPIO_Mode_OUT;
+    gpio15.GPIO_OType = GPIO_OType_PP;
+    GPIO_Init(GPIOG, &gpio15);
+
+    //CONFIG Pin G12
+    GPIO_InitTypeDef gpio12;
+    GPIO_StructInit(&gpio12);
+    gpio12.GPIO_Pin = GPIO_Pin_12;
+    gpio12.GPIO_Mode = GPIO_Mode_OUT;
+    gpio12.GPIO_OType = GPIO_OType_PP;
+    GPIO_Init(GPIOG, &gpio12);
+
+
+    //INTERRUPT CONFIGS
+
+    //BUTTON COFIGS
+    //Enable clock for GPOIA
+    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE);
+
+    //Al principi fiquem els pins dels PWM a 0
+    GPIO_ResetBits(GPIOG, GPIO_Pin_12);
+    GPIO_ResetBits(GPIOG, GPIO_Pin_15);
+
+    while (1){
+    	//LEDS
+    	//GPIO_ResetBits(GPIOG, GPIO_Pin_14); // LED4 OFF
+    	//delay(300);
+    	//GPIO_SetBits(GPIOG, GPIO_Pin_14); // LED4 ON
+    	//delay(300);
+
+    	if (GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0)) {
+    		GPIO_SetBits(GPIOG, GPIO_Pin_13);
+    	} else {
+
+    	}
+ 	}
+}
+
+
+void TIM4_IRQHandler(){
+//Todo lo que escribamos aqui se ejecutara cuando salte la interrupcion del timer 4
+//Y tedremos que asegurarnos de borrar el flag:
+	GPIO_SetBits(GPIOG, GPIO_Pin_13);
+	TIM_ClearITPendingBit(TIM4, TIM_IT_Update);
+}

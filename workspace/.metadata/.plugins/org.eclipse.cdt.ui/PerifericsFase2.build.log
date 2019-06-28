@@ -1,0 +1,6 @@
+12:37:43 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+
+12:37:44 Build Finished (took 744ms)
+

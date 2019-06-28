@@ -1,0 +1,157 @@
+/**
+  ******************************************************************************
+  * @file    main.c
+  * @author  Ac6
+  * @version V1.0
+  * @date    01-December-2013
+  * @brief   Default main function.
+  ******************************************************************************
+*/
+
+#include "stm32f4xx.h"
+#include "stm32f4xx_rcc.h"
+#include "stm32f4xx_gpio.h"
+#include "stm32f4xx_tim.h"
+#include "misc.h"
+#include "delay.h"
+#include "clock.h"
+#include "tm_stm32f4_disco.h"
+
+
+
+void delay(int counter){
+ int i;
+ for (i = 0; i < counter * 10000; i++) {}
+}
+
+int main(void){
+	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOG, ENABLE);
+
+	//Config LED4
+ 	GPIO_InitTypeDef gpio14;
+ 	GPIO_StructInit(&gpio14);
+ 	gpio14.GPIO_Pin = GPIO_Pin_14;
+ 	gpio14.GPIO_Mode = GPIO_Mode_OUT;
+    GPIO_Init(GPIOG, &gpio14);
+    GPIO_SetBits(GPIOG, GPIO_Pin_14);
+
+    //CONFIG Pin G15
+    GPIO_InitTypeDef gpio15;
+    GPIO_StructInit(&gpio15);
+    gpio15.GPIO_Pin = GPIO_Pin_15;
+    gpio15.GPIO_Mode = GPIO_Mode_OUT;
+    gpio15.GPIO_OType = GPIO_OType_PP;
+    GPIO_Init(GPIOG, &gpio15);
+
+    //CONFIG Pin G12
+    GPIO_InitTypeDef gpio12;
+    GPIO_StructInit(&gpio12);
+    gpio12.GPIO_Pin = GPIO_Pin_12;
+    gpio12.GPIO_Mode = GPIO_Mode_OUT;
+    gpio12.GPIO_OType = GPIO_OType_PP;
+    GPIO_Init(GPIOG, &gpio12);
+
+
+    //INTERRUPT CONFIGS
+    // Set clock to 168MHz
+    CLOCK_SetClockTo168MHz();
+    // Delay initialization
+    DELAY_Init();
+    // Timer interrupt initialization
+    TIM2_INT_Init();
+    // Clock for GPIOD
+    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOG, ENABLE);
+    // GPIOD initialization as an output for orange LED (GPIOD13)
+    GPIO_InitTypeDef GPIO_InitStruct;
+    GPIO_InitStruct.GPIO_Mode = GPIO_Mode_OUT;
+    GPIO_InitStruct.GPIO_OType = GPIO_OType_PP;
+    GPIO_InitStruct.GPIO_Pin = GPIO_Pin_13;
+    GPIO_InitStruct.GPIO_PuPd = GPIO_PuPd_NOPULL;
+    GPIO_InitStruct.GPIO_Speed = GPIO_Speed_2MHz;
+    GPIO_Init(GPIOG, &GPIO_InitStruct);
+
+    //BUTTON COFIGS
+    //Enable clock for GPOIA
+    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE);
+
+    //Pin 0
+    GPIO_InitStruct.GPIO_Pin = GPIO_Pin_0;
+    //Mode output
+    GPIO_InitStruct.GPIO_Mode = GPIO_Mode_IN;
+    //Output type push-pull
+    GPIO_InitStruct.GPIO_OType = GPIO_OType_PP;
+    //With pull down resistor
+    GPIO_InitStruct.GPIO_PuPd = GPIO_PuPd_DOWN;
+    //100MHz pin speed
+    GPIO_InitStruct.GPIO_Speed = GPIO_Speed_100MHz;
+
+    //Initialize pin on GPIOA port
+    GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+    while (1){
+    	//LEDS
+    	//GPIO_ResetBits(GPIOG, GPIO_Pin_14); // LED4 OFF
+    	//delay(300);
+    	//GPIO_SetBits(GPIOG, GPIO_Pin_14); // LED4 ON
+    	//delay(300);
+
+    	//delay(10);
+    	GPIO_ResetBits(GPIOG, GPIO_Pin_12);
+    	GPIO_ResetBits(GPIOG, GPIO_Pin_15);
+    	if (GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0)) {
+    		GPIO_SetBits(GPIOG, GPIO_Pin_14);
+    		GPIO_SetBits(GPIOG, GPIO_Pin_15);
+    		GPIO_SetBits(GPIOG, GPIO_Pin_12);
+    	} else {
+    		GPIO_ResetBits(GPIOG, GPIO_Pin_14);
+    		GPIO_ResetBits(GPIOG, GPIO_Pin_15);
+    		GPIO_ResetBits(GPIOG, GPIO_Pin_12);
+    	}
+ 	}
+}
+
+void TIM2_INT_Init(){
+    // Enable clock for TIM2
+    RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
+    // TIM2 initialization overflow every 500ms
+    // TIM2 by default has clock of 84MHz
+    // Here, we must set value of prescaler and period,
+    // so update event is 0.5Hz or 500ms
+    // Update Event (Hz) = timer_clock / ((TIM_Prescaler + 1) *
+    // (TIM_Period + 1))
+    // Update Event (Hz) = 84MHz / ((4199 + 1) * (9999 + 1)) = 2 Hz
+    TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStruct;
+    TIM_TimeBaseInitStruct.TIM_Prescaler = 4199;
+    TIM_TimeBaseInitStruct.TIM_Period = 99;
+    TIM_TimeBaseInitStruct.TIM_ClockDivision = TIM_CKD_DIV1;
+    TIM_TimeBaseInitStruct.TIM_CounterMode = TIM_CounterMode_Up;
+    // TIM2 initialize
+    TIM_TimeBaseInit(TIM2, &TIM_TimeBaseInitStruct);
+    // Enable TIM2 interrupt
+    TIM_ITConfig(TIM2, TIM_IT_Update, ENABLE);
+    // Start TIM2
+    TIM_Cmd(TIM2, ENABLE);
+    // Nested vectored interrupt settings
+    // TIM2 interrupt is most important (PreemptionPriority and
+    // SubPriority = 0)
+    NVIC_InitTypeDef NVIC_InitStruct;
+    NVIC_InitStruct.NVIC_IRQChannel = TIM2_IRQn;
+    NVIC_InitStruct.NVIC_IRQChannelPreemptionPriority = 0;
+    NVIC_InitStruct.NVIC_IRQChannelSubPriority = 0;
+    NVIC_InitStruct.NVIC_IRQChannelCmd = ENABLE;
+    NVIC_Init(&NVIC_InitStruct);
+}
+
+void TIM2_IRQHandler(){
+    // Checks whether the TIM2 interrupt has occurred or not
+    if (TIM_GetITStatus(TIM2, TIM_IT_Update)){
+        // Toggle orange LED (GPIO13)
+        GPIO_ToggleBits(GPIOG, GPIO_Pin_13);
+
+        GPIO_SetBits(GPIOG, GPIO_Pin_12);
+        GPIO_SetBits(GPIOG, GPIO_Pin_15);
+
+        // Clears the TIM2 interrupt pending bit
+        TIM_ClearITPendingBit(TIM2, TIM_IT_Update);
+    }
+}

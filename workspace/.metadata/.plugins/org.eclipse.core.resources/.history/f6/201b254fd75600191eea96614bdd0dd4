@@ -1,0 +1,135 @@
+/**
+  ******************************************************************************
+  * @file    main.c
+  * @author  Ac6
+  * @version V1.0
+  * @date    01-December-2013
+  * @brief   Default main function.
+  ******************************************************************************
+*/
+
+#include "stm32f4xx.h"
+#include "stm32f4xx_rcc.h"
+#include "stm32f4xx_gpio.h"
+#include "stm32f4xx_tim.h"
+#include "misc.h"
+#include "delay.h"
+#include "clock.h"
+#include "tm_stm32f4_disco.h"
+
+// PWM initialization struct
+TIM_OCInitTypeDef TIM_OCInitStruct;
+
+void TIM_Init(){
+    // Enable clock for TIM4
+    // We use TIM4 because green LED (PD12) is connected
+    // to TIM4_CH1 GPIO AF mapping
+    RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
+
+    // Timer initialization struct
+    TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStruct;
+
+    // Create 1kHz PWM
+    // TIM4 is connected to APB1 bus that have default clock 84MHz
+    // So, the frequency of TIM4 is 84MHz
+    // We use prescaler 10 here
+    // So, the frequency of TIM4 now is 8.4MHz
+    TIM_TimeBaseInitStruct.TIM_Prescaler = 33;
+    // TIM_Period determine the PWM frequency by this equation:
+    // PWM_frequency = timer_clock / (TIM_Period + 1)
+    // If we want 1kHz PWM we can calculate:
+    // TIM_Period = (timer_clock / PWM_frequency) - 1
+    // TIM_Period = (8.4MHz / 1kHz) - 1 = 8399
+    TIM_TimeBaseInitStruct.TIM_Period = 8479;
+    TIM_TimeBaseInitStruct.TIM_ClockDivision = TIM_CKD_DIV1;
+    TIM_TimeBaseInitStruct.TIM_CounterMode = TIM_CounterMode_Up;
+
+    // Initialize TIM4
+    TIM_TimeBaseInit(TIM4, &TIM_TimeBaseInitStruct);
+    // Start TIM4
+    TIM_Cmd(TIM4, ENABLE);
+}
+
+void GPIO_Configure (void){
+    GPIO_InitTypeDef GPIO_InitDef;
+
+	//Activem el clock per els pins G
+	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOG, ENABLE);
+
+	//Inicialitzem leds:
+	GPIO_InitDef.GPIO_Pin = GPIO_Pin_13 | GPIO_Pin_14;
+	GPIO_InitDef.GPIO_Mode = GPIO_Mode_OUT;
+	GPIO_InitDef.GPIO_OType = GPIO_OType_PP;
+	GPIO_InitDef.GPIO_PuPd = GPIO_PuPd_NOPULL;
+	GPIO_Init(GPIOG, &GPIO_InitDef);
+	GPIO_SetBits(GPIOG, GPIO_Pin_13);
+}
+
+void BUTTON_Configure(void){
+	//Enable clock for GPOIA
+	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE);
+	GPIO_InitTypeDef GPIO_InitStruct;
+	//Pin 0
+	GPIO_InitStruct.GPIO_Pin = GPIO_Pin_0;
+	//Mode output
+	GPIO_InitStruct.GPIO_Mode = GPIO_Mode_IN;
+	//Output type push-pull
+	GPIO_InitStruct.GPIO_OType = GPIO_OType_PP;
+	//With pull down resistor
+	GPIO_InitStruct.GPIO_PuPd = GPIO_PuPd_DOWN;
+	//100MHz pin speed
+	GPIO_InitStruct.GPIO_Speed = GPIO_Speed_100MHz;
+	//Initialize pin on GPIOA port
+	GPIO_Init(GPIOA, &GPIO_InitStruct);
+}
+
+void PWM_Init(){
+
+
+    // Common PWM settings
+    TIM_OCInitStruct.TIM_OCMode = TIM_OCMode_PWM1;
+    TIM_OCInitStruct.TIM_OutputState = TIM_OutputState_Enable;
+    TIM_OCInitStruct.TIM_OCPolarity = TIM_OCPolarity_High;
+
+    // Duty cycle calculation equation:
+    // TIM_Pulse = (((TIM_Period + 1) * duty_cycle) / 100) - 1
+    // Ex. 25% duty cycle:
+    //     TIM_Pulse = (((8399 + 1) * 25) / 100) - 1 = 2099
+    //     TIM_Pulse = (((8399 + 1) * 75) / 100) - 1 = 6299
+    // We initialize PWM value with duty cycle of 25%
+    TIM_OCInitStruct.TIM_Pulse = 4099;						//Temps de PWM a 1
+    TIM_OC1Init(TIM4, &TIM_OCInitStruct);
+    TIM_OC1PreloadConfig(TIM4, TIM_OCPreload_Enable);
+}
+
+int main(void){
+	TIM_Init();
+	PWM_Init();
+	GPIO_Configure();
+	BUTTON_Configure();
+
+	 /* Set clock for GPIOD ------------------------------------------ */
+	    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE);
+
+	    // Set alternate function of GPIOD pin 12 as PWM outputs
+	    GPIO_PinAFConfig(GPIOD, GPIO_PinSource12, GPIO_AF_TIM4);
+
+	    // GPIOD pin 12 as outputs
+	    GPIO_InitTypeDef GPIO_InitStruct;
+	    GPIO_InitStruct.GPIO_Pin = GPIO_Pin_12;
+	    GPIO_InitStruct.GPIO_OType = GPIO_OType_PP;
+	    GPIO_InitStruct.GPIO_PuPd = GPIO_PuPd_NOPULL;
+	    GPIO_InitStruct.GPIO_Mode = GPIO_Mode_AF;
+	    GPIO_InitStruct.GPIO_Speed = GPIO_Speed_100MHz;
+	    GPIO_Init(GPIOD, &GPIO_InitStruct);
+	    /* -------------------------------------------------------------- */
+
+    while (1){
+    	if (GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0)) {
+			GPIO_ResetBits(GPIOG, GPIO_Pin_13);
+			TIM1->CCR1 = TIM1->CCR1 + 100;
+		} else {
+			GPIO_SetBits(GPIOG, GPIO_Pin_13);
+		}
+   	}
+}

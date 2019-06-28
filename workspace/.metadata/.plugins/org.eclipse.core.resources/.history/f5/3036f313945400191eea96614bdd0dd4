@@ -1,0 +1,72 @@
+/**
+  ******************************************************************************
+  * @file    main.c
+  * @author  Ac6
+  * @version V1.0
+  * @date    01-December-2013
+  * @brief   Default main function.
+  ******************************************************************************
+*/
+
+#include "stm32f4xx.h"
+void delay(int counter){
+ int i;
+ for (i = 0; i < counter * 10000; i++) {}
+}
+
+int main(void){
+ GPIO_InitTypeDef gpio1;
+ GPIO_InitTypeDef gpio2;
+ RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOG, ENABLE);
+ GPIO_StructInit(&gpio1);
+ GPIO_StructInit(&gpio2);
+ gpio1.GPIO_Pin = GPIO_Pin_13;
+ gpio1.GPIO_Mode = GPIO_Mode_OUT;
+ gpio2.GPIO_Pin = GPIO_Pin_14;
+ gpio2.GPIO_Mode = GPIO_Mode_OUT;
+ GPIO_Init(GPIOG, &gpio1);
+ GPIO_Init(GPIOG, &gpio2);
+ GPIO_SetBits(GPIOG, GPIO_Pin_13);
+ GPIO_SetBits(GPIOG, GPIO_Pin_14);
+ while (1){
+ GPIO_SetBits(GPIOG, GPIO_Pin_13); // LED3 ON
+ GPIO_SetBits(GPIOG, GPIO_Pin_14); // LED4 ON
+ delay(400);
+ GPIO_ResetBits(GPIOG, GPIO_Pin_13); // LED3 OFF
+ GPIO_ResetBits(GPIOG, GPIO_Pin_14); // LED4 OFF
+ delay(100);
+ }
+}
+
+void TIM_INT_Init(){
+    // Enable clock for TIM2
+    RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
+    // TIM2 initialization overflow every 500ms
+    // TIM2 by default has clock of 84MHz
+    // Here, we must set value of prescaler and period,
+    // so update event is 0.5Hz or 500ms
+    // Update Event (Hz) = timer_clock / ((TIM_Prescaler + 1) *
+    // (TIM_Period + 1))
+    // Update Event (Hz) = 84MHz / ((4199 + 1) * (9999 + 1)) = 2 Hz
+    TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStruct;
+    TIM_TimeBaseInitStruct.TIM_Prescaler = 4199;
+    TIM_TimeBaseInitStruct.TIM_Period = 9999;
+    TIM_TimeBaseInitStruct.TIM_ClockDivision = TIM_CKD_DIV1;
+    TIM_TimeBaseInitStruct.TIM_CounterMode = TIM_CounterMode_Up;
+    // TIM2 initialize
+    TIM_TimeBaseInit(TIM2, &TIM_TimeBaseInitStruct);
+    // Enable TIM2 interrupt
+    TIM_ITConfig(TIM2, TIM_IT_Update, ENABLE);
+    // Start TIM2
+    TIM_Cmd(TIM2, ENABLE);
+    // Nested vectored interrupt settings
+    // TIM2 interrupt is most important (PreemptionPriority and
+    // SubPriority = 0)
+    NVIC_InitTypeDef NVIC_InitStruct;
+    NVIC_InitStruct.NVIC_IRQChannel = TIM2_IRQn;
+    NVIC_InitStruct.NVIC_IRQChannelPreemptionPriority = 0;
+    NVIC_InitStruct.NVIC_IRQChannelSubPriority = 0;
+    NVIC_InitStruct.NVIC_IRQChannelCmd = ENABLE;
+    NVIC_Init(&NVIC_InitStruct);
+}
+

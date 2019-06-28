@@ -1,0 +1,23 @@
+15:04:57 **** Incremental Build of configuration Debug for project Periferics2 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\workspace\Periferics2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/workspace/Periferics2/StdPeriph_Driver/inc" -I"C:/Users/angel/workspace/Periferics2/inc" -I"C:/Users/angel/workspace/Periferics2/CMSIS/device" -I"C:/Users/angel/workspace/Periferics2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: Periferics2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/workspace/Periferics2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Periferics2.elf" @"objects.list"   -lm
+Finished building target: Periferics2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Periferics2.elf" "Periferics2.bin"
+arm-none-eabi-size "Periferics2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3716	   1080	   1100	   5896	   1708	Periferics2.elf
+ 
+
+15:04:59 Build Finished (took 2s.99ms)
+

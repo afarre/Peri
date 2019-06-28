@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;Periferics&apos;" deleteContents="true" description="Delete resource &apos;Periferics&apos;" element1="/Periferics" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1561468096822"/>&#x0A;<refactoring comment="Rename resource &apos;Periferics2&apos; to &apos;PerifericsFase1&apos;" description="Rename resource &apos;Periferics2&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Periferics2" name="PerifericsFase1" stamp="1561468112102" updateReferences="true"/>
+</session>
