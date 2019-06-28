@@ -1,19 +1,12 @@
-14:35:58 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+15:26:23 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
 make -j8 all 
 Building file: ../src/mainF1.c
 Invoking: MCU GCC Compiler
 C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
-../src/mainF1.c:88:2: warning: "/*" within comment [-Wcomment]
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
   /*
    
-../src/mainF1.c: In function 'main':
-../src/mainF1.c:506:18: warning: unused variable 'microsecondsStop' [-Wunused-variable]
-         uint32_t microsecondsStop = TIM5->CNT << 1;
-                  ^~~~~~~~~~~~~~~~
-../src/mainF1.c:501:16: warning: unused variable 'microsecondsStart' [-Wunused-variable]
-       uint32_t microsecondsStart = TIM5->CNT << 1;
-                ^~~~~~~~~~~~~~~~~
 Finished building: ../src/mainF1.c
  
 Building target: PerifericsFase1.elf
@@ -26,8 +19,8 @@ Generating binary and Printing size information:
 arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
 arm-none-eabi-size "PerifericsFase1.elf"
    text	   data	    bss	    dec	    hex	filename
-   6008	   1080	   1100	   8188	   1ffc	PerifericsFase1.elf
+   5768	   1080	   1100	   7948	   1f0c	PerifericsFase1.elf
  
 
-14:36:00 Build Finished (took 2s.758ms)
+15:26:25 Build Finished (took 2s.322ms)
 

@@ -479,7 +479,6 @@ int main(void){
     	// Button pressed
     	if (GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0)) {
     		// Save TIM2 start value
-    		GPIO_ToggleBits(GPIOG, GPIO_Pin_14);
     		unsigned long countStart = TIM_GetCounter(TIM2);
 
     		do{
@@ -489,10 +488,9 @@ int main(void){
 
     		//USer stopped pressing button
 			// Save TIM2 end value
-    		GPIO_ToggleBits(GPIOG, GPIO_Pin_14);
 			unsigned long countStop = TIM_GetCounter(TIM2);
 
-			if((countStop - countStart) < 70000000){
+			if((countStart - countStop) < 20000){
 				//button pressed for less than 2.5seconds
 				if (fastLED){
 					TIM4_Init();

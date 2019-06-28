@@ -472,6 +472,8 @@ int main(void){
 	Configure_PB12();
 	/* -------------------------------------------------------------- */
 	GPIO_SetBits(GPIOG, GPIO_Pin_14);
+	unsigned long countStart;
+	unsigned long countStop;
     while (1){
 		// Delay initialization
 		//DELAY_Init();
@@ -479,40 +481,46 @@ int main(void){
     	// Button pressed
     	if (GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0)) {
     		// Save TIM2 start value
-    		GPIO_ToggleBits(GPIOG, GPIO_Pin_14);
-    		unsigned long countStart = TIM_GetCounter(TIM2);
+    		countStart = TIM_GetCounter(TIM2);
+    		int topTime = 0;
 
     		do{
     			//do LED toggle while button pressed
     			LEDToggle();
-			}while(GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0));
+    			//USer stopped pressing button
+				// Save TIM2 end value
+				GPIO_ToggleBits(GPIOG, GPIO_Pin_14);
+				countStop = TIM_GetCounter(TIM2);
 
-    		//USer stopped pressing button
-			// Save TIM2 end value
-    		GPIO_ToggleBits(GPIOG, GPIO_Pin_14);
-			unsigned long countStop = TIM_GetCounter(TIM2);
-
-			if((countStop - countStart) < 70000000){
-				//button pressed for less than 2.5seconds
-				if (fastLED){
-					TIM4_Init();
-					int aux = TIM4->CCR1;
-					if(aux >= 2059){
-						TIM4->CCR1 = 459;
+				if((countStop - countStart) < 70000000){
+					//button pressed for less than 2.5seconds
+					if (fastLED){
+						TIM4_Init();
+						int aux = TIM4->CCR1;
+						if(aux >= 2059){
+							TIM4->CCR1 = 459;
+						}else{
+							aux = TIM4->CCR1 + 200;
+							TIM4->CCR1 = aux;
+						}
 					}else{
-						aux = TIM4->CCR1 + 200;
-						TIM4->CCR1 = aux;
+						TIM4_Init();
+						int aux = TIM4->CCR2;
+						if(aux >= 2059){
+							TIM4->CCR2 = 459;
+						}else{
+							aux = TIM4->CCR2 + 200;
+							TIM4->CCR2 = aux;
+						}
 					}
 				}else{
-					TIM4_Init();
-					int aux = TIM4->CCR2;
-					if(aux >= 2059){
-						TIM4->CCR2 = 459;
-					}else{
-						aux = TIM4->CCR2 + 200;
-						TIM4->CCR2 = aux;
-					}
+					//button pressed for more than 2.5seconds
+					topTime = !topTime;
 				}
+			}while(GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0) && !topTime);
+
+    		if((countStop - countStart) < 70000000){
+
 			}else{
 				//button pressed for more than 2.5seconds
 				fastLED = !fastLED;

@@ -485,38 +485,43 @@ int main(void){
     		do{
     			//do LED toggle while button pressed
     			LEDToggle();
+
+    			//Enter if if user stops pressing the button
+    			if(!GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0)){
+    				//USer stopped pressing button
+    							// Save TIM2 end value
+    				    		GPIO_ToggleBits(GPIOG, GPIO_Pin_14);
+    							unsigned long countStop = TIM_GetCounter(TIM2);
+
+    							if((countStop - countStart) < 200000000){
+    								//button pressed for less than 2.5seconds
+    								if (fastLED){
+    									TIM4_Init();
+    									int aux = TIM4->CCR1;
+    									if(aux >= 2059){
+    										TIM4->CCR1 = 459;
+    									}else{
+    										aux = TIM4->CCR1 + 200;
+    										TIM4->CCR1 = aux;
+    									}
+    								}else{
+    									TIM4_Init();
+    									int aux = TIM4->CCR2;
+    									if(aux >= 2059){
+    										TIM4->CCR2 = 459;
+    									}else{
+    										aux = TIM4->CCR2 + 200;
+    										TIM4->CCR2 = aux;
+    									}
+    								}
+    							}else{
+    								//button pressed for more than 2.5seconds
+    								fastLED = !fastLED;
+    							}
+    			}
 			}while(GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0));
 
-    		//USer stopped pressing button
-			// Save TIM2 end value
-    		GPIO_ToggleBits(GPIOG, GPIO_Pin_14);
-			unsigned long countStop = TIM_GetCounter(TIM2);
 
-			if((countStop - countStart) < 70000000){
-				//button pressed for less than 2.5seconds
-				if (fastLED){
-					TIM4_Init();
-					int aux = TIM4->CCR1;
-					if(aux >= 2059){
-						TIM4->CCR1 = 459;
-					}else{
-						aux = TIM4->CCR1 + 200;
-						TIM4->CCR1 = aux;
-					}
-				}else{
-					TIM4_Init();
-					int aux = TIM4->CCR2;
-					if(aux >= 2059){
-						TIM4->CCR2 = 459;
-					}else{
-						aux = TIM4->CCR2 + 200;
-						TIM4->CCR2 = aux;
-					}
-				}
-			}else{
-				//button pressed for more than 2.5seconds
-				fastLED = !fastLED;
-			}
     	}
     	//do LED toggle while button unpressed
     	LEDToggle();

@@ -498,11 +498,13 @@ int main(void){
     	// Button pressed
     	if (GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0)) {
     		// Start TIM2
-			TIM_Cmd(TIM2, ENABLE);
+    		uint32_t microsecondsStart = TIM5->CNT << 1;
+			//TIM_Cmd(TIM2, ENABLE);
 			do{
     			if (!GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0)) {
     				// Stop TIM2
-					TIM_Cmd(TIM2, DISABLE);
+    				uint32_t microsecondsStop = TIM5->CNT << 1;
+					//TIM_Cmd(TIM2, DISABLE);
 
 					if (fastLED){
 						TIM4_Init();
@@ -524,7 +526,7 @@ int main(void){
 						}
 					}
 					//Reset TIM2 value
-					TIM2->CNT = 0;
+					//TIM2->CNT = 0;
     			}
 
     			if (fastLED){
@@ -545,7 +547,7 @@ int main(void){
 			}while(GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0));
     	}else{
     		// Stop TIM2
-			TIM_Cmd(TIM2, DISABLE);
+			//TIM_Cmd(TIM2, DISABLE);
     	}
    	}
 }

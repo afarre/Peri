@@ -2534,3 +2534,533 @@ arm-none-eabi-size "PerifericsFase1.elf"
    text	   data	    bss	    dec	    hex	filename
    6008	   1080	   1100	   8188	   1ffc	PerifericsFase1.elf
  
+14:56:02 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+../src/mainF1.c: In function 'main':
+../src/mainF1.c:475:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5748	   1080	   1100	   7928	   1ef8	PerifericsFase1.elf
+ 
+14:57:21 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5748	   1080	   1100	   7928	   1ef8	PerifericsFase1.elf
+ 
+14:59:43 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:01:20 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5744	   1080	   1100	   7924	   1ef4	PerifericsFase1.elf
+ 
+15:01:36 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5740	   1080	   1100	   7920	   1ef0	PerifericsFase1.elf
+ 
+15:01:48 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:02:36 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:04:41 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5748	   1080	   1100	   7928	   1ef8	PerifericsFase1.elf
+ 
+15:06:16 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5748	   1080	   1100	   7928	   1ef8	PerifericsFase1.elf
+ 
+15:07:19 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5768	   1080	   1100	   7948	   1f0c	PerifericsFase1.elf
+ 
+15:07:46 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5768	   1080	   1100	   7948	   1f0c	PerifericsFase1.elf
+ 
+15:08:15 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5768	   1080	   1100	   7948	   1f0c	PerifericsFase1.elf
+ 
+15:09:32 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5780	   1080	   1100	   7960	   1f18	PerifericsFase1.elf
+ 
+15:09:51 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5780	   1080	   1100	   7960	   1f18	PerifericsFase1.elf
+ 
+15:10:34 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5768	   1080	   1100	   7948	   1f0c	PerifericsFase1.elf
+ 
+15:11:13 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5768	   1080	   1100	   7948	   1f0c	PerifericsFase1.elf
+ 
+15:11:29 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5768	   1080	   1100	   7948	   1f0c	PerifericsFase1.elf
+ 
+15:12:38 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5768	   1080	   1100	   7948	   1f0c	PerifericsFase1.elf
+ 
+15:12:54 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5768	   1080	   1100	   7948	   1f0c	PerifericsFase1.elf
+ 
+15:13:38 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5768	   1080	   1100	   7948	   1f0c	PerifericsFase1.elf
+ 
+15:16:29 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5756	   1080	   1100	   7936	   1f00	PerifericsFase1.elf
+ 
+15:19:03 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+../src/mainF1.c: In function 'main':
+../src/mainF1.c:520:11: error: 'countStop' undeclared (first use in this function); did you mean 'countStart'?
+       if((countStop - countStart) < 70000000){
+           ^~~~~~~~~
+           countStart
+../src/mainF1.c:520:11: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:36: recipe for target 'src/mainF1.o' failed
+make: *** [src/mainF1.o] Error 1
+15:19:48 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+../src/mainF1.c: In function 'main':
+../src/mainF1.c:484:7: error: 'ountStart' undeclared (first use in this function); did you mean 'countStart'?
+       ountStart = TIM_GetCounter(TIM2);
+       ^~~~~~~~~
+       countStart
+../src/mainF1.c:484:7: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:36: recipe for target 'src/mainF1.o' failed
+make: *** [src/mainF1.o] Error 1
+15:19:57 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5896	   1080	   1100	   8076	   1f8c	PerifericsFase1.elf
+ 
+15:21:58 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5792	   1080	   1100	   7972	   1f24	PerifericsFase1.elf
+ 
+15:26:23 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5768	   1080	   1100	   7948	   1f0c	PerifericsFase1.elf
+ 

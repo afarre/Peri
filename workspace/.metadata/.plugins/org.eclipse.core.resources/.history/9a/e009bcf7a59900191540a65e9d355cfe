@@ -492,7 +492,7 @@ int main(void){
     		GPIO_ToggleBits(GPIOG, GPIO_Pin_14);
 			unsigned long countStop = TIM_GetCounter(TIM2);
 
-			if((countStop - countStart) < 70000000){
+			if((countStop - countStart) < 400000000){
 				//button pressed for less than 2.5seconds
 				if (fastLED){
 					TIM4_Init();
