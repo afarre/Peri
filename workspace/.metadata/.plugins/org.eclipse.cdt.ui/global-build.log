@@ -3064,3 +3064,1608 @@ arm-none-eabi-size "PerifericsFase1.elf"
    text	   data	    bss	    dec	    hex	filename
    5768	   1080	   1100	   7948	   1f0c	PerifericsFase1.elf
  
+15:31:31 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5768	   1080	   1100	   7948	   1f0c	PerifericsFase1.elf
+ 
+15:33:52 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5768	   1080	   1100	   7948	   1f0c	PerifericsFase1.elf
+ 
+15:42:58 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5768	   1080	   1100	   7948	   1f0c	PerifericsFase1.elf
+ 
+15:48:04 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+../src/mainF1.c: In function 'GPIO_Configure':
+../src/mainF1.c:330:19: error: redeclaration of 'GPIO_InitStruct' with no linkage
+  GPIO_InitTypeDef GPIO_InitStruct;
+                   ^~~~~~~~~~~~~~~
+../src/mainF1.c:314:19: note: previous declaration of 'GPIO_InitStruct' was here
+  GPIO_InitTypeDef GPIO_InitStruct;
+                   ^~~~~~~~~~~~~~~
+make: *** [src/mainF1.o] Error 1
+src/subdir.mk:36: recipe for target 'src/mainF1.o' failed
+15:48:20 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5724	   1080	   1100	   7904	   1ee0	PerifericsFase1.elf
+ 
+16:08:11 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5104	   1080	   1100	   7284	   1c74	PerifericsFase1.elf
+ 
+16:14:36 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5724	   1080	   1100	   7904	   1ee0	PerifericsFase1.elf
+ 
+16:21:06 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'main':
+../src/mainF2.c:75:2: warning: implicit declaration of function 'TIM4_Init'; did you mean 'TIM2_Init'? [-Wimplicit-function-declaration]
+  TIM4_Init();
+  ^~~~~~~~~
+  TIM2_Init
+../src/mainF2.c:76:2: warning: implicit declaration of function 'TIM5_Init'; did you mean 'TIM2_Init'? [-Wimplicit-function-declaration]
+  TIM5_Init();
+  ^~~~~~~~~
+  TIM2_Init
+../src/mainF2.c:78:2: warning: implicit declaration of function 'PWM_TIM5_Init'; did you mean 'TIM2_Init'? [-Wimplicit-function-declaration]
+  PWM_TIM5_Init();
+  ^~~~~~~~~~~~~
+  TIM2_Init
+../src/mainF2.c:79:2: warning: implicit declaration of function 'PWM_TIM4_Init'; did you mean 'TIM2_Init'? [-Wimplicit-function-declaration]
+  PWM_TIM4_Init();
+  ^~~~~~~~~~~~~
+  TIM2_Init
+../src/mainF2.c:80:2: warning: implicit declaration of function 'GPIO_Configure'; did you mean 'BUTTON_Configure'? [-Wimplicit-function-declaration]
+  GPIO_Configure();
+  ^~~~~~~~~~~~~~
+  BUTTON_Configure
+../src/mainF2.c:84:2: warning: implicit declaration of function 'Configure_PD0' [-Wimplicit-function-declaration]
+  Configure_PD0();
+  ^~~~~~~~~~~~~
+../src/mainF2.c:86:2: warning: implicit declaration of function 'Configure_PB12' [-Wimplicit-function-declaration]
+  Configure_PB12();
+  ^~~~~~~~~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+src/mainF2.o: In function `main':
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug/../src/mainF2.c:75: undefined reference to `TIM4_Init'
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug/../src/mainF2.c:76: undefined reference to `TIM5_Init'
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug/../src/mainF2.c:78: undefined reference to `PWM_TIM5_Init'
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug/../src/mainF2.c:79: undefined reference to `PWM_TIM4_Init'
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug/../src/mainF2.c:80: undefined reference to `GPIO_Configure'
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug/../src/mainF2.c:84: undefined reference to `Configure_PD0'
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug/../src/mainF2.c:86: undefined reference to `Configure_PB12'
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug/../src/mainF2.c:112: undefined reference to `TIM4_Init'
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug/../src/mainF2.c:121: undefined reference to `TIM4_Init'
+collect2.exe: error: ld returned 1 exit status
+makefile:35: recipe for target 'PerifericsFase2.elf' failed
+make: *** [PerifericsFase2.elf] Error 1
+16:22:27 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'main':
+../src/mainF2.c:120:6: warning: implicit declaration of function 'TIM4_Init'; did you mean 'TIM2_Init'? [-Wimplicit-function-declaration]
+      TIM4_Init();
+      ^~~~~~~~~
+      TIM2_Init
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+src/mainF2.o: In function `main':
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug/../src/mainF2.c:120: undefined reference to `TIM4_Init'
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug/../src/mainF2.c:129: undefined reference to `TIM4_Init'
+collect2.exe: error: ld returned 1 exit status
+makefile:35: recipe for target 'PerifericsFase2.elf' failed
+make: *** [PerifericsFase2.elf] Error 1
+16:24:41 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2724	   1080	   1108	   4912	   1330	PerifericsFase2.elf
+ 
+16:26:27 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2672	   1080	   1108	   4860	   12fc	PerifericsFase2.elf
+ 
+16:27:01 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2672	   1080	   1108	   4860	   12fc	PerifericsFase2.elf
+ 
+16:27:20 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2672	   1080	   1108	   4860	   12fc	PerifericsFase2.elf
+ 
+16:29:04 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2672	   1080	   1108	   4860	   12fc	PerifericsFase2.elf
+ 
+16:29:50 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2688	   1080	   1108	   4876	   130c	PerifericsFase2.elf
+ 
+16:30:09 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:30:51 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2692	   1080	   1108	   4880	   1310	PerifericsFase2.elf
+ 
+17:21:54 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5720	   1080	   1100	   7900	   1edc	PerifericsFase1.elf
+ 
+17:21:57 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:49:10 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:49:47 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5720	   1080	   1100	   7900	   1edc	PerifericsFase1.elf
+ 
+17:52:35 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+../src/mainF1.c: In function 'EXTI0_IRQHandler':
+../src/mainF1.c:242:7: error: redefinition of 'aux'
+   int aux = TIM5->CCR2;
+       ^~~
+../src/mainF1.c:234:7: note: previous definition of 'aux' was here
+   int aux = TIM4->CCR3;
+       ^~~
+make: *** [src/mainF1.o] Error 1
+src/subdir.mk:36: recipe for target 'src/mainF1.o' failed
+17:52:49 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5764	   1080	   1100	   7944	   1f08	PerifericsFase1.elf
+ 
+17:53:31 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5768	   1080	   1100	   7948	   1f0c	PerifericsFase1.elf
+ 
+17:56:24 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+../src/mainF1.c: In function 'EXTI0_IRQHandler':
+../src/mainF1.c:235:18: warning: unused variable 'countStart' [-Wunused-variable]
+    unsigned long countStart = TIM_GetCounter(TIM2);
+                  ^~~~~~~~~~
+../src/mainF1.c:237:18: warning: unused variable 'countStop' [-Wunused-variable]
+    unsigned long countStop = TIM_GetCounter(TIM2);
+                  ^~~~~~~~~
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5816	   1080	   1100	   7996	   1f3c	PerifericsFase1.elf
+ 
+17:57:09 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+../src/mainF1.c: In function 'EXTI0_IRQHandler':
+../src/mainF1.c:235:18: warning: unused variable 'countStart' [-Wunused-variable]
+    unsigned long countStart = TIM_GetCounter(TIM2);
+                  ^~~~~~~~~~
+../src/mainF1.c:237:18: warning: unused variable 'countStop' [-Wunused-variable]
+    unsigned long countStop = TIM_GetCounter(TIM2);
+                  ^~~~~~~~~
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5816	   1080	   1100	   7996	   1f3c	PerifericsFase1.elf
+ 
+17:57:39 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+../src/mainF1.c: In function 'EXTI0_IRQHandler':
+../src/mainF1.c:235:18: warning: unused variable 'countStart' [-Wunused-variable]
+    unsigned long countStart = TIM_GetCounter(TIM2);
+                  ^~~~~~~~~~
+../src/mainF1.c:237:18: warning: unused variable 'countStop' [-Wunused-variable]
+    unsigned long countStop = TIM_GetCounter(TIM2);
+                  ^~~~~~~~~
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5816	   1080	   1100	   7996	   1f3c	PerifericsFase1.elf
+ 
+17:58:50 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+../src/mainF1.c: In function 'EXTI0_IRQHandler':
+../src/mainF1.c:235:18: warning: unused variable 'countStart' [-Wunused-variable]
+    unsigned long countStart = TIM_GetCounter(TIM2);
+                  ^~~~~~~~~~
+../src/mainF1.c:237:18: warning: unused variable 'countStop' [-Wunused-variable]
+    unsigned long countStop = TIM_GetCounter(TIM2);
+                  ^~~~~~~~~
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5816	   1080	   1100	   7996	   1f3c	PerifericsFase1.elf
+ 
+17:59:32 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+../src/mainF1.c: In function 'EXTI0_IRQHandler':
+../src/mainF1.c:235:18: warning: unused variable 'countStart' [-Wunused-variable]
+    unsigned long countStart = TIM_GetCounter(TIM2);
+                  ^~~~~~~~~~
+../src/mainF1.c:237:18: warning: unused variable 'countStop' [-Wunused-variable]
+    unsigned long countStop = TIM_GetCounter(TIM2);
+                  ^~~~~~~~~
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5816	   1080	   1100	   7996	   1f3c	PerifericsFase1.elf
+ 
+18:00:26 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+../src/mainF1.c: In function 'EXTI0_IRQHandler':
+../src/mainF1.c:235:18: warning: unused variable 'countStart' [-Wunused-variable]
+    unsigned long countStart = TIM_GetCounter(TIM2);
+                  ^~~~~~~~~~
+../src/mainF1.c:237:18: warning: unused variable 'countStop' [-Wunused-variable]
+    unsigned long countStop = TIM_GetCounter(TIM2);
+                  ^~~~~~~~~
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5816	   1080	   1100	   7996	   1f3c	PerifericsFase1.elf
+ 
+18:01:12 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+../src/mainF1.c: In function 'EXTI0_IRQHandler':
+../src/mainF1.c:235:18: warning: unused variable 'countStart' [-Wunused-variable]
+    unsigned long countStart = TIM_GetCounter(TIM2);
+                  ^~~~~~~~~~
+../src/mainF1.c:237:18: warning: unused variable 'countStop' [-Wunused-variable]
+    unsigned long countStop = TIM_GetCounter(TIM2);
+                  ^~~~~~~~~
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5816	   1080	   1100	   7996	   1f3c	PerifericsFase1.elf
+ 
+18:02:57 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:89:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+../src/mainF1.c: In function 'EXTI0_IRQHandler':
+../src/mainF1.c:233:16: warning: variable 'dif' set but not used [-Wunused-but-set-variable]
+  unsigned long dif;
+                ^~~
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5824	   1080	   1100	   8004	   1f44	PerifericsFase1.elf
+ 
+18:18:37 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+18:18:48 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+18:28:56 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+18:29:33 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+18:32:55 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'main':
+../src/mainF2.c:162:9: warning: unused variable 'adcData' [-Wunused-variable]
+     int adcData = ADC_Read();
+         ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3672	   1080	   1108	   5860	   16e4	PerifericsFase2.elf
+ 
+18:33:08 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+18:33:45 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+18:35:41 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3672	   1080	   1108	   5860	   16e4	PerifericsFase2.elf
+ 
+18:36:19 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'main':
+../src/mainF2.c:159:9: warning: unused variable 'adcData' [-Wunused-variable]
+     int adcData = ADC_Read();
+         ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3672	   1080	   1108	   5860	   16e4	PerifericsFase2.elf
+ 
+18:40:07 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+18:52:53 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'main':
+../src/mainF2.c:163:9: warning: unused variable 'adcData' [-Wunused-variable]
+     int adcData = ADC_Read();
+         ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3788	   1080	   1108	   5976	   1758	PerifericsFase2.elf
+ 
+18:53:30 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+18:54:08 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+18:55:42 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+18:56:20 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+18:56:38 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+18:57:07 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+18:57:44 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+09:41:51 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+09:42:21 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+09:47:42 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'main':
+../src/mainF2.c:178:2: warning: implicit declaration of function 'ADC_Configure'; did you mean 'GPIO_Configure'? [-Wimplicit-function-declaration]
+  ADC_Configure();
+  ^~~~~~~~~~~~~
+  GPIO_Configure
+../src/mainF2.c:212:9: warning: unused variable 'adcData' [-Wunused-variable]
+     int adcData = ADC3_Read();
+         ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+src/mainF2.o: In function `main':
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug/../src/mainF2.c:178: undefined reference to `ADC_Configure'
+collect2.exe: error: ld returned 1 exit status
+makefile:35: recipe for target 'PerifericsFase2.elf' failed
+make: *** [PerifericsFase2.elf] Error 1
+09:48:03 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'main':
+../src/mainF2.c:213:9: warning: unused variable 'adcData' [-Wunused-variable]
+     int adcData = ADC3_Read();
+         ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3968	   1080	   1108	   6156	   180c	PerifericsFase2.elf
+ 
+09:48:10 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+09:51:30 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'main':
+../src/mainF2.c:233:9: warning: unused variable 'adcData' [-Wunused-variable]
+     int adcData = ADC3_Read();
+         ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4232	   1080	   1108	   6420	   1914	PerifericsFase2.elf
+ 
+09:51:37 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+09:52:08 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+10:17:41 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'main':
+../src/mainF2.c:258:9: warning: unused variable 'adcData' [-Wunused-variable]
+     int adcData = ADC3_Read();
+         ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4340	   1080	   1108	   6528	   1980	PerifericsFase2.elf
+ 
+10:18:02 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'main':
+../src/mainF2.c:234:9: warning: unused variable 'adcData' [-Wunused-variable]
+     int adcData = ADC3_Read();
+         ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4232	   1080	   1108	   6420	   1914	PerifericsFase2.elf
+ 
+10:19:21 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'main':
+../src/mainF2.c:270:9: warning: unused variable 'adcData' [-Wunused-variable]
+     int adcData = ADC3_Read();
+         ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4576	   1080	   1108	   6764	   1a6c	PerifericsFase2.elf
+ 
+10:23:00 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'main':
+../src/mainF2.c:268:9: warning: unused variable 'adcData' [-Wunused-variable]
+     int adcData = ADC3_Read();
+         ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4576	   1080	   1108	   6764	   1a6c	PerifericsFase2.elf
+ 
+10:27:50 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:287:10: warning: unused variable 'adcData' [-Wunused-variable]
+      int adcData = ADC3_Read();
+          ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4580	   1080	   1108	   6768	   1a70	PerifericsFase2.elf
+ 
+10:28:15 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:287:10: warning: unused variable 'adcData' [-Wunused-variable]
+      int adcData = ADC3_Read();
+          ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4580	   1080	   1108	   6768	   1a70	PerifericsFase2.elf
+ 
+10:29:29 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:287:10: warning: unused variable 'adcData' [-Wunused-variable]
+      int adcData = ADC3_Read();
+          ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4580	   1080	   1108	   6768	   1a70	PerifericsFase2.elf
+ 
+10:30:25 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:287:10: warning: unused variable 'adcData' [-Wunused-variable]
+      int adcData = ADC3_Read();
+          ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4580	   1080	   1108	   6768	   1a70	PerifericsFase2.elf
+ 
+10:30:58 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:287:10: warning: unused variable 'adcData' [-Wunused-variable]
+      int adcData = ADC3_Read();
+          ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4580	   1080	   1108	   6768	   1a70	PerifericsFase2.elf
+ 
+10:31:33 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:287:10: warning: unused variable 'adcData' [-Wunused-variable]
+      int adcData = ADC3_Read();
+          ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4580	   1080	   1108	   6768	   1a70	PerifericsFase2.elf
+ 
+10:32:12 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:287:10: warning: unused variable 'adcData' [-Wunused-variable]
+      int adcData = ADC3_Read();
+          ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4580	   1080	   1108	   6768	   1a70	PerifericsFase2.elf
+ 
+10:32:48 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:287:10: warning: unused variable 'adcData' [-Wunused-variable]
+      int adcData = ADC3_Read();
+          ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4580	   1080	   1108	   6768	   1a70	PerifericsFase2.elf
+ 
+10:33:19 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:287:10: warning: unused variable 'adcData' [-Wunused-variable]
+      int adcData = ADC3_Read();
+          ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4580	   1080	   1108	   6768	   1a70	PerifericsFase2.elf
+ 
+10:33:39 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:287:10: warning: unused variable 'adcData' [-Wunused-variable]
+      int adcData = ADC3_Read();
+          ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4580	   1080	   1108	   6768	   1a70	PerifericsFase2.elf
+ 
+10:34:08 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:287:10: warning: unused variable 'adcData' [-Wunused-variable]
+      int adcData = ADC3_Read();
+          ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4576	   1080	   1108	   6764	   1a6c	PerifericsFase2.elf
+ 
+10:34:31 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:287:10: warning: unused variable 'adcData' [-Wunused-variable]
+      int adcData = ADC3_Read();
+          ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4576	   1080	   1108	   6764	   1a6c	PerifericsFase2.elf
+ 
+10:35:01 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:287:10: warning: unused variable 'adcData' [-Wunused-variable]
+      int adcData = ADC3_Read();
+          ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4576	   1080	   1108	   6764	   1a6c	PerifericsFase2.elf
+ 
+10:35:32 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:287:10: warning: unused variable 'adcData' [-Wunused-variable]
+      int adcData = ADC3_Read();
+          ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4576	   1080	   1108	   6764	   1a6c	PerifericsFase2.elf
+ 
+10:35:55 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:287:10: warning: unused variable 'adcData' [-Wunused-variable]
+      int adcData = ADC3_Read();
+          ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4576	   1080	   1108	   6764	   1a6c	PerifericsFase2.elf
+ 
+10:43:12 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:286:10: warning: variable 'adcData' set but not used [-Wunused-but-set-variable]
+      int adcData;
+          ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4720	   1080	   1116	   6916	   1b04	PerifericsFase2.elf
+ 
+10:47:13 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+10:47:56 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+10:48:39 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:286:10: warning: variable 'adcData' set but not used [-Wunused-but-set-variable]
+      int adcData = 0;
+          ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4724	   1080	   1116	   6920	   1b08	PerifericsFase2.elf
+ 
+10:49:24 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:286:10: warning: variable 'adcData' set but not used [-Wunused-but-set-variable]
+      int adcData = 0;
+          ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4724	   1080	   1116	   6920	   1b08	PerifericsFase2.elf
+ 
+10:57:00 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:286:10: warning: variable 'adcData' set but not used [-Wunused-but-set-variable]
+      int adcData = 0;
+          ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4700	   1080	   1116	   6896	   1af0	PerifericsFase2.elf
+ 
+10:57:13 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+11:04:38 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'main':
+../src/mainF2.c:186:2: warning: implicit declaration of function 'ADC3_CH12_Config'; did you mean 'ADC_ITConfig'? [-Wimplicit-function-declaration]
+  ADC3_CH12_Config();
+  ^~~~~~~~~~~~~~~~
+  ADC_ITConfig
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:240:10: warning: variable 'adcData' set but not used [-Wunused-but-set-variable]
+      int adcData = 0;
+          ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+src/mainF2.o: In function `main':
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug/../src/mainF2.c:186: undefined reference to `ADC3_CH12_Config'
+collect2.exe: error: ld returned 1 exit status
+makefile:35: recipe for target 'PerifericsFase2.elf' failed
+make: *** [PerifericsFase2.elf] Error 1
+11:05:34 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:240:10: warning: variable 'adcData' set but not used [-Wunused-but-set-variable]
+      int adcData = 0;
+          ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4492	   1080	   1116	   6688	   1a20	PerifericsFase2.elf
+ 
+11:25:58 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'main':
+../src/mainF2.c:190:2: warning: implicit declaration of function 'ADC_Configure'; did you mean 'ADC_Config'? [-Wimplicit-function-declaration]
+  ADC_Configure();
+  ^~~~~~~~~~~~~
+  ADC_Config
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:244:10: warning: variable 'adcData' set but not used [-Wunused-but-set-variable]
+      int adcData = 0;
+          ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+src/mainF2.o: In function `main':
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug/../src/mainF2.c:190: undefined reference to `ADC_Configure'
+collect2.exe: error: ld returned 1 exit status
+make: *** [PerifericsFase2.elf] Error 1
+makefile:35: recipe for target 'PerifericsFase2.elf' failed
+11:26:10 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:244:10: warning: variable 'adcData' set but not used [-Wunused-but-set-variable]
+      int adcData = 0;
+          ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4452	   1080	   1116	   6648	   19f8	PerifericsFase2.elf
+ 

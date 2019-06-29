@@ -227,16 +227,29 @@ void Configure_PB12(void) {
 /* Set interrupt handlers */
 /* Handle PD0 interrupt */
 void EXTI0_IRQHandler(void) {
+	int flag = 1;
+	unsigned long countStart;
+	unsigned long countStop;
+	unsigned long dif;
 	/* Make sure that interrupt flag is set */
 	if (EXTI_GetITStatus(EXTI_Line0) != RESET) {
 		/* Do your stuff when PD0 is changed */
-
-		int aux = TIM4->CCR3;
-		if(aux >= 8059){
-			TIM4->CCR3 = 459;
+		if(flag){
+			countStart = TIM_GetCounter(TIM2);
 		}else{
-			aux = TIM4->CCR3 + 200;
-			TIM4->CCR3 = aux;
+			countStop = TIM_GetCounter(TIM2);
+		}
+		flag = !flag;
+
+		dif = countStop - countStart;
+
+
+		int aux = TIM5->CCR2;
+		if(aux >= 8059){
+			TIM5->CCR2 = 459;
+		}else{
+			aux = TIM5->CCR2 + 200;
+			TIM5->CCR2 = aux;
 		}
 
 		/* Clear interrupt flag */
@@ -251,6 +264,14 @@ void EXTI15_10_IRQHandler(void) {
 	/* Make sure that interrupt flag is set */
 	if (EXTI_GetITStatus(EXTI_Line12) != RESET) {
 		/* Do your stuff when PB12 is changed */
+
+		int aux = TIM5->CCR1;
+		if(aux >= 8059){
+			TIM5->CCR1 = 459;
+		}else{
+			aux = TIM5->CCR1 + 200;
+			TIM5->CCR1 = aux;
+		}
 
 		/* Clear interrupt flag */
 		EXTI_ClearITPendingBit(EXTI_Line12);
@@ -301,23 +322,7 @@ void GPIO_Configure (void){
 	GPIO_Init(GPIOG, &GPIO_InitDef);
 	GPIO_SetBits(GPIOG, GPIO_Pin_13);
 
-
-	//tim5
-	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE);
-
-
-	GPIO_PinAFConfig(GPIOA, GPIO_PinSource1, GPIO_AF_TIM5);
-	GPIO_PinAFConfig(GPIOA, GPIO_PinSource8, GPIO_AF_TIM1);
-
-	GPIO_InitDef.GPIO_Pin =  GPIO_Pin_8;
-	GPIO_InitDef.GPIO_OType = GPIO_OType_PP;
-	GPIO_InitDef.GPIO_Mode = GPIO_Mode_AF;
-	GPIO_InitDef.GPIO_PuPd = GPIO_PuPd_NOPULL;
-	GPIO_InitDef.GPIO_Speed = GPIO_Speed_100MHz;
-
-	GPIO_Init(GPIOA, &GPIO_InitDef);
-
-	/* Set clock for GPIOD ------------------------------------------ */
+	/* Set clock for GPIOD (TIM4)------------------------------------------ */
 	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE);
 
 	// Set alternate function of GPIOD pin 12 as PWM outputs
@@ -334,6 +339,21 @@ void GPIO_Configure (void){
 	GPIO_InitStruct.GPIO_Mode = GPIO_Mode_AF;
 	GPIO_InitStruct.GPIO_Speed = GPIO_Speed_100MHz;
 	GPIO_Init(GPIOD, &GPIO_InitStruct);
+
+	/* Set clock for GPIOA (TIM5)------------------------------------------ */
+	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE);
+
+	// Set alternate function of GPIOA pin 12 as PWM outputs
+	GPIO_PinAFConfig(GPIOA, GPIO_PinSource0, GPIO_AF_TIM5);
+	GPIO_PinAFConfig(GPIOA, GPIO_PinSource1, GPIO_AF_TIM5);
+
+	// GPIOD pin 12 as outputs
+	GPIO_InitStruct.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1;
+	GPIO_InitStruct.GPIO_OType = GPIO_OType_PP;
+	GPIO_InitStruct.GPIO_PuPd = GPIO_PuPd_UP;
+	GPIO_InitStruct.GPIO_Mode = GPIO_Mode_AF;
+	GPIO_InitStruct.GPIO_Speed = GPIO_Speed_100MHz;
+	GPIO_Init(GPIOA, &GPIO_InitStruct);
 }
 
 void BUTTON_Configure(void){
@@ -382,51 +402,60 @@ void PWM_TIM4_Init(){
 }
 
 void TIM5_Init(){
-	TIM_TimeBaseInitTypeDef TIM_TimeBase_InitStructure;
+	// Enable clock for TIM5
+	    // We use TIM4 because green LED (PD12) is connected
+	    // to TIM4_CH1 GPIO AF mapping
+	    RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM5, ENABLE);
 
-	  RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM5, ENABLE);
-	  RCC_APB2PeriphClockCmd(RCC_APB2Periph_TIM1 , ENABLE);
+	    // Timer initialization struct
+	    TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStruct;
 
-	  TIM_TimeBase_InitStructure.TIM_ClockDivision = TIM_CKD_DIV1;
-	  TIM_TimeBase_InitStructure.TIM_CounterMode = TIM_CounterMode_Up;
-	  TIM_TimeBase_InitStructure.TIM_Period = 8399;
-	  TIM_TimeBase_InitStructure.TIM_Prescaler = 0;
-	  TIM_TimeBase_InitStructure.TIM_RepetitionCounter = 0;
-	  TIM_TimeBaseInit(TIM5, &TIM_TimeBase_InitStructure);
+	    // Create 1kHz PWM
+	    // TIM4 is connected to APB1 bus that have default clock 84MHz
+	    // So, the frequency of TIM4 is 84MHz
+	    // We use prescaler 10 here
+	    // So, the frequency of TIM4 now is 8.4MHz
+	    TIM_TimeBaseInitStruct.TIM_Prescaler = 33;
+	    // TIM_Period determine the PWM frequency by this equation:
+	    // PWM_frequency = timer_clock / (TIM_Period + 1)
+	    // If we want 1kHz PWM we can calculate:
+	    // TIM_Period = (timer_clock / PWM_frequency) - 1
+	    // TIM_Period = (8.4MHz / 1kHz) - 1 = 8399
+	    TIM_TimeBaseInitStruct.TIM_Period = 850;
+	    TIM_TimeBaseInitStruct.TIM_ClockDivision = TIM_CKD_DIV1;
+	    TIM_TimeBaseInitStruct.TIM_CounterMode = TIM_CounterMode_Up;
 
-	  TIM_Cmd(TIM5, ENABLE);
-
-
-	  TIM_TimeBase_InitStructure.TIM_ClockDivision = TIM_CKD_DIV1;
-	  TIM_TimeBase_InitStructure.TIM_CounterMode = TIM_CounterMode_Up;
-	  TIM_TimeBase_InitStructure.TIM_Period = 8399;
-	  TIM_TimeBase_InitStructure.TIM_Prescaler = 0;
-	  TIM_TimeBase_InitStructure.TIM_RepetitionCounter = 0;
-	  TIM_TimeBaseInit(TIM1, &TIM_TimeBase_InitStructure);
-
-	  TIM_Cmd(TIM1, ENABLE);
+	    // Initialize TIM5
+	    TIM_TimeBaseInit(TIM5, &TIM_TimeBaseInitStruct);
+	    // Start TIM5
+	    TIM_Cmd(TIM5, ENABLE);
 }
 
+void PWM_TIM5_Init(){
+	// PWM initialization struct
+	TIM_OCInitTypeDef TIM_OCInitStruct;
 
-void setPWM5(void){
+    // Common PWM settings
+    TIM_OCInitStruct.TIM_OCMode = TIM_OCMode_PWM1;
+    TIM_OCInitStruct.TIM_OutputState = TIM_OutputState_Enable;
+    TIM_OCInitStruct.TIM_OCPolarity = TIM_OCPolarity_High;
 
-  TIM_OCInitTypeDef TIM_OC_InitStructure;
+    // Duty cycle calculation equation:
+    // TIM_Pulse = (((TIM_Period + 1) * duty_cycle) / 100) - 1
+    // Ex. 25% duty cycle:
+    //     TIM_Pulse = (((8399 + 1) * 25) / 100) - 1 = 2099
+    //     TIM_Pulse = (((8399 + 1) * 75) / 100) - 1 = 6299
+    // We initialize PWM value with duty cycle of 25%
+    TIM_OCInitStruct.TIM_Pulse = 1259;						//Temps de PWM a 1 (4099 = 50%) (1259 = 1'5ms) (2107 = 2'5ms) (559 = 0'7ms)
+    TIM_OC1Init(TIM5, &TIM_OCInitStruct);
+    TIM_OC2Init(TIM5, &TIM_OCInitStruct);
 
-
-  TIM_OC_InitStructure.TIM_OCMode = TIM_OCMode_PWM2;
-  TIM_OC_InitStructure.TIM_OCIdleState = TIM_OCIdleState_Reset;
-  TIM_OC_InitStructure.TIM_OCPolarity = TIM_OCPolarity_Low;
-  TIM_OC_InitStructure.TIM_OutputState = TIM_OutputState_Enable;
-  TIM_OC_InitStructure.TIM_Pulse = 2000;
-
-
-  TIM_OC2Init(TIM5, &TIM_OC_InitStructure);
-  TIM_OC2PreloadConfig(TIM5, TIM_OCPreload_Enable);
-
+    TIM_OC1PreloadConfig(TIM5, TIM_OCPreload_Enable);
+    TIM_OC2PreloadConfig(TIM5, TIM_OCPreload_Enable);
 }
-
 
 void TIM2_Init(){
+	//SOURCE: https://www.rapitasystems.com/blog/setting-up-a-free-running-timer-on-the-stm-32-discovery-f4-board
 	TIM_TimeBaseInitTypeDef SetupTimer;
 	/* Enable timer 2, using the Reset and Clock Control register */
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
@@ -458,10 +487,11 @@ void LEDToggle(){
 
 int main(void){
 	//TIM4 config source: http://embeddedsystemengineering.blogspot.com/2015/08/stm32f4-discovery-tutorial-10-pwm.html
+	//TIM4 config source: https://stm32f4-discovery.net/2014/05/stm32f4-stm32f429-discovery-pwm-tutorial/
 	TIM4_Init();
 	TIM5_Init();
 	TIM2_Init();
-	setPWM5();
+	PWM_TIM5_Init();
 	PWM_TIM4_Init();
 	GPIO_Configure();
 	BUTTON_Configure();
@@ -492,7 +522,7 @@ int main(void){
     		GPIO_ToggleBits(GPIOG, GPIO_Pin_14);
 			unsigned long countStop = TIM_GetCounter(TIM2);
 
-			if((countStop - countStart) < 70000000){
+			if((countStop - countStart) < 60000000){
 				//button pressed for less than 2.5seconds
 				if (fastLED){
 					TIM4_Init();

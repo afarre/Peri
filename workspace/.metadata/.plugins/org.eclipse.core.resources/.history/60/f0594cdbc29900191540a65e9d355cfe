@@ -1,0 +1,171 @@
+/**
+  ******************************************************************************
+  * @file    main.c
+  * @author  Ac6
+  * @version V1.0
+  * @date    01-December-2013
+  * @brief   Default main function.
+  ******************************************************************************
+*/
+
+#include "stm32f4xx.h"
+#include "stm32f4xx_rcc.h"
+#include "stm32f4xx_gpio.h"
+#include "stm32f4xx_tim.h"
+#include "misc.h"
+#include "delay.h"
+#include "clock.h"
+#include "tm_stm32f4_disco.h"
+
+int fastLED = 0;
+int count = 0;
+int freq = 0;
+
+void ADC_Config(void)
+{
+    // Enable clock for ADC1
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_ADC1, ENABLE);
+
+    // Init GPIOB for ADC input
+    GPIO_InitTypeDef GPIO_InitStruct;
+    GPIO_InitStruct.GPIO_Mode = GPIO_Mode_AN;
+    GPIO_InitStruct.GPIO_Pin = GPIO_Pin_1;
+    GPIO_InitStruct.GPIO_PuPd = GPIO_PuPd_NOPULL;
+    GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+    // Init ADC1
+    ADC_InitTypeDef ADC_InitStruct;
+    ADC_InitStruct.ADC_ContinuousConvMode = DISABLE;
+    ADC_InitStruct.ADC_DataAlign = ADC_DataAlign_Right;
+    ADC_InitStruct.ADC_ExternalTrigConv = DISABLE;
+    ADC_InitStruct.ADC_ExternalTrigConvEdge =
+        ADC_ExternalTrigConvEdge_None;
+    ADC_InitStruct.ADC_NbrOfConversion = 1;
+    ADC_InitStruct.ADC_Resolution = ADC_Resolution_12b;
+    ADC_InitStruct.ADC_ScanConvMode = DISABLE;
+    ADC_Init(ADC1, &ADC_InitStruct);
+    ADC_Cmd(ADC1, ENABLE);
+
+    // Select input channel for ADC1
+    // ADC1 channel 9 is on PB1
+    ADC_RegularChannelConfig(ADC1, ADC_Channel_9, 1,
+        ADC_SampleTime_84Cycles);
+}
+
+uint16_t ADC_Read(void){
+    // Start ADC conversion
+    ADC_SoftwareStartConv(ADC1);
+    // Wait until conversion is finish
+    while (!ADC_GetFlagStatus(ADC1, ADC_FLAG_EOC));
+
+    return ADC_GetConversionValue(ADC1);
+}
+
+void BUTTON_Configure(void){
+	//Enable clock for GPOIA
+	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE);
+	GPIO_InitTypeDef GPIO_InitStruct;
+	//Pin 0
+	GPIO_InitStruct.GPIO_Pin = GPIO_Pin_0;
+	//Mode output
+	GPIO_InitStruct.GPIO_Mode = GPIO_Mode_IN;
+	//Output type push-pull
+	GPIO_InitStruct.GPIO_OType = GPIO_OType_PP;
+	//With pull down resistor
+	GPIO_InitStruct.GPIO_PuPd = GPIO_PuPd_DOWN;
+	//100MHz pin speed
+	GPIO_InitStruct.GPIO_Speed = GPIO_Speed_100MHz;
+	//Initialize pin on GPIOA port
+	GPIO_Init(GPIOA, &GPIO_InitStruct);
+}
+
+void TIM2_Init(){
+	//SOURCE: https://www.rapitasystems.com/blog/setting-up-a-free-running-timer-on-the-stm-32-discovery-f4-board
+	TIM_TimeBaseInitTypeDef SetupTimer;
+	/* Enable timer 2, using the Reset and Clock Control register */
+	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
+	SetupTimer.TIM_Prescaler = 0x0000;
+	SetupTimer.TIM_CounterMode = TIM_CounterMode_Up;
+	SetupTimer.TIM_Period = 0xFFFFFFFF;
+	SetupTimer.TIM_ClockDivision = TIM_CKD_DIV1;
+	TIM_TimeBaseInit(TIM2, &SetupTimer);
+	TIM_Cmd(TIM2, ENABLE); /* start counting by enabling CEN in CR1 */
+}
+
+void GPIO_Configure (void){
+    GPIO_InitTypeDef GPIO_InitDef;
+
+	//Activem el clock per els pins G
+	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOG, ENABLE);
+
+	//Inicialitzem leds:
+	GPIO_InitDef.GPIO_Pin = GPIO_Pin_13 | GPIO_Pin_14;
+	GPIO_InitDef.GPIO_Mode = GPIO_Mode_OUT;
+	GPIO_InitDef.GPIO_OType = GPIO_OType_PP;
+	GPIO_InitDef.GPIO_PuPd = GPIO_PuPd_NOPULL;
+	GPIO_Init(GPIOG, &GPIO_InitDef);
+	GPIO_SetBits(GPIOG, GPIO_Pin_13);
+}
+
+void LEDToggle(){
+	if (count >= 400000){
+		GPIO_ToggleBits(GPIOG, GPIO_Pin_13);
+		count = 0;
+	}else{
+		count+=10;
+	}
+}
+
+int main(void){
+	//TIM4 config source: http://embeddedsystemengineering.blogspot.com/2015/08/stm32f4-discovery-tutorial-10-pwm.html
+	//TIM4 config source: https://stm32f4-discovery.net/2014/05/stm32f4-stm32f429-discovery-pwm-tutorial/
+
+	TIM2_Init();
+	GPIO_Configure();
+	BUTTON_Configure();
+	ADC_Config();
+
+	/* -------------------------------------------------------------- */
+	GPIO_ResetBits(GPIOG, GPIO_Pin_14);
+	int LED = 1;
+    while (1){
+		// Delay initialization
+		//DELAY_Init();
+
+    	// Button pressed
+    	if (GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0)) {
+    		// Save TIM2 start value
+    		unsigned long countStart = TIM_GetCounter(TIM2);
+
+    		do{
+    			//do LED toggle while button pressed
+    			if(LED){
+    				LEDToggle();
+    			}
+			}while(GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0));
+
+    		//USer stopped pressing button
+			// Save TIM2 end value
+			unsigned long countStop = TIM_GetCounter(TIM2);
+
+			if((countStop - countStart) < 60000000){
+				//button pressed for less than 2.5seconds
+				freq++;
+				if (freq > 3){
+					freq = 0;
+				}
+			}else{
+				//button pressed for more than 2.5seconds
+				GPIO_ResetBits(GPIOG, GPIO_Pin_13);
+				GPIO_SetBits(GPIOG, GPIO_Pin_14);
+				LED = 0;
+				int adcData = ADC_Read();
+				adcData = adcData;
+			}
+    	}
+    	//do LED toggle while button unpressed
+    	if(LED){
+			LEDToggle();
+		}
+   	}
+}

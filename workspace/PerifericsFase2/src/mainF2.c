@@ -17,8 +17,18 @@
 #include "clock.h"
 #include "tm_stm32f4_disco.h"
 
-int showGreenLED = 1;
-int frequencia = 0;
+int fastLED = 0;
+int count = 0;
+int freq = 0;
+
+uint16_t ADC_Read(void){
+    // Start ADC conversion
+    ADC_SoftwareStartConv(ADC1);
+    // Wait until conversion is finish
+    while (!ADC_GetFlagStatus(ADC1, ADC_FLAG_EOC));
+
+    return ADC_GetConversionValue(ADC1);
+}
 
 void ADC_Config(void){
     // Enable clock for ADC1
@@ -33,48 +43,22 @@ void ADC_Config(void){
 
     // Init ADC1
     ADC_InitTypeDef ADC_InitStruct;
-    ADC_InitStruct.ADC_ContinuousConvMode = ENABLE;
+    ADC_InitStruct.ADC_ContinuousConvMode = DISABLE;
     ADC_InitStruct.ADC_DataAlign = ADC_DataAlign_Right;
     ADC_InitStruct.ADC_ExternalTrigConv = DISABLE;
-    ADC_InitStruct.ADC_ExternalTrigConvEdge = ADC_ExternalTrigConvEdge_None;
-    ADC_InitStruct.ADC_NbrOfConversion = 300;
+    ADC_InitStruct.ADC_ExternalTrigConvEdge =
+        ADC_ExternalTrigConvEdge_None;
+    ADC_InitStruct.ADC_NbrOfConversion = 1;
     ADC_InitStruct.ADC_Resolution = ADC_Resolution_12b;
     ADC_InitStruct.ADC_ScanConvMode = DISABLE;
     ADC_Init(ADC1, &ADC_InitStruct);
+    ADC_Cmd(ADC1, ENABLE);
 
+    // Select input channel for ADC1
+    // ADC1 channel 9 is on PB1
+    ADC_RegularChannelConfig(ADC1, ADC_Channel_9, 1,
+        ADC_SampleTime_84Cycles);
 }
-
-uint16_t ADC_Read(void){
-    // Start ADC conversion
-    ADC_SoftwareStartConv(ADC1);
-    // Wait until conversion is finish
-    while (!ADC_GetFlagStatus(ADC1, ADC_FLAG_EOC));
-
-    return ADC_GetConversionValue(ADC1);
-}
-
-void takeSamples(){
-	for (int i = 0; i < 300; i++){
-		int adcData = ADC_Read();
-	}
-}
-
-void GPIO_Configure (void){
-    GPIO_InitTypeDef GPIO_InitDef;
-
-	//Activem el clock per els pins G
-	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOG, ENABLE);
-
-	//Inicialitzem leds:
-	GPIO_InitDef.GPIO_Pin = GPIO_Pin_13 | GPIO_Pin_14;
-	GPIO_InitDef.GPIO_Mode = GPIO_Mode_OUT;
-	GPIO_InitDef.GPIO_OType = GPIO_OType_PP;
-	GPIO_InitDef.GPIO_PuPd = GPIO_PuPd_NOPULL;
-	GPIO_Init(GPIOG, &GPIO_InitDef);
-	GPIO_SetBits(GPIOG, GPIO_Pin_13);
-
-}
-
 void BUTTON_Configure(void){
 	//Enable clock for GPOIA
 	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE);
@@ -94,117 +78,194 @@ void BUTTON_Configure(void){
 }
 
 void TIM2_Init(){
-    // Enable clock for TIM2
+	//SOURCE: https://www.rapitasystems.com/blog/setting-up-a-free-running-timer-on-the-stm-32-discovery-f4-board
+	TIM_TimeBaseInitTypeDef SetupTimer;
+	/* Enable timer 2, using the Reset and Clock Control register */
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
-
-	// TIM2 initialization overflow every 500ms
-	// TIM2 by default has clock of 84MHz
-	// Here, we must set value of prescaler and period,
-	// so update event is 0.5Hz or 500ms
-	// Update Event (Hz) = timer_clock / ((TIM_Prescaler + 1) *
-	// (TIM_Period + 1))
-	// Update Event (Hz) = 84MHz / ((4199 + 1) * (9999 + 1)) = 2 Hz
-	TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStruct;
-	TIM_TimeBaseInitStruct.TIM_Prescaler = 3599;
-	TIM_TimeBaseInitStruct.TIM_Period = 9999;
-	TIM_TimeBaseInitStruct.TIM_ClockDivision = TIM_CKD_DIV1;
-	TIM_TimeBaseInitStruct.TIM_CounterMode = TIM_CounterMode_Up;
-
-	// TIM2 initialize
-	TIM_TimeBaseInit(TIM2, &TIM_TimeBaseInitStruct);
-	// Enable TIM2 interrupt
-	TIM_ITConfig(TIM2, TIM_IT_Update, ENABLE);
-
-	// Nested vectored interrupt settings
-	// TIM2 interrupt is most important (PreemptionPriority and
-	// SubPriority = 0)
-	NVIC_InitTypeDef NVIC_InitStruct;
-	NVIC_InitStruct.NVIC_IRQChannel = TIM2_IRQn;
-	NVIC_InitStruct.NVIC_IRQChannelPreemptionPriority = 0;
-	NVIC_InitStruct.NVIC_IRQChannelSubPriority = 0;
-	NVIC_InitStruct.NVIC_IRQChannelCmd = ENABLE;
-	NVIC_Init(&NVIC_InitStruct);
+	SetupTimer.TIM_Prescaler = 0x0000;
+	SetupTimer.TIM_CounterMode = TIM_CounterMode_Up;
+	SetupTimer.TIM_Period = 0xFFFFFFFF;
+	SetupTimer.TIM_ClockDivision = TIM_CKD_DIV1;
+	TIM_TimeBaseInit(TIM2, &SetupTimer);
+	TIM_Cmd(TIM2, ENABLE); /* start counting by enabling CEN in CR1 */
 }
 
+void reconfigTimer2(){
+	// Enable clock for TIM2
+		RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
+
+		// TIM2 initialization overflow every 500ms
+		// TIM2 by default has clock of 84MHz
+		// Here, we must set value of prescaler and period,
+		// so update event is 0.5Hz or 500ms
+		// Update Event (Hz) = timer_clock / ((TIM_Prescaler + 1) *
+		// (TIM_Period + 1))
+		// Update Event (Hz) = 84MHz / ((4199 + 1) * (9999 + 1)) = 2 Hz
+		TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStruct;
+		TIM_TimeBaseInitStruct.TIM_Prescaler = 1;
+		TIM_TimeBaseInitStruct.TIM_Period = 47;
+		TIM_TimeBaseInitStruct.TIM_ClockDivision = TIM_CKD_DIV1;
+		TIM_TimeBaseInitStruct.TIM_CounterMode = TIM_CounterMode_Up;
+
+		// TIM2 initialize
+		TIM_TimeBaseInit(TIM2, &TIM_TimeBaseInitStruct);
+		// Enable TIM2 interrupt
+		TIM_ITConfig(TIM2, TIM_IT_Update, ENABLE);
+
+		// Nested vectored interrupt settings
+		// TIM2 interrupt is most important (PreemptionPriority and
+		// SubPriority = 0)
+		NVIC_InitTypeDef NVIC_InitStruct;
+		NVIC_InitStruct.NVIC_IRQChannel = TIM2_IRQn;
+		NVIC_InitStruct.NVIC_IRQChannelPreemptionPriority = 0;
+		NVIC_InitStruct.NVIC_IRQChannelSubPriority = 0;
+		NVIC_InitStruct.NVIC_IRQChannelCmd = ENABLE;
+		NVIC_Init(&NVIC_InitStruct);
+
+}
+
+void GPIO_Configure (void){
+    GPIO_InitTypeDef GPIO_InitDef;
+
+	//Activem el clock per els pins G
+	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOG, ENABLE);
+
+	//Inicialitzem leds:
+	GPIO_InitDef.GPIO_Pin = GPIO_Pin_13 | GPIO_Pin_14;
+	GPIO_InitDef.GPIO_Mode = GPIO_Mode_OUT;
+	GPIO_InitDef.GPIO_OType = GPIO_OType_PP;
+	GPIO_InitDef.GPIO_PuPd = GPIO_PuPd_NOPULL;
+	GPIO_Init(GPIOG, &GPIO_InitDef);
+	GPIO_SetBits(GPIOG, GPIO_Pin_13);
+
+	//ADC
+	GPIO_InitTypeDef GPIO_InitStructure;
+
+	RCC_AHB1PeriphClockCmd (RCC_AHB1Periph_GPIOA, ENABLE);
+
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_1;
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AN;
+	//    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_100MHz;
+	//    GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
+	GPIO_Init (GPIOA, &GPIO_InitStructure);
+}
+
+void LEDToggle(){
+	if (count >= 400000){
+		GPIO_ToggleBits(GPIOG, GPIO_Pin_13);
+		count = 0;
+	}else{
+		count+=10;
+	}
+}
 
 int main(void){
+	//TIM4 config source: http://embeddedsystemengineering.blogspot.com/2015/08/stm32f4-discovery-tutorial-10-pwm.html
+	//TIM4 config source: https://stm32f4-discovery.net/2014/05/stm32f4-stm32f429-discovery-pwm-tutorial/
+
+	GPIO_InitTypeDef GPIO_InitStructure;
+	   NVIC_InitTypeDef      NVIC_InitStructure;
+
+	   RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_DMA1 | RCC_AHB1Periph_GPIOA, ENABLE);
+
+	   RCC_APB1PeriphClockCmd(RCC_APB1Periph_DAC, ENABLE);
+
+	   GPIO_InitStructure.GPIO_Pin = GPIO_Pin_4;
+	   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AN;
+	   GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
+	   GPIO_Init(GPIOA, &GPIO_InitStructure);
+
+	   NVIC_InitStructure.NVIC_IRQChannel = DMA1_Stream6_IRQn;
+	   NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+	   NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1;
+	   NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+	   NVIC_Init(&NVIC_InitStructure);
+
+
+
 	TIM2_Init();
 	GPIO_Configure();
 	BUTTON_Configure();
-
-	/* Set clock for GPIOD ------------------------------------------ */
-	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE);
-
-	// Set alternate function of GPIOD pin 12 as PWM outputs
-	GPIO_PinAFConfig(GPIOD, GPIO_PinSource12, GPIO_AF_TIM4);
-	GPIO_PinAFConfig(GPIOD, GPIO_PinSource13, GPIO_AF_TIM4);
-	GPIO_PinAFConfig(GPIOD, GPIO_PinSource14, GPIO_AF_TIM4);
-	GPIO_PinAFConfig(GPIOD, GPIO_PinSource15, GPIO_AF_TIM4);
-
-	// GPIOD pin 12 as outputs
-	GPIO_InitTypeDef GPIO_InitStruct;
-	GPIO_InitStruct.GPIO_Pin = GPIO_Pin_12 | GPIO_Pin_13 | GPIO_Pin_14 | GPIO_Pin_15;
-	GPIO_InitStruct.GPIO_OType = GPIO_OType_PP;
-	GPIO_InitStruct.GPIO_PuPd = GPIO_PuPd_UP;
-	GPIO_InitStruct.GPIO_Mode = GPIO_Mode_AF;
-	GPIO_InitStruct.GPIO_Speed = GPIO_Speed_100MHz;
-	GPIO_Init(GPIOD, &GPIO_InitStruct);
+	ADC_Config();
 
 
 	/* -------------------------------------------------------------- */
 	GPIO_ResetBits(GPIOG, GPIO_Pin_14);
-	int count = 0;
+	int LED = 1;
     while (1){
 		// Delay initialization
 		//DELAY_Init();
 
-		if (count >= 500000){
-			GPIO_ToggleBits(GPIOG, GPIO_Pin_13);
-			count = 0;
-		}else{
-			count+=10;
-		}
-
-
     	// Button pressed
     	if (GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0)) {
-    		// Start TIM2
-			TIM_Cmd(TIM2, ENABLE);
-			do{
-				if (!GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0)) {
-					// Stop TIM2
-					TIM_Cmd(TIM2, DISABLE);
+    		// Save TIM2 start value
+    		unsigned long countStart = TIM_GetCounter(TIM2);
 
-					//BOTO APRETAT: FER COSES
-					GPIO_ToggleBits(GPIOG, GPIO_Pin_14);
-					//Reset TIM2 value
-					TIM2->CNT = 0;
-				}
+    		do{
+    			//do LED toggle while button pressed
+    			if(LED){
+    				LEDToggle();
+    			}
 			}while(GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0));
-    	}else{
-    		// Stop TIM2
-			TIM_Cmd(TIM2, DISABLE);
+
+    		//USer stopped pressing button
+			// Save TIM2 end value
+			unsigned long countStop = TIM_GetCounter(TIM2);
+
+			if((countStop - countStart) < 60000000){
+				//button pressed for less than 2.5seconds
+				freq++;
+				if (freq >= 3){
+					freq = 0;
+				}
+			}else{
+				//button pressed for more than 2.5seconds
+				GPIO_ResetBits(GPIOG, GPIO_Pin_13);
+				GPIO_SetBits(GPIOG, GPIO_Pin_14);
+				LED = 0;
+				reconfigTimer2();
+				TIM_Cmd(TIM2, ENABLE);
+			}
     	}
+    	//do LED toggle while button unpressed
+    	if(LED){
+			LEDToggle();
+		}
    	}
 }
 
+int compt = 0;
+int mostres = 0;
 void TIM2_IRQHandler(){
     // Checks whether the TIM2 interrupt has occurred or not
-
     if (TIM_GetITStatus(TIM2, TIM_IT_Update)){
+//    	GPIO_ToggleBits(GPIOG, GPIO_Pin_14);
+    	int adcData = 0;
 
-
-    	GPIO_SetBits(GPIOG, GPIO_Pin_14);
-    	GPIO_ResetBits(GPIOG, GPIO_Pin_13);
-    	showGreenLED = 0;
-
-
-    	ADC_Cmd(ADC1, ENABLE);
-		// Select input channel for ADC1
-		// ADC1 channel 9 is on PB1
-		ADC_RegularChannelConfig(ADC1, ADC_Channel_9, 1, ADC_SampleTime_84Cycles);
-		takeSamples();
-
+    	if(mostres < 300){
+    		if (freq == 0){
+    			//freq == 0 -> una mostra cada 10us
+    			adcData = ADC_Read();
+    			mostres++;
+    		}else if (freq == 1){
+    			//freq == 1 -> una mostra cada 100us
+    			compt++;
+    			if (compt == 10){
+    				adcData = ADC_Read();
+    				compt = 0;
+    				mostres++;
+    			}
+    		}else if (freq == 2){
+    			//freq == 2 -> una mostra cada 1ms
+    			compt++;
+				if (compt == 100){
+					adcData = ADC_Read();
+					compt = 0;
+					mostres++;
+				}
+    		}
+    	}
         // Clears the TIM2 interrupt pending bit
         TIM_ClearITPendingBit(TIM2, TIM_IT_Update);
     }

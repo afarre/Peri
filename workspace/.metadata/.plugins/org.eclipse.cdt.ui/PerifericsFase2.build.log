@@ -1,6 +1,27 @@
-12:37:43 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+11:26:10 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
 make -j8 all 
-make: Nothing to be done for 'all'.
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:244:10: warning: variable 'adcData' set but not used [-Wunused-but-set-variable]
+      int adcData = 0;
+          ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4452	   1080	   1116	   6648	   19f8	PerifericsFase2.elf
+ 
 
-12:37:44 Build Finished (took 744ms)
+11:26:13 Build Finished (took 2s.324ms)
 
