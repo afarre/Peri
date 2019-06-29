@@ -20,7 +20,15 @@
 int fastLED = 0;
 int count = 0;
 int freq = 0;
+int totalMostres[300];
 
+__IO uint16_t ADC3ConvertedValue = 0;
+__IO uint32_t ADC3ConvertedVoltage = 0;
+
+#define ADC3_DR_ADDRESS    ((uint32_t)0x4001224C)
+
+
+/*
 uint16_t ADC_Read(void){
     // Start ADC conversion
     ADC_SoftwareStartConv(ADC1);
@@ -59,6 +67,79 @@ void ADC_Config(void){
     ADC_RegularChannelConfig(ADC1, ADC_Channel_9, 1,
         ADC_SampleTime_84Cycles);
 }
+*/
+
+/**
+  * @brief  ADC3 channel07 with DMA configuration
+  * @param  None
+  * @retval None
+  */
+void ADC3_CH7_DMA_Config(void){
+  ADC_InitTypeDef       ADC_InitStructure;
+  ADC_CommonInitTypeDef ADC_CommonInitStructure;
+  DMA_InitTypeDef       DMA_InitStructure;
+  GPIO_InitTypeDef      GPIO_InitStructure;
+
+  /* Enable ADC3, DMA2 and GPIO clocks ****************************************/
+  RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_DMA2 | RCC_AHB1Periph_GPIOF, ENABLE);
+  RCC_APB2PeriphClockCmd(RCC_APB2Periph_ADC3, ENABLE);
+
+  /* DMA2 Stream0 channel2 configuration **************************************/
+  DMA_InitStructure.DMA_Channel = DMA_Channel_2;
+  DMA_InitStructure.DMA_PeripheralBaseAddr = (uint32_t)ADC3_DR_ADDRESS;
+  DMA_InitStructure.DMA_Memory0BaseAddr = (uint32_t)&ADC3ConvertedValue;
+  DMA_InitStructure.DMA_DIR = DMA_DIR_PeripheralToMemory;
+  DMA_InitStructure.DMA_BufferSize = 1;
+  DMA_InitStructure.DMA_PeripheralInc = DMA_PeripheralInc_Disable;
+  DMA_InitStructure.DMA_MemoryInc = DMA_MemoryInc_Disable;
+  DMA_InitStructure.DMA_PeripheralDataSize = DMA_PeripheralDataSize_HalfWord;
+  DMA_InitStructure.DMA_MemoryDataSize = DMA_MemoryDataSize_HalfWord;
+  DMA_InitStructure.DMA_Mode = DMA_Mode_Circular;
+  DMA_InitStructure.DMA_Priority = DMA_Priority_High;
+  DMA_InitStructure.DMA_FIFOMode = DMA_FIFOMode_Disable;
+  DMA_InitStructure.DMA_FIFOThreshold = DMA_FIFOThreshold_HalfFull;
+  DMA_InitStructure.DMA_MemoryBurst = DMA_MemoryBurst_Single;
+  DMA_InitStructure.DMA_PeripheralBurst = DMA_PeripheralBurst_Single;
+  DMA_Init(DMA2_Stream0, &DMA_InitStructure);
+  DMA_Cmd(DMA2_Stream0, ENABLE);
+
+  /* Configure ADC3 Channel7 pin as analog input ******************************/
+  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_9;
+  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AN;
+  GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL ;
+  GPIO_Init(GPIOF, &GPIO_InitStructure);
+
+  /* ADC Common Init **********************************************************/
+  ADC_CommonInitStructure.ADC_Mode = ADC_Mode_Independent;
+  ADC_CommonInitStructure.ADC_Prescaler = ADC_Prescaler_Div2;
+  ADC_CommonInitStructure.ADC_DMAAccessMode = ADC_DMAAccessMode_Disabled;
+  ADC_CommonInitStructure.ADC_TwoSamplingDelay = ADC_TwoSamplingDelay_5Cycles;
+  ADC_CommonInit(&ADC_CommonInitStructure);
+
+  /* ADC3 Init ****************************************************************/
+  ADC_InitStructure.ADC_Resolution = ADC_Resolution_12b;
+  ADC_InitStructure.ADC_ScanConvMode = DISABLE;
+  ADC_InitStructure.ADC_ContinuousConvMode = ENABLE;
+  ADC_InitStructure.ADC_ExternalTrigConvEdge = ADC_ExternalTrigConvEdge_None;
+  ADC_InitStructure.ADC_ExternalTrigConv = ADC_ExternalTrigConv_T1_CC1;
+  ADC_InitStructure.ADC_DataAlign = ADC_DataAlign_Right;
+  ADC_InitStructure.ADC_NbrOfConversion = 1;
+  ADC_Init(ADC3, &ADC_InitStructure);
+
+  /* ADC3 regular channel7 configuration *************************************/
+  ADC_RegularChannelConfig(ADC3, ADC_Channel_7, 1, ADC_SampleTime_3Cycles);
+
+ /* Enable DMA request after last transfer (Single-ADC mode) */
+  ADC_DMARequestAfterLastTransferCmd(ADC3, ENABLE);
+
+  /* Enable ADC3 DMA */
+  ADC_DMACmd(ADC3, ENABLE);
+
+  /* Enable ADC3 */
+  ADC_Cmd(ADC3, ENABLE);
+}
+
+
 void BUTTON_Configure(void){
 	//Enable clock for GPOIA
 	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE);
@@ -121,7 +202,6 @@ void reconfigTimer2(){
 		NVIC_InitStruct.NVIC_IRQChannelSubPriority = 0;
 		NVIC_InitStruct.NVIC_IRQChannelCmd = ENABLE;
 		NVIC_Init(&NVIC_InitStruct);
-
 }
 
 void GPIO_Configure (void){
@@ -165,30 +245,33 @@ int main(void){
 	//TIM4 config source: https://stm32f4-discovery.net/2014/05/stm32f4-stm32f429-discovery-pwm-tutorial/
 
 	GPIO_InitTypeDef GPIO_InitStructure;
-	   NVIC_InitTypeDef      NVIC_InitStructure;
+	NVIC_InitTypeDef      NVIC_InitStructure;
 
-	   RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_DMA1 | RCC_AHB1Periph_GPIOA, ENABLE);
+	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_DMA1 | RCC_AHB1Periph_GPIOA, ENABLE);
 
-	   RCC_APB1PeriphClockCmd(RCC_APB1Periph_DAC, ENABLE);
+	RCC_APB1PeriphClockCmd(RCC_APB1Periph_DAC, ENABLE);
 
-	   GPIO_InitStructure.GPIO_Pin = GPIO_Pin_4;
-	   GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AN;
-	   GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
-	   GPIO_Init(GPIOA, &GPIO_InitStructure);
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_4;
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AN;
+	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
+	GPIO_Init(GPIOA, &GPIO_InitStructure);
 
-	   NVIC_InitStructure.NVIC_IRQChannel = DMA1_Stream6_IRQn;
-	   NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
-	   NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1;
-	   NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
-	   NVIC_Init(&NVIC_InitStructure);
-
+	NVIC_InitStructure.NVIC_IRQChannel = DMA1_Stream6_IRQn;
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1;
+	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+	NVIC_Init(&NVIC_InitStructure);
 
 
 	TIM2_Init();
 	GPIO_Configure();
 	BUTTON_Configure();
-	ADC_Config();
+	ADC3_CH7_DMA_Config();
+	//ADC3_CH7_DMA_Config source: https://github.com/Dima-Meln/stm32-cmake/blob/master/stm32f4/libs/STM32F4xx_DSP_StdPeriph_Lib_V1.0.0/Project/STM32F4xx_StdPeriph_Examples/ADC/ADC3_DMA/main.c
 
+	//	ADC_Config();
+	//ADC config source 1: http://electronicatk.blogspot.com/2016/01/adc-stm32f4-discovery.html
+	//ADC config source 2: http://embeddedsystemengineering.blogspot.com/2015/07/stm32f4-discovery-tutorial-7-adc.html
 
 	/* -------------------------------------------------------------- */
 	GPIO_ResetBits(GPIOG, GPIO_Pin_14);
@@ -246,13 +329,15 @@ void TIM2_IRQHandler(){
     	if(mostres < 300){
     		if (freq == 0){
     			//freq == 0 -> una mostra cada 10us
-    			adcData = ADC_Read();
+    			//adcData = ADC_Read();
+    			/* Start ADC3 Software Conversion */
+    			  ADC_SoftwareStartConv(ADC3);
     			mostres++;
     		}else if (freq == 1){
     			//freq == 1 -> una mostra cada 100us
     			compt++;
     			if (compt == 10){
-    				adcData = ADC_Read();
+    				//adcData = ADC_Read();
     				compt = 0;
     				mostres++;
     			}
@@ -260,12 +345,15 @@ void TIM2_IRQHandler(){
     			//freq == 2 -> una mostra cada 1ms
     			compt++;
 				if (compt == 100){
-					adcData = ADC_Read();
+					//adcData = ADC_Read();
 					compt = 0;
 					mostres++;
 				}
     		}
-    	}
+    		totalMostres[mostres] = adcData;
+    	}else{
+        	GPIO_ResetBits(GPIOG, GPIO_Pin_14);
+        }
         // Clears the TIM2 interrupt pending bit
         TIM_ClearITPendingBit(TIM2, TIM_IT_Update);
     }

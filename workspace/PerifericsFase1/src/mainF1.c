@@ -257,7 +257,6 @@ void EXTI0_IRQHandler(void) {
 	}
 }
 
-
 /* Handle PB12 interrupt */
 void EXTI15_10_IRQHandler(void) {
 
