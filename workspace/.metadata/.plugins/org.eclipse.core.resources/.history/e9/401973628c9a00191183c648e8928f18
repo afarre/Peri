@@ -114,7 +114,7 @@ void startMemoryToMemoryTransfer(){
 
 	//Enable DMA1 Channel transfer
 	DMA_Cmd(DMA1_Stream1, ENABLE);
-//	while(status == 0) {};
+	while(status == 0) {};
 	    for (i=0; i < ARRAYSIZE; i++){
 	        destination[i] = totalMostres[i];
 	    }

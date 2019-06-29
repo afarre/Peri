@@ -1,4 +1,4 @@
-15:58:46 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+18:38:55 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
 make -j8 all 
 Building file: ../src/mainF2.c
 Invoking: MCU GCC Compiler
@@ -16,8 +16,8 @@ Generating binary and Printing size information:
 arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
 arm-none-eabi-size "PerifericsFase2.elf"
    text	   data	    bss	    dec	    hex	filename
-   4936	   1080	   2324	   8340	   2094	PerifericsFase2.elf
+   5760	   1080	   2332	   9172	   23d4	PerifericsFase2.elf
  
 
-15:58:48 Build Finished (took 2s.316ms)
+18:38:57 Build Finished (took 2s.409ms)
 

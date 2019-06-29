@@ -397,3 +397,716 @@ arm-none-eabi-size "PerifericsFase2.elf"
    text	   data	    bss	    dec	    hex	filename
    4936	   1080	   2324	   8340	   2094	PerifericsFase2.elf
  
+16:47:16 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4936	   1080	   2324	   8340	   2094	PerifericsFase2.elf
+ 
+16:47:44 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:51:22 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:328:10: warning: unused variable 'adcData' [-Wunused-variable]
+      int adcData = 0;
+          ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4956	   1080	   2324	   8360	   20a8	PerifericsFase2.elf
+ 
+16:52:13 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:52:59 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:54:02 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:328:10: warning: unused variable 'adcData' [-Wunused-variable]
+      int adcData = 0;
+          ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4936	   1080	   2324	   8340	   2094	PerifericsFase2.elf
+ 
+16:55:39 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:56:42 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:26:11 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:412:7: warning: implicit declaration of function 'startMemoryToMemoryTransfer' [-Wimplicit-function-declaration]
+       startMemoryToMemoryTransfer();
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/mainF2.c:384:10: warning: unused variable 'adcData' [-Wunused-variable]
+      int adcData = 0;
+          ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+src/mainF2.o: In function `TIM2_IRQHandler':
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug/../src/mainF2.c:412: undefined reference to `startMemoryToMemoryTransfer'
+collect2.exe: error: ld returned 1 exit status
+make: *** [PerifericsFase2.elf] Error 1
+makefile:35: recipe for target 'PerifericsFase2.elf' failed
+17:26:20 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:384:10: warning: unused variable 'adcData' [-Wunused-variable]
+      int adcData = 0;
+          ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4936	   1080	   2332	   8348	   209c	PerifericsFase2.elf
+ 
+17:26:52 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+18:19:50 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'startMemoryToMemoryTransfer':
+../src/mainF2.c:78:2: warning: implicit declaration of function 'LEDsInit'; did you mean 'LTDC_Init'? [-Wimplicit-function-declaration]
+  LEDsInit();
+  ^~~~~~~~
+  LTDC_Init
+../src/mainF2.c:80:2: warning: implicit declaration of function 'RCC_AHBPeriphClockCmd'; did you mean 'RCC_AHB3PeriphClockCmd'? [-Wimplicit-function-declaration]
+  RCC_AHBPeriphClockCmd(RCC_AHB1Periph_DMA1, ENABLE);
+  ^~~~~~~~~~~~~~~~~~~~~
+  RCC_AHB3PeriphClockCmd
+In file included from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_conf.h:37:0,
+                 from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device/stm32f4xx.h:12027,
+                 from ../src/mainF2.c:11:
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_DeInit' makes pointer from integer without a cast [-Wint-conversion]
+ #define DMA_Channel_1                     ((uint32_t)0x02000000)
+                                           ^
+../src/mainF2.c:84:13: note: in expansion of macro 'DMA_Channel_1'
+  DMA_DeInit(DMA_Channel_1);
+             ^~~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:562:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
+ void DMA_DeInit(DMA_Stream_TypeDef* DMAy_Streamx);
+      ^~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_Init' makes pointer from integer without a cast [-Wint-conversion]
+ #define DMA_Channel_1                     ((uint32_t)0x02000000)
+                                           ^
+../src/mainF2.c:105:11: note: in expansion of macro 'DMA_Channel_1'
+  DMA_Init(DMA_Channel_1, &DMA_InitStructure);
+           ^~~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:565:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
+ void DMA_Init(DMA_Stream_TypeDef* DMAy_Streamx, DMA_InitTypeDef* DMA_InitStruct);
+      ^~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_ITConfig' makes pointer from integer without a cast [-Wint-conversion]
+ #define DMA_Channel_1                     ((uint32_t)0x02000000)
+                                           ^
+../src/mainF2.c:107:15: note: in expansion of macro 'DMA_Channel_1'
+  DMA_ITConfig(DMA_Channel_1, DMA_IT_TC, ENABLE);
+               ^~~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:590:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
+ void DMA_ITConfig(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_IT, FunctionalState NewState);
+      ^~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_Cmd' makes pointer from integer without a cast [-Wint-conversion]
+ #define DMA_Channel_1                     ((uint32_t)0x02000000)
+                                           ^
+../src/mainF2.c:118:10: note: in expansion of macro 'DMA_Channel_1'
+  DMA_Cmd(DMA_Channel_1, ENABLE);
+          ^~~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:567:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
+ void DMA_Cmd(DMA_Stream_TypeDef* DMAy_Streamx, FunctionalState NewState);
+      ^~~~~~~
+../src/mainF2.c: In function 'DMA1_Channel1_IRQHandler':
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:432:43: warning: passing argument 1 of 'DMA_GetITStatus' makes pointer from integer without a cast [-Wint-conversion]
+ #define DMA_IT_TC                         ((uint32_t)0x00000010)
+                                           ^
+../src/mainF2.c:128:22: note: in expansion of macro 'DMA_IT_TC'
+   if(DMA_GetITStatus(DMA_IT_TC)){
+                      ^~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:591:10: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
+ ITStatus DMA_GetITStatus(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_IT);
+          ^~~~~~~~~~~~~~~
+../src/mainF2.c:128:6: error: too few arguments to function 'DMA_GetITStatus'
+   if(DMA_GetITStatus(DMA_IT_TC)){
+      ^~~~~~~~~~~~~~~
+In file included from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_conf.h:37:0,
+                 from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device/stm32f4xx.h:12027,
+                 from ../src/mainF2.c:11:
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:591:10: note: declared here
+ ITStatus DMA_GetITStatus(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_IT);
+          ^~~~~~~~~~~~~~~
+../src/mainF2.c:131:5: error: too few arguments to function 'DMA_ClearITPendingBit'
+     DMA_ClearITPendingBit(DMA1_Stream1);
+     ^~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_conf.h:37:0,
+                 from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device/stm32f4xx.h:12027,
+                 from ../src/mainF2.c:11:
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:592:6: note: declared here
+ void DMA_ClearITPendingBit(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_IT);
+      ^~~~~~~~~~~~~~~~~~~~~
+../src/mainF2.c: In function 'main':
+../src/mainF2.c:310:24: warning: unused variable 'NVIC_InitStructure' [-Wunused-variable]
+  NVIC_InitTypeDef      NVIC_InitStructure;
+                        ^~~~~~~~~~~~~~~~~~
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:389:10: warning: unused variable 'adcData' [-Wunused-variable]
+      int adcData = 0;
+          ^~~~~~~
+src/subdir.mk:36: recipe for target 'src/mainF2.o' failed
+make: *** [src/mainF2.o] Error 1
+18:20:07 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'startMemoryToMemoryTransfer':
+../src/mainF2.c:78:2: warning: implicit declaration of function 'LEDsInit'; did you mean 'LTDC_Init'? [-Wimplicit-function-declaration]
+  LEDsInit();
+  ^~~~~~~~
+  LTDC_Init
+../src/mainF2.c:80:2: warning: implicit declaration of function 'RCC_AHBPeriphClockCmd'; did you mean 'RCC_AHB3PeriphClockCmd'? [-Wimplicit-function-declaration]
+  RCC_AHBPeriphClockCmd(RCC_AHB1Periph_DMA1, ENABLE);
+  ^~~~~~~~~~~~~~~~~~~~~
+  RCC_AHB3PeriphClockCmd
+In file included from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_conf.h:37:0,
+                 from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device/stm32f4xx.h:12027,
+                 from ../src/mainF2.c:11:
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_DeInit' makes pointer from integer without a cast [-Wint-conversion]
+ #define DMA_Channel_1                     ((uint32_t)0x02000000)
+                                           ^
+../src/mainF2.c:84:13: note: in expansion of macro 'DMA_Channel_1'
+  DMA_DeInit(DMA_Channel_1);
+             ^~~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:562:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
+ void DMA_DeInit(DMA_Stream_TypeDef* DMAy_Streamx);
+      ^~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_Init' makes pointer from integer without a cast [-Wint-conversion]
+ #define DMA_Channel_1                     ((uint32_t)0x02000000)
+                                           ^
+../src/mainF2.c:105:11: note: in expansion of macro 'DMA_Channel_1'
+  DMA_Init(DMA_Channel_1, &DMA_InitStructure);
+           ^~~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:565:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
+ void DMA_Init(DMA_Stream_TypeDef* DMAy_Streamx, DMA_InitTypeDef* DMA_InitStruct);
+      ^~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_ITConfig' makes pointer from integer without a cast [-Wint-conversion]
+ #define DMA_Channel_1                     ((uint32_t)0x02000000)
+                                           ^
+../src/mainF2.c:107:15: note: in expansion of macro 'DMA_Channel_1'
+  DMA_ITConfig(DMA_Channel_1, DMA_IT_TC, ENABLE);
+               ^~~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:590:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
+ void DMA_ITConfig(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_IT, FunctionalState NewState);
+      ^~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_Cmd' makes pointer from integer without a cast [-Wint-conversion]
+ #define DMA_Channel_1                     ((uint32_t)0x02000000)
+                                           ^
+../src/mainF2.c:118:10: note: in expansion of macro 'DMA_Channel_1'
+  DMA_Cmd(DMA_Channel_1, ENABLE);
+          ^~~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:567:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
+ void DMA_Cmd(DMA_Stream_TypeDef* DMAy_Streamx, FunctionalState NewState);
+      ^~~~~~~
+../src/mainF2.c: In function 'main':
+../src/mainF2.c:310:24: warning: unused variable 'NVIC_InitStructure' [-Wunused-variable]
+  NVIC_InitTypeDef      NVIC_InitStructure;
+                        ^~~~~~~~~~~~~~~~~~
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:389:10: warning: unused variable 'adcData' [-Wunused-variable]
+      int adcData = 0;
+          ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4924	   1080	   2332	   8336	   2090	PerifericsFase2.elf
+ 
+18:21:49 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'startMemoryToMemoryTransfer':
+../src/mainF2.c:78:2: warning: implicit declaration of function 'LEDsInit'; did you mean 'LTDC_Init'? [-Wimplicit-function-declaration]
+  LEDsInit();
+  ^~~~~~~~
+  LTDC_Init
+../src/mainF2.c:80:2: warning: implicit declaration of function 'RCC_AHBPeriphClockCmd'; did you mean 'RCC_AHB3PeriphClockCmd'? [-Wimplicit-function-declaration]
+  RCC_AHBPeriphClockCmd(RCC_AHB1Periph_DMA1, ENABLE);
+  ^~~~~~~~~~~~~~~~~~~~~
+  RCC_AHB3PeriphClockCmd
+In file included from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_conf.h:37:0,
+                 from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device/stm32f4xx.h:12027,
+                 from ../src/mainF2.c:11:
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_DeInit' makes pointer from integer without a cast [-Wint-conversion]
+ #define DMA_Channel_1                     ((uint32_t)0x02000000)
+                                           ^
+../src/mainF2.c:84:13: note: in expansion of macro 'DMA_Channel_1'
+  DMA_DeInit(DMA_Channel_1);
+             ^~~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:562:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
+ void DMA_DeInit(DMA_Stream_TypeDef* DMAy_Streamx);
+      ^~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_Init' makes pointer from integer without a cast [-Wint-conversion]
+ #define DMA_Channel_1                     ((uint32_t)0x02000000)
+                                           ^
+../src/mainF2.c:105:11: note: in expansion of macro 'DMA_Channel_1'
+  DMA_Init(DMA_Channel_1, &DMA_InitStructure);
+           ^~~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:565:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
+ void DMA_Init(DMA_Stream_TypeDef* DMAy_Streamx, DMA_InitTypeDef* DMA_InitStruct);
+      ^~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_ITConfig' makes pointer from integer without a cast [-Wint-conversion]
+ #define DMA_Channel_1                     ((uint32_t)0x02000000)
+                                           ^
+../src/mainF2.c:107:15: note: in expansion of macro 'DMA_Channel_1'
+  DMA_ITConfig(DMA_Channel_1, DMA_IT_TC, ENABLE);
+               ^~~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:590:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
+ void DMA_ITConfig(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_IT, FunctionalState NewState);
+      ^~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_Cmd' makes pointer from integer without a cast [-Wint-conversion]
+ #define DMA_Channel_1                     ((uint32_t)0x02000000)
+                                           ^
+../src/mainF2.c:118:10: note: in expansion of macro 'DMA_Channel_1'
+  DMA_Cmd(DMA_Channel_1, ENABLE);
+          ^~~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:567:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
+ void DMA_Cmd(DMA_Stream_TypeDef* DMAy_Streamx, FunctionalState NewState);
+      ^~~~~~~
+../src/mainF2.c: In function 'DMA1_Channel1_IRQHandler':
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:432:43: warning: passing argument 1 of 'DMA_GetITStatus' makes pointer from integer without a cast [-Wint-conversion]
+ #define DMA_IT_TC                         ((uint32_t)0x00000010)
+                                           ^
+../src/mainF2.c:128:22: note: in expansion of macro 'DMA_IT_TC'
+   if(DMA_GetITStatus(DMA_IT_TC)){
+                      ^~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:591:10: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
+ ITStatus DMA_GetITStatus(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_IT);
+          ^~~~~~~~~~~~~~~
+../src/mainF2.c:128:6: error: too few arguments to function 'DMA_GetITStatus'
+   if(DMA_GetITStatus(DMA_IT_TC)){
+      ^~~~~~~~~~~~~~~
+In file included from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_conf.h:37:0,
+                 from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device/stm32f4xx.h:12027,
+                 from ../src/mainF2.c:11:
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:591:10: note: declared here
+ ITStatus DMA_GetITStatus(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_IT);
+          ^~~~~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:456:43: warning: passing argument 1 of 'DMA_ClearITPendingBit' makes pointer from integer without a cast [-Wint-conversion]
+ #define DMA_IT_TCIF1                      ((uint32_t)0x10008800)
+                                           ^
+../src/mainF2.c:131:27: note: in expansion of macro 'DMA_IT_TCIF1'
+     DMA_ClearITPendingBit(DMA_IT_TCIF1);
+                           ^~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:592:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
+ void DMA_ClearITPendingBit(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_IT);
+      ^~~~~~~~~~~~~~~~~~~~~
+../src/mainF2.c:131:5: error: too few arguments to function 'DMA_ClearITPendingBit'
+     DMA_ClearITPendingBit(DMA_IT_TCIF1);
+     ^~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_conf.h:37:0,
+                 from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device/stm32f4xx.h:12027,
+                 from ../src/mainF2.c:11:
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:592:6: note: declared here
+ void DMA_ClearITPendingBit(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_IT);
+      ^~~~~~~~~~~~~~~~~~~~~
+../src/mainF2.c: In function 'main':
+../src/mainF2.c:310:24: warning: unused variable 'NVIC_InitStructure' [-Wunused-variable]
+  NVIC_InitTypeDef      NVIC_InitStructure;
+                        ^~~~~~~~~~~~~~~~~~
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:382:10: warning: unused variable 'adcData' [-Wunused-variable]
+      int adcData = 0;
+          ^~~~~~~
+src/subdir.mk:36: recipe for target 'src/mainF2.o' failed
+make: *** [src/mainF2.o] Error 1
+18:22:49 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'startMemoryToMemoryTransfer':
+../src/mainF2.c:78:2: warning: implicit declaration of function 'LEDsInit'; did you mean 'LTDC_Init'? [-Wimplicit-function-declaration]
+  LEDsInit();
+  ^~~~~~~~
+  LTDC_Init
+../src/mainF2.c:80:2: warning: implicit declaration of function 'RCC_AHBPeriphClockCmd'; did you mean 'RCC_AHB3PeriphClockCmd'? [-Wimplicit-function-declaration]
+  RCC_AHBPeriphClockCmd(RCC_AHB1Periph_DMA1, ENABLE);
+  ^~~~~~~~~~~~~~~~~~~~~
+  RCC_AHB3PeriphClockCmd
+In file included from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_conf.h:37:0,
+                 from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device/stm32f4xx.h:12027,
+                 from ../src/mainF2.c:11:
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_DeInit' makes pointer from integer without a cast [-Wint-conversion]
+ #define DMA_Channel_1                     ((uint32_t)0x02000000)
+                                           ^
+../src/mainF2.c:84:13: note: in expansion of macro 'DMA_Channel_1'
+  DMA_DeInit(DMA_Channel_1);
+             ^~~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:562:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
+ void DMA_DeInit(DMA_Stream_TypeDef* DMAy_Streamx);
+      ^~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_Init' makes pointer from integer without a cast [-Wint-conversion]
+ #define DMA_Channel_1                     ((uint32_t)0x02000000)
+                                           ^
+../src/mainF2.c:105:11: note: in expansion of macro 'DMA_Channel_1'
+  DMA_Init(DMA_Channel_1, &DMA_InitStructure);
+           ^~~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:565:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
+ void DMA_Init(DMA_Stream_TypeDef* DMAy_Streamx, DMA_InitTypeDef* DMA_InitStruct);
+      ^~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_ITConfig' makes pointer from integer without a cast [-Wint-conversion]
+ #define DMA_Channel_1                     ((uint32_t)0x02000000)
+                                           ^
+../src/mainF2.c:107:15: note: in expansion of macro 'DMA_Channel_1'
+  DMA_ITConfig(DMA_Channel_1, DMA_IT_TC, ENABLE);
+               ^~~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:590:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
+ void DMA_ITConfig(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_IT, FunctionalState NewState);
+      ^~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_Cmd' makes pointer from integer without a cast [-Wint-conversion]
+ #define DMA_Channel_1                     ((uint32_t)0x02000000)
+                                           ^
+../src/mainF2.c:118:10: note: in expansion of macro 'DMA_Channel_1'
+  DMA_Cmd(DMA_Channel_1, ENABLE);
+          ^~~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:567:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
+ void DMA_Cmd(DMA_Stream_TypeDef* DMAy_Streamx, FunctionalState NewState);
+      ^~~~~~~
+../src/mainF2.c: In function 'main':
+../src/mainF2.c:310:24: warning: unused variable 'NVIC_InitStructure' [-Wunused-variable]
+  NVIC_InitTypeDef      NVIC_InitStructure;
+                        ^~~~~~~~~~~~~~~~~~
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:382:10: warning: unused variable 'adcData' [-Wunused-variable]
+      int adcData = 0;
+          ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4924	   1080	   2332	   8336	   2090	PerifericsFase2.elf
+ 
+18:23:14 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+18:26:20 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'startMemoryToMemoryTransfer':
+../src/mainF2.c:78:2: warning: implicit declaration of function 'LEDsInit'; did you mean 'LTDC_Init'? [-Wimplicit-function-declaration]
+  LEDsInit();
+  ^~~~~~~~
+  LTDC_Init
+../src/mainF2.c:80:2: warning: implicit declaration of function 'RCC_AHBPeriphClockCmd'; did you mean 'RCC_AHB3PeriphClockCmd'? [-Wimplicit-function-declaration]
+  RCC_AHBPeriphClockCmd(RCC_AHB1Periph_DMA1, ENABLE);
+  ^~~~~~~~~~~~~~~~~~~~~
+  RCC_AHB3PeriphClockCmd
+In file included from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_conf.h:37:0,
+                 from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device/stm32f4xx.h:12027,
+                 from ../src/mainF2.c:11:
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_DeInit' makes pointer from integer without a cast [-Wint-conversion]
+ #define DMA_Channel_1                     ((uint32_t)0x02000000)
+                                           ^
+../src/mainF2.c:84:13: note: in expansion of macro 'DMA_Channel_1'
+  DMA_DeInit(DMA_Channel_1);
+             ^~~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:562:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
+ void DMA_DeInit(DMA_Stream_TypeDef* DMAy_Streamx);
+      ^~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_Init' makes pointer from integer without a cast [-Wint-conversion]
+ #define DMA_Channel_1                     ((uint32_t)0x02000000)
+                                           ^
+../src/mainF2.c:105:11: note: in expansion of macro 'DMA_Channel_1'
+  DMA_Init(DMA_Channel_1, &DMA_InitStructure);
+           ^~~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:565:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
+ void DMA_Init(DMA_Stream_TypeDef* DMAy_Streamx, DMA_InitTypeDef* DMA_InitStruct);
+      ^~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_ITConfig' makes pointer from integer without a cast [-Wint-conversion]
+ #define DMA_Channel_1                     ((uint32_t)0x02000000)
+                                           ^
+../src/mainF2.c:107:15: note: in expansion of macro 'DMA_Channel_1'
+  DMA_ITConfig(DMA_Channel_1, DMA_IT_TC, ENABLE);
+               ^~~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:590:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
+ void DMA_ITConfig(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_IT, FunctionalState NewState);
+      ^~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_Cmd' makes pointer from integer without a cast [-Wint-conversion]
+ #define DMA_Channel_1                     ((uint32_t)0x02000000)
+                                           ^
+../src/mainF2.c:118:10: note: in expansion of macro 'DMA_Channel_1'
+  DMA_Cmd(DMA_Channel_1, ENABLE);
+          ^~~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:567:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
+ void DMA_Cmd(DMA_Stream_TypeDef* DMAy_Streamx, FunctionalState NewState);
+      ^~~~~~~
+../src/mainF2.c: In function 'main':
+../src/mainF2.c:310:24: warning: unused variable 'NVIC_InitStructure' [-Wunused-variable]
+  NVIC_InitTypeDef      NVIC_InitStructure;
+                        ^~~~~~~~~~~~~~~~~~
+../src/mainF2.c: In function 'TIM2_IRQHandler':
+../src/mainF2.c:382:10: warning: unused variable 'adcData' [-Wunused-variable]
+      int adcData = 0;
+          ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4924	   1080	   2332	   8336	   2090	PerifericsFase2.elf
+ 
+18:28:34 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+In file included from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_conf.h:37:0,
+                 from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device/stm32f4xx.h:12027,
+                 from ../src/mainF2.c:11:
+../src/mainF2.c: In function 'startMemoryToMemoryTransfer':
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_DeInit' makes pointer from integer without a cast [-Wint-conversion]
+ #define DMA_Channel_1                     ((uint32_t)0x02000000)
+                                           ^
+../src/mainF2.c:82:13: note: in expansion of macro 'DMA_Channel_1'
+  DMA_DeInit(DMA_Channel_1);
+             ^~~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:562:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
+ void DMA_DeInit(DMA_Stream_TypeDef* DMAy_Streamx);
+      ^~~~~~~~~~
+../src/mainF2.c: In function 'main':
+../src/mainF2.c:308:24: warning: unused variable 'NVIC_InitStructure' [-Wunused-variable]
+  NVIC_InitTypeDef      NVIC_InitStructure;
+                        ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4912	   1080	   2332	   8324	   2084	PerifericsFase2.elf
+ 
+18:29:20 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+In file included from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_conf.h:37:0,
+                 from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device/stm32f4xx.h:12027,
+                 from ../src/mainF2.c:11:
+../src/mainF2.c: In function 'startMemoryToMemoryTransfer':
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_DeInit' makes pointer from integer without a cast [-Wint-conversion]
+ #define DMA_Channel_1                     ((uint32_t)0x02000000)
+                                           ^
+../src/mainF2.c:82:13: note: in expansion of macro 'DMA_Channel_1'
+  DMA_DeInit(DMA_Channel_1);
+             ^~~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:562:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
+ void DMA_DeInit(DMA_Stream_TypeDef* DMAy_Streamx);
+      ^~~~~~~~~~
+../src/mainF2.c: In function 'main':
+../src/mainF2.c:308:24: warning: unused variable 'NVIC_InitStructure' [-Wunused-variable]
+  NVIC_InitTypeDef      NVIC_InitStructure;
+                        ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5776	   1080	   2332	   9188	   23e4	PerifericsFase2.elf
+ 
+18:34:39 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+In file included from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_conf.h:37:0,
+                 from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device/stm32f4xx.h:12027,
+                 from ../src/mainF2.c:11:
+../src/mainF2.c: In function 'startMemoryToMemoryTransfer':
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_DeInit' makes pointer from integer without a cast [-Wint-conversion]
+ #define DMA_Channel_1                     ((uint32_t)0x02000000)
+                                           ^
+../src/mainF2.c:82:13: note: in expansion of macro 'DMA_Channel_1'
+  DMA_DeInit(DMA_Channel_1);
+             ^~~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:562:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
+ void DMA_DeInit(DMA_Stream_TypeDef* DMAy_Streamx);
+      ^~~~~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5776	   1080	   2332	   9188	   23e4	PerifericsFase2.elf
+ 
+18:35:23 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+18:36:02 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5776	   1080	   2332	   9188	   23e4	PerifericsFase2.elf
+ 
+18:37:04 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+18:37:34 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+18:38:55 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5760	   1080	   2332	   9172	   23d4	PerifericsFase2.elf
+ 

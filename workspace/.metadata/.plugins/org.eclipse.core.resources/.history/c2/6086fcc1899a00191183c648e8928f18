@@ -74,12 +74,14 @@ void ADC_Config(void){
 void startMemoryToMemoryTransfer(){
 	//initialize destination arrays
 	uint32_t destination[ARRAYSIZE];
+	//initialize led
+	LEDsInit();
 	//enable DMA1 clock
-	RCC_AHB3PeriphClockCmd(RCC_AHB1Periph_DMA1, ENABLE);
+	RCC_AHBPeriphClockCmd(RCC_AHB1Periph_DMA1, ENABLE);
 	//create DMA structure
 	DMA_InitTypeDef  DMA_InitStructure;
 	//reset DMA1 channe1 to default values;
-	DMA_DeInit(DMA1_Stream1);
+	DMA_DeInit(DMA_Channel_1);
 	//channel will be used for memory to memory transfer
 	//DMA_InitStructure.DMA_M2M = DMA_M2M_Enable;
 	//setting normal mode (non circular)
@@ -100,9 +102,9 @@ void startMemoryToMemoryTransfer(){
 	DMA_InitStructure.DMA_PeripheralBaseAddr = (uint32_t)totalMostres;
 	DMA_InitStructure.DMA_Memory0BaseAddr = (uint32_t)destination;
 	//send values to DMA registers
-	DMA_Init(DMA1_Stream1, &DMA_InitStructure);
+	DMA_Init(DMA_Channel_1, &DMA_InitStructure);
 	// Enable DMA1 Channel Transfer Complete interrupt
-	DMA_ITConfig(DMA1_Stream1, DMA_IT_TC, ENABLE);
+	DMA_ITConfig(DMA_Channel_1, DMA_IT_TC, ENABLE);
 
 	NVIC_InitTypeDef NVIC_InitStructure;
 	//Enable DMA1 channel IRQ Channel */
@@ -113,20 +115,20 @@ void startMemoryToMemoryTransfer(){
 	NVIC_Init(&NVIC_InitStructure);
 
 	//Enable DMA1 Channel transfer
-	DMA_Cmd(DMA1_Stream1, ENABLE);
-//	while(status == 0) {};
-	    for (i=0; i < ARRAYSIZE; i++){
+	DMA_Cmd(DMA_Channel_1, ENABLE);
+	while(status == 0) {};
+	    for (i=0; i < ARRAYSIZE; i++)
+	    {
 	        destination[i] = totalMostres[i];
 	    }
-	    TIM_ClearITPendingBit(TIM2, TIM_IT_Update);
 }
 
 void DMA1_Channel1_IRQHandler(void){
   //Test on DMA1 Channel1 Transfer Complete interrupt
-  if(DMA_GetITStatus(DMA1_Stream1, DMA_IT_TCIF1)){
+  if(DMA_GetITStatus(DMA_IT_TC)){
       status=1;
    //Clear DMA1 Channel1 Half Transfer, Transfer Complete and Global interrupt pending bits
-    DMA_ClearITPendingBit(DMA1_Stream1, DMA_IT_TCIF1);
+    DMA_ClearITPendingBit(DMA1_Stream1);
   }
 }
 
@@ -305,6 +307,7 @@ int main(void){
 	//TIM4 config source: https://stm32f4-discovery.net/2014/05/stm32f4-stm32f429-discovery-pwm-tutorial/
 
 	GPIO_InitTypeDef GPIO_InitStructure;
+	NVIC_InitTypeDef      NVIC_InitStructure;
 
 	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_DMA1 | RCC_AHB1Periph_GPIOA, ENABLE);
 
@@ -314,6 +317,13 @@ int main(void){
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AN;
 	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
+/*
+	NVIC_InitStructure.NVIC_IRQChannel = DMA1_Stream6_IRQn;
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1;
+	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+	NVIC_Init(&NVIC_InitStructure);
+*/
 
 	TIM2_Init();
 	GPIO_Configure();
@@ -376,7 +386,7 @@ void TIM2_IRQHandler(){
     // Checks whether the TIM2 interrupt has occurred or not
     if (TIM_GetITStatus(TIM2, TIM_IT_Update)){
 //    	GPIO_ToggleBits(GPIOG, GPIO_Pin_14);
-//    	int adcData = 0;
+    	int adcData = 0;
 
     	if(mostres < 300){
     		if (freq == 0){
@@ -404,7 +414,7 @@ void TIM2_IRQHandler(){
     		totalMostres[mostres] = ADC3ConvertedValue;
     		mostres++;
     	}else{
-    		startMemoryToMemoryTransfer();
+    		//startMemoryToMemoryTransfer();
         	GPIO_ResetBits(GPIOG, GPIO_Pin_14);
         	TIM_Cmd(TIM2, DISABLE);
         }
