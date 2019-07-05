@@ -1,42 +1,43 @@
-15:38:42 **** Build of configuration Debug for project PerifericsFase2 ****
+16:59:38 **** Build of configuration Debug for project PerifericsFase3 ****
 make -j8 all 
 Building file: ../startup/startup_stm32.s
 Building file: ../src/clock.c
 Building file: ../src/delay.c
-Building file: ../src/mainF2.c
-Building file: ../src/syscalls.c
-Building file: ../src/system_stm32f4xx.c
 Invoking: MCU GCC Assembler
+Building file: ../src/mainF3.c
 Invoking: MCU GCC Compiler
 Invoking: MCU GCC Compiler
+Building file: ../src/syscalls.c
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
 Invoking: MCU GCC Compiler
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/clock.d" -MT"src/clock.o" -o "src/clock.o" "../src/clock.c"
 Invoking: MCU GCC Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/delay.d" -MT"src/delay.o" -o "src/delay.o" "../src/delay.c"
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+Building file: ../src/system_stm32f4xx.c
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/syscalls.d" -MT"src/syscalls.o" -o "src/syscalls.o" "../src/syscalls.c"
 Building file: ../src/tm_stm32f4_disco.c
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-Invoking: MCU GCC Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/delay.d" -MT"src/delay.o" -o "src/delay.o" "../src/delay.c"
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/clock.d" -MT"src/clock.o" -o "src/clock.o" "../src/clock.c"
-Invoking: MCU GCC Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
 Building file: ../src/tm_stm32f4_gpio.c
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/syscalls.d" -MT"src/syscalls.o" -o "src/syscalls.o" "../src/syscalls.c"
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/system_stm32f4xx.d" -MT"src/system_stm32f4xx.o" -o "src/system_stm32f4xx.o" "../src/system_stm32f4xx.c"
 Invoking: MCU GCC Compiler
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/tm_stm32f4_disco.d" -MT"src/tm_stm32f4_disco.o" -o "src/tm_stm32f4_disco.o" "../src/tm_stm32f4_disco.c"
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/tm_stm32f4_gpio.d" -MT"src/tm_stm32f4_gpio.o" -o "src/tm_stm32f4_gpio.o" "../src/tm_stm32f4_gpio.c"
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/tm_stm32f4_disco.d" -MT"src/tm_stm32f4_disco.o" -o "src/tm_stm32f4_disco.o" "../src/tm_stm32f4_disco.c"
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/system_stm32f4xx.d" -MT"src/system_stm32f4xx.o" -o "src/system_stm32f4xx.o" "../src/system_stm32f4xx.c"
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/tm_stm32f4_gpio.d" -MT"src/tm_stm32f4_gpio.o" -o "src/tm_stm32f4_gpio.o" "../src/tm_stm32f4_gpio.c"
 Finished building: ../startup/startup_stm32.s
  
 Building file: ../StdPeriph_Driver/src/misc.c
 Invoking: MCU GCC Compiler
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/misc.d" -MT"StdPeriph_Driver/src/misc.o" -o "StdPeriph_Driver/src/misc.o" "../StdPeriph_Driver/src/misc.c"
 ../src/system_stm32f4xx.c: In function 'SetSysClock':
 ../src/system_stm32f4xx.c:760:5: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
      while ((RCC->CFGR & (uint32_t)RCC_CFGR_SWS ) != RCC_CFGR_SWS_PLL);
@@ -44,1069 +45,283 @@ C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
 ../src/system_stm32f4xx.c:761:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'while'
      {
      ^
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/misc.d" -MT"StdPeriph_Driver/src/misc.o" -o "StdPeriph_Driver/src/misc.o" "../StdPeriph_Driver/src/misc.c"
-../src/mainF2.c: In function 'TIM2_IRQHandler':
-../src/mainF2.c:330:18: warning: implicit declaration of function 'ADC_Read'; did you mean 'ADC_Cmd'? [-Wimplicit-function-declaration]
-        adcData = ADC_Read();
-                  ^~~~~~~~
-                  ADC_Cmd
 Finished building: ../src/syscalls.c
  
 Building file: ../StdPeriph_Driver/src/stm32f4xx_adc.c
 Invoking: MCU GCC Compiler
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_adc.d" -MT"StdPeriph_Driver/src/stm32f4xx_adc.o" -o "StdPeriph_Driver/src/stm32f4xx_adc.o" "../StdPeriph_Driver/src/stm32f4xx_adc.c"
-Finished building: ../src/delay.c
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_adc.d" -MT"StdPeriph_Driver/src/stm32f4xx_adc.o" -o "StdPeriph_Driver/src/stm32f4xx_adc.o" "../StdPeriph_Driver/src/stm32f4xx_adc.c"
 Finished building: ../src/clock.c
-Finished building: ../src/system_stm32f4xx.c
+Finished building: ../src/mainF3.c
  
- 
-Finished building: ../StdPeriph_Driver/src/misc.c
-Finished building: ../src/mainF2.c
 Finished building: ../src/tm_stm32f4_disco.c
-Finished building: ../src/tm_stm32f4_gpio.c
+ 
+Finished building: ../src/delay.c
 Building file: ../StdPeriph_Driver/src/stm32f4xx_can.c
  
  
- 
- 
 Building file: ../StdPeriph_Driver/src/stm32f4xx_cec.c
- 
+Finished building: ../src/system_stm32f4xx.c
 Invoking: MCU GCC Compiler
 Building file: ../StdPeriph_Driver/src/stm32f4xx_crc.c
+Finished building: ../src/tm_stm32f4_gpio.c
+Invoking: MCU GCC Compiler
 Building file: ../StdPeriph_Driver/src/stm32f4xx_cryp.c
+ 
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_cec.d" -MT"StdPeriph_Driver/src/stm32f4xx_cec.o" -o "StdPeriph_Driver/src/stm32f4xx_cec.o" "../StdPeriph_Driver/src/stm32f4xx_cec.c"
+ 
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_can.d" -MT"StdPeriph_Driver/src/stm32f4xx_can.o" -o "StdPeriph_Driver/src/stm32f4xx_can.o" "../StdPeriph_Driver/src/stm32f4xx_can.c"
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_crc.d" -MT"StdPeriph_Driver/src/stm32f4xx_crc.o" -o "StdPeriph_Driver/src/stm32f4xx_crc.o" "../StdPeriph_Driver/src/stm32f4xx_crc.c"
 Building file: ../StdPeriph_Driver/src/stm32f4xx_cryp_aes.c
 Building file: ../StdPeriph_Driver/src/stm32f4xx_cryp_des.c
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
 Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_cryp.d" -MT"StdPeriph_Driver/src/stm32f4xx_cryp.o" -o "StdPeriph_Driver/src/stm32f4xx_cryp.o" "../StdPeriph_Driver/src/stm32f4xx_cryp.c"
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_cryp_aes.d" -MT"StdPeriph_Driver/src/stm32f4xx_cryp_aes.o" -o "StdPeriph_Driver/src/stm32f4xx_cryp_aes.o" "../StdPeriph_Driver/src/stm32f4xx_cryp_aes.c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_cryp_des.d" -MT"StdPeriph_Driver/src/stm32f4xx_cryp_des.o" -o "StdPeriph_Driver/src/stm32f4xx_cryp_des.o" "../StdPeriph_Driver/src/stm32f4xx_cryp_des.c"
+Finished building: ../StdPeriph_Driver/src/misc.c
+ 
 Building file: ../StdPeriph_Driver/src/stm32f4xx_cryp_tdes.c
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_can.d" -MT"StdPeriph_Driver/src/stm32f4xx_can.o" -o "StdPeriph_Driver/src/stm32f4xx_can.o" "../StdPeriph_Driver/src/stm32f4xx_can.c"
 Invoking: MCU GCC Compiler
-Invoking: MCU GCC Compiler
-Invoking: MCU GCC Compiler
-Invoking: MCU GCC Compiler
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-Invoking: MCU GCC Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_cec.d" -MT"StdPeriph_Driver/src/stm32f4xx_cec.o" -o "StdPeriph_Driver/src/stm32f4xx_cec.o" "../StdPeriph_Driver/src/stm32f4xx_cec.c"
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_crc.d" -MT"StdPeriph_Driver/src/stm32f4xx_crc.o" -o "StdPeriph_Driver/src/stm32f4xx_crc.o" "../StdPeriph_Driver/src/stm32f4xx_crc.c"
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_cryp_aes.d" -MT"StdPeriph_Driver/src/stm32f4xx_cryp_aes.o" -o "StdPeriph_Driver/src/stm32f4xx_cryp_aes.o" "../StdPeriph_Driver/src/stm32f4xx_cryp_aes.c"
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_cryp_des.d" -MT"StdPeriph_Driver/src/stm32f4xx_cryp_des.o" -o "StdPeriph_Driver/src/stm32f4xx_cryp_des.o" "../StdPeriph_Driver/src/stm32f4xx_cryp_des.c"
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_cryp.d" -MT"StdPeriph_Driver/src/stm32f4xx_cryp.o" -o "StdPeriph_Driver/src/stm32f4xx_cryp.o" "../StdPeriph_Driver/src/stm32f4xx_cryp.c"
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_cryp_tdes.d" -MT"StdPeriph_Driver/src/stm32f4xx_cryp_tdes.o" -o "StdPeriph_Driver/src/stm32f4xx_cryp_tdes.o" "../StdPeriph_Driver/src/stm32f4xx_cryp_tdes.c"
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_cryp_tdes.d" -MT"StdPeriph_Driver/src/stm32f4xx_cryp_tdes.o" -o "StdPeriph_Driver/src/stm32f4xx_cryp_tdes.o" "../StdPeriph_Driver/src/stm32f4xx_cryp_tdes.c"
 Finished building: ../StdPeriph_Driver/src/stm32f4xx_adc.c
  
-Building file: ../StdPeriph_Driver/src/stm32f4xx_dac.c
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_cryp_tdes.c
 Finished building: ../StdPeriph_Driver/src/stm32f4xx_cec.c
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_cryp_des.c
+Building file: ../StdPeriph_Driver/src/stm32f4xx_dac.c
 Finished building: ../StdPeriph_Driver/src/stm32f4xx_crc.c
+ 
 Finished building: ../StdPeriph_Driver/src/stm32f4xx_can.c
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_cryp.c
 Invoking: MCU GCC Compiler
  
  
- 
- 
- 
- 
-Building file: ../StdPeriph_Driver/src/stm32f4xx_dcmi.c
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
 Building file: ../StdPeriph_Driver/src/stm32f4xx_dbgmcu.c
+Building file: ../StdPeriph_Driver/src/stm32f4xx_dcmi.c
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
 Building file: ../StdPeriph_Driver/src/stm32f4xx_dfsdm.c
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_dac.d" -MT"StdPeriph_Driver/src/stm32f4xx_dac.o" -o "StdPeriph_Driver/src/stm32f4xx_dac.o" "../StdPeriph_Driver/src/stm32f4xx_dac.c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_dac.d" -MT"StdPeriph_Driver/src/stm32f4xx_dac.o" -o "StdPeriph_Driver/src/stm32f4xx_dac.o" "../StdPeriph_Driver/src/stm32f4xx_dac.c"
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_cryp.c
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_dfsdm.d" -MT"StdPeriph_Driver/src/stm32f4xx_dfsdm.o" -o "StdPeriph_Driver/src/stm32f4xx_dfsdm.o" "../StdPeriph_Driver/src/stm32f4xx_dfsdm.c"
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_dbgmcu.d" -MT"StdPeriph_Driver/src/stm32f4xx_dbgmcu.o" -o "StdPeriph_Driver/src/stm32f4xx_dbgmcu.o" "../StdPeriph_Driver/src/stm32f4xx_dbgmcu.c"
+ 
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_dcmi.d" -MT"StdPeriph_Driver/src/stm32f4xx_dcmi.o" -o "StdPeriph_Driver/src/stm32f4xx_dcmi.o" "../StdPeriph_Driver/src/stm32f4xx_dcmi.c"
 Building file: ../StdPeriph_Driver/src/stm32f4xx_dma.c
-Building file: ../StdPeriph_Driver/src/stm32f4xx_dsi.c
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_cryp_des.c
+ 
+Invoking: MCU GCC Compiler
 Building file: ../StdPeriph_Driver/src/stm32f4xx_dma2d.c
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_dma.d" -MT"StdPeriph_Driver/src/stm32f4xx_dma.o" -o "StdPeriph_Driver/src/stm32f4xx_dma.o" "../StdPeriph_Driver/src/stm32f4xx_dma.c"
 Invoking: MCU GCC Compiler
 Finished building: ../StdPeriph_Driver/src/stm32f4xx_cryp_aes.c
-Invoking: MCU GCC Compiler
-Invoking: MCU GCC Compiler
-Invoking: MCU GCC Compiler
-Invoking: MCU GCC Compiler
-Invoking: MCU GCC Compiler
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_dma2d.d" -MT"StdPeriph_Driver/src/stm32f4xx_dma2d.o" -o "StdPeriph_Driver/src/stm32f4xx_dma2d.o" "../StdPeriph_Driver/src/stm32f4xx_dma2d.c"
  
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_dbgmcu.d" -MT"StdPeriph_Driver/src/stm32f4xx_dbgmcu.o" -o "StdPeriph_Driver/src/stm32f4xx_dbgmcu.o" "../StdPeriph_Driver/src/stm32f4xx_dbgmcu.c"
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_dcmi.d" -MT"StdPeriph_Driver/src/stm32f4xx_dcmi.o" -o "StdPeriph_Driver/src/stm32f4xx_dcmi.o" "../StdPeriph_Driver/src/stm32f4xx_dcmi.c"
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_dfsdm.d" -MT"StdPeriph_Driver/src/stm32f4xx_dfsdm.o" -o "StdPeriph_Driver/src/stm32f4xx_dfsdm.o" "../StdPeriph_Driver/src/stm32f4xx_dfsdm.c"
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_dma.d" -MT"StdPeriph_Driver/src/stm32f4xx_dma.o" -o "StdPeriph_Driver/src/stm32f4xx_dma.o" "../StdPeriph_Driver/src/stm32f4xx_dma.c"
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_dsi.d" -MT"StdPeriph_Driver/src/stm32f4xx_dsi.o" -o "StdPeriph_Driver/src/stm32f4xx_dsi.o" "../StdPeriph_Driver/src/stm32f4xx_dsi.c"
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_dma2d.d" -MT"StdPeriph_Driver/src/stm32f4xx_dma2d.o" -o "StdPeriph_Driver/src/stm32f4xx_dma2d.o" "../StdPeriph_Driver/src/stm32f4xx_dma2d.c"
-Building file: ../StdPeriph_Driver/src/stm32f4xx_exti.c
+Building file: ../StdPeriph_Driver/src/stm32f4xx_dsi.c
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_cryp_tdes.c
+ 
 Invoking: MCU GCC Compiler
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_exti.d" -MT"StdPeriph_Driver/src/stm32f4xx_exti.o" -o "StdPeriph_Driver/src/stm32f4xx_exti.o" "../StdPeriph_Driver/src/stm32f4xx_exti.c"
+Building file: ../StdPeriph_Driver/src/stm32f4xx_exti.c
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_dsi.d" -MT"StdPeriph_Driver/src/stm32f4xx_dsi.o" -o "StdPeriph_Driver/src/stm32f4xx_dsi.o" "../StdPeriph_Driver/src/stm32f4xx_dsi.c"
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_exti.d" -MT"StdPeriph_Driver/src/stm32f4xx_exti.o" -o "StdPeriph_Driver/src/stm32f4xx_exti.o" "../StdPeriph_Driver/src/stm32f4xx_exti.c"
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_dbgmcu.c
 Finished building: ../StdPeriph_Driver/src/stm32f4xx_dac.c
  
+ 
 Building file: ../StdPeriph_Driver/src/stm32f4xx_flash.c
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_dma2d.c
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_dcmi.c
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_dsi.c
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_dma.c
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_dfsdm.c
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_dbgmcu.c
- 
-Invoking: MCU GCC Compiler
- 
- 
- 
- 
- 
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
 Building file: ../StdPeriph_Driver/src/stm32f4xx_flash_ramfunc.c
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_flash.d" -MT"StdPeriph_Driver/src/stm32f4xx_flash.o" -o "StdPeriph_Driver/src/stm32f4xx_flash.o" "../StdPeriph_Driver/src/stm32f4xx_flash.c"
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_flash.d" -MT"StdPeriph_Driver/src/stm32f4xx_flash.o" -o "StdPeriph_Driver/src/stm32f4xx_flash.o" "../StdPeriph_Driver/src/stm32f4xx_flash.c"
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_dcmi.c
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+ 
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_flash_ramfunc.d" -MT"StdPeriph_Driver/src/stm32f4xx_flash_ramfunc.o" -o "StdPeriph_Driver/src/stm32f4xx_flash_ramfunc.o" "../StdPeriph_Driver/src/stm32f4xx_flash_ramfunc.c"
 Building file: ../StdPeriph_Driver/src/stm32f4xx_fmc.c
-Building file: ../StdPeriph_Driver/src/stm32f4xx_fsmc.c
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_dfsdm.c
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_dma.c
+Invoking: MCU GCC Compiler
+ 
+ 
 Building file: ../StdPeriph_Driver/src/stm32f4xx_fmip2c.c
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_fmc.d" -MT"StdPeriph_Driver/src/stm32f4xx_fmc.o" -o "StdPeriph_Driver/src/stm32f4xx_fmc.o" "../StdPeriph_Driver/src/stm32f4xx_fmc.c"
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_dma2d.c
+Invoking: MCU GCC Compiler
+Building file: ../StdPeriph_Driver/src/stm32f4xx_fsmc.c
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+ 
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_fmip2c.d" -MT"StdPeriph_Driver/src/stm32f4xx_fmip2c.o" -o "StdPeriph_Driver/src/stm32f4xx_fmip2c.o" "../StdPeriph_Driver/src/stm32f4xx_fmip2c.c"
+Invoking: MCU GCC Compiler
 Building file: ../StdPeriph_Driver/src/stm32f4xx_gpio.c
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_fsmc.d" -MT"StdPeriph_Driver/src/stm32f4xx_fsmc.o" -o "StdPeriph_Driver/src/stm32f4xx_fsmc.o" "../StdPeriph_Driver/src/stm32f4xx_fsmc.c"
+Invoking: MCU GCC Compiler
 Finished building: ../StdPeriph_Driver/src/stm32f4xx_exti.c
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_dsi.c
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+ 
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_gpio.d" -MT"StdPeriph_Driver/src/stm32f4xx_gpio.o" -o "StdPeriph_Driver/src/stm32f4xx_gpio.o" "../StdPeriph_Driver/src/stm32f4xx_gpio.c"
+ 
 Building file: ../StdPeriph_Driver/src/stm32f4xx_hash.c
-Invoking: MCU GCC Compiler
-Invoking: MCU GCC Compiler
-Invoking: MCU GCC Compiler
-Invoking: MCU GCC Compiler
-Invoking: MCU GCC Compiler
- 
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-Invoking: MCU GCC Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_fmc.d" -MT"StdPeriph_Driver/src/stm32f4xx_fmc.o" -o "StdPeriph_Driver/src/stm32f4xx_fmc.o" "../StdPeriph_Driver/src/stm32f4xx_fmc.c"
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_flash_ramfunc.d" -MT"StdPeriph_Driver/src/stm32f4xx_flash_ramfunc.o" -o "StdPeriph_Driver/src/stm32f4xx_flash_ramfunc.o" "../StdPeriph_Driver/src/stm32f4xx_flash_ramfunc.c"
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_fmip2c.d" -MT"StdPeriph_Driver/src/stm32f4xx_fmip2c.o" -o "StdPeriph_Driver/src/stm32f4xx_fmip2c.o" "../StdPeriph_Driver/src/stm32f4xx_fmip2c.c"
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
 Building file: ../StdPeriph_Driver/src/stm32f4xx_hash_md5.c
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_gpio.d" -MT"StdPeriph_Driver/src/stm32f4xx_gpio.o" -o "StdPeriph_Driver/src/stm32f4xx_gpio.o" "../StdPeriph_Driver/src/stm32f4xx_gpio.c"
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_fsmc.d" -MT"StdPeriph_Driver/src/stm32f4xx_fsmc.o" -o "StdPeriph_Driver/src/stm32f4xx_fsmc.o" "../StdPeriph_Driver/src/stm32f4xx_fsmc.c"
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_hash.d" -MT"StdPeriph_Driver/src/stm32f4xx_hash.o" -o "StdPeriph_Driver/src/stm32f4xx_hash.o" "../StdPeriph_Driver/src/stm32f4xx_hash.c"
 Invoking: MCU GCC Compiler
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_hash_md5.d" -MT"StdPeriph_Driver/src/stm32f4xx_hash_md5.o" -o "StdPeriph_Driver/src/stm32f4xx_hash_md5.o" "../StdPeriph_Driver/src/stm32f4xx_hash_md5.c"
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_hash.d" -MT"StdPeriph_Driver/src/stm32f4xx_hash.o" -o "StdPeriph_Driver/src/stm32f4xx_hash.o" "../StdPeriph_Driver/src/stm32f4xx_hash.c"
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_hash_md5.d" -MT"StdPeriph_Driver/src/stm32f4xx_hash_md5.o" -o "StdPeriph_Driver/src/stm32f4xx_hash_md5.o" "../StdPeriph_Driver/src/stm32f4xx_hash_md5.c"
 Finished building: ../StdPeriph_Driver/src/stm32f4xx_flash_ramfunc.c
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_flash.c
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_gpio.c
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_hash.c
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_fmip2c.c
- 
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_fsmc.c
- 
- 
- 
  
 Building file: ../StdPeriph_Driver/src/stm32f4xx_hash_sha1.c
+Invoking: MCU GCC Compiler
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_flash.c
  
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_fmc.c
-Building file: ../StdPeriph_Driver/src/stm32f4xx_iwdg.c
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_hash_sha1.d" -MT"StdPeriph_Driver/src/stm32f4xx_hash_sha1.o" -o "StdPeriph_Driver/src/stm32f4xx_hash_sha1.o" "../StdPeriph_Driver/src/stm32f4xx_hash_sha1.c"
 Building file: ../StdPeriph_Driver/src/stm32f4xx_i2c.c
-Building file: ../StdPeriph_Driver/src/stm32f4xx_ltdc.c
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_fmip2c.c
+ 
+Invoking: MCU GCC Compiler
+Building file: ../StdPeriph_Driver/src/stm32f4xx_iwdg.c
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+Invoking: MCU GCC Compiler
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_fmc.c
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_i2c.d" -MT"StdPeriph_Driver/src/stm32f4xx_i2c.o" -o "StdPeriph_Driver/src/stm32f4xx_i2c.o" "../StdPeriph_Driver/src/stm32f4xx_i2c.c"
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_fsmc.c
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+ 
+ 
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_iwdg.d" -MT"StdPeriph_Driver/src/stm32f4xx_iwdg.o" -o "StdPeriph_Driver/src/stm32f4xx_iwdg.o" "../StdPeriph_Driver/src/stm32f4xx_iwdg.c"
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_gpio.c
 Building file: ../StdPeriph_Driver/src/stm32f4xx_lptim.c
-Invoking: MCU GCC Compiler
+Building file: ../StdPeriph_Driver/src/stm32f4xx_ltdc.c
  
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_hash_md5.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_lptim.d" -MT"StdPeriph_Driver/src/stm32f4xx_lptim.o" -o "StdPeriph_Driver/src/stm32f4xx_lptim.o" "../StdPeriph_Driver/src/stm32f4xx_lptim.c"
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
 Building file: ../StdPeriph_Driver/src/stm32f4xx_pwr.c
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_ltdc.d" -MT"StdPeriph_Driver/src/stm32f4xx_ltdc.o" -o "StdPeriph_Driver/src/stm32f4xx_ltdc.o" "../StdPeriph_Driver/src/stm32f4xx_ltdc.c"
 Invoking: MCU GCC Compiler
-Invoking: MCU GCC Compiler
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-Invoking: MCU GCC Compiler
-Invoking: MCU GCC Compiler
-Invoking: MCU GCC Compiler
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_hash_sha1.d" -MT"StdPeriph_Driver/src/stm32f4xx_hash_sha1.o" -o "StdPeriph_Driver/src/stm32f4xx_hash_sha1.o" "../StdPeriph_Driver/src/stm32f4xx_hash_sha1.c"
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_pwr.d" -MT"StdPeriph_Driver/src/stm32f4xx_pwr.o" -o "StdPeriph_Driver/src/stm32f4xx_pwr.o" "../StdPeriph_Driver/src/stm32f4xx_pwr.c"
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_hash_md5.c
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_hash.c
  
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_i2c.d" -MT"StdPeriph_Driver/src/stm32f4xx_i2c.o" -o "StdPeriph_Driver/src/stm32f4xx_i2c.o" "../StdPeriph_Driver/src/stm32f4xx_i2c.c"
+ 
 Building file: ../StdPeriph_Driver/src/stm32f4xx_qspi.c
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_iwdg.d" -MT"StdPeriph_Driver/src/stm32f4xx_iwdg.o" -o "StdPeriph_Driver/src/stm32f4xx_iwdg.o" "../StdPeriph_Driver/src/stm32f4xx_iwdg.c"
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_lptim.d" -MT"StdPeriph_Driver/src/stm32f4xx_lptim.o" -o "StdPeriph_Driver/src/stm32f4xx_lptim.o" "../StdPeriph_Driver/src/stm32f4xx_lptim.c"
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_ltdc.d" -MT"StdPeriph_Driver/src/stm32f4xx_ltdc.o" -o "StdPeriph_Driver/src/stm32f4xx_ltdc.o" "../StdPeriph_Driver/src/stm32f4xx_ltdc.c"
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_pwr.d" -MT"StdPeriph_Driver/src/stm32f4xx_pwr.o" -o "StdPeriph_Driver/src/stm32f4xx_pwr.o" "../StdPeriph_Driver/src/stm32f4xx_pwr.c"
-Invoking: MCU GCC Compiler
 Building file: ../StdPeriph_Driver/src/stm32f4xx_rcc.c
 Invoking: MCU GCC Compiler
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_qspi.d" -MT"StdPeriph_Driver/src/stm32f4xx_qspi.o" -o "StdPeriph_Driver/src/stm32f4xx_qspi.o" "../StdPeriph_Driver/src/stm32f4xx_qspi.c"
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_rcc.d" -MT"StdPeriph_Driver/src/stm32f4xx_rcc.o" -o "StdPeriph_Driver/src/stm32f4xx_rcc.o" "../StdPeriph_Driver/src/stm32f4xx_rcc.c"
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_qspi.d" -MT"StdPeriph_Driver/src/stm32f4xx_qspi.o" -o "StdPeriph_Driver/src/stm32f4xx_qspi.o" "../StdPeriph_Driver/src/stm32f4xx_qspi.c"
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_rcc.d" -MT"StdPeriph_Driver/src/stm32f4xx_rcc.o" -o "StdPeriph_Driver/src/stm32f4xx_rcc.o" "../StdPeriph_Driver/src/stm32f4xx_rcc.c"
 Finished building: ../StdPeriph_Driver/src/stm32f4xx_hash_sha1.c
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_iwdg.c
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_lptim.c
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_pwr.c
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_i2c.c
- 
- 
- 
  
 Building file: ../StdPeriph_Driver/src/stm32f4xx_rng.c
+Invoking: MCU GCC Compiler
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_iwdg.c
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_rng.d" -MT"StdPeriph_Driver/src/stm32f4xx_rng.o" -o "StdPeriph_Driver/src/stm32f4xx_rng.o" "../StdPeriph_Driver/src/stm32f4xx_rng.c"
  
-Building file: ../StdPeriph_Driver/src/stm32f4xx_sai.c
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_i2c.c
 Building file: ../StdPeriph_Driver/src/stm32f4xx_rtc.c
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_qspi.c
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_ltdc.c
+ 
+Invoking: MCU GCC Compiler
+Building file: ../StdPeriph_Driver/src/stm32f4xx_sai.c
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_rtc.d" -MT"StdPeriph_Driver/src/stm32f4xx_rtc.o" -o "StdPeriph_Driver/src/stm32f4xx_rtc.o" "../StdPeriph_Driver/src/stm32f4xx_rtc.c"
+Invoking: MCU GCC Compiler
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_lptim.c
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+ 
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_sai.d" -MT"StdPeriph_Driver/src/stm32f4xx_sai.o" -o "StdPeriph_Driver/src/stm32f4xx_sai.o" "../StdPeriph_Driver/src/stm32f4xx_sai.c"
 Building file: ../StdPeriph_Driver/src/stm32f4xx_sdio.c
 Invoking: MCU GCC Compiler
-Invoking: MCU GCC Compiler
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_rcc.c
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_pwr.c
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_ltdc.c
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_sdio.d" -MT"StdPeriph_Driver/src/stm32f4xx_sdio.o" -o "StdPeriph_Driver/src/stm32f4xx_sdio.o" "../StdPeriph_Driver/src/stm32f4xx_sdio.c"
+ 
+ 
 Building file: ../StdPeriph_Driver/src/stm32f4xx_spdifrx.c
-Invoking: MCU GCC Compiler
- 
- 
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-Invoking: MCU GCC Compiler
-Invoking: MCU GCC Compiler
- 
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_rng.d" -MT"StdPeriph_Driver/src/stm32f4xx_rng.o" -o "StdPeriph_Driver/src/stm32f4xx_rng.o" "../StdPeriph_Driver/src/stm32f4xx_rng.c"
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_rtc.d" -MT"StdPeriph_Driver/src/stm32f4xx_rtc.o" -o "StdPeriph_Driver/src/stm32f4xx_rtc.o" "../StdPeriph_Driver/src/stm32f4xx_rtc.c"
 Building file: ../StdPeriph_Driver/src/stm32f4xx_spi.c
-Building file: ../StdPeriph_Driver/src/stm32f4xx_syscfg.c
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_sai.d" -MT"StdPeriph_Driver/src/stm32f4xx_sai.o" -o "StdPeriph_Driver/src/stm32f4xx_sai.o" "../StdPeriph_Driver/src/stm32f4xx_sai.c"
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-Building file: ../StdPeriph_Driver/src/stm32f4xx_tim.c
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_sdio.d" -MT"StdPeriph_Driver/src/stm32f4xx_sdio.o" -o "StdPeriph_Driver/src/stm32f4xx_sdio.o" "../StdPeriph_Driver/src/stm32f4xx_sdio.c"
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_spdifrx.d" -MT"StdPeriph_Driver/src/stm32f4xx_spdifrx.o" -o "StdPeriph_Driver/src/stm32f4xx_spdifrx.o" "../StdPeriph_Driver/src/stm32f4xx_spdifrx.c"
 Invoking: MCU GCC Compiler
 Invoking: MCU GCC Compiler
-Invoking: MCU GCC Compiler
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_spi.d" -MT"StdPeriph_Driver/src/stm32f4xx_spi.o" -o "StdPeriph_Driver/src/stm32f4xx_spi.o" "../StdPeriph_Driver/src/stm32f4xx_spi.c"
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_syscfg.d" -MT"StdPeriph_Driver/src/stm32f4xx_syscfg.o" -o "StdPeriph_Driver/src/stm32f4xx_syscfg.o" "../StdPeriph_Driver/src/stm32f4xx_syscfg.c"
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_tim.d" -MT"StdPeriph_Driver/src/stm32f4xx_tim.o" -o "StdPeriph_Driver/src/stm32f4xx_tim.o" "../StdPeriph_Driver/src/stm32f4xx_tim.c"
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_spdifrx.c
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_rng.c
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_sai.c
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_spi.c
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_spdifrx.d" -MT"StdPeriph_Driver/src/stm32f4xx_spdifrx.o" -o "StdPeriph_Driver/src/stm32f4xx_spdifrx.o" "../StdPeriph_Driver/src/stm32f4xx_spdifrx.c"
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_qspi.c
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_spi.d" -MT"StdPeriph_Driver/src/stm32f4xx_spi.o" -o "StdPeriph_Driver/src/stm32f4xx_spi.o" "../StdPeriph_Driver/src/stm32f4xx_spi.c"
  
+Building file: ../StdPeriph_Driver/src/stm32f4xx_syscfg.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_syscfg.d" -MT"StdPeriph_Driver/src/stm32f4xx_syscfg.o" -o "StdPeriph_Driver/src/stm32f4xx_syscfg.o" "../StdPeriph_Driver/src/stm32f4xx_syscfg.c"
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_rcc.c
+ 
+Building file: ../StdPeriph_Driver/src/stm32f4xx_tim.c
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_rng.c
+Invoking: MCU GCC Compiler
+ 
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_tim.d" -MT"StdPeriph_Driver/src/stm32f4xx_tim.o" -o "StdPeriph_Driver/src/stm32f4xx_tim.o" "../StdPeriph_Driver/src/stm32f4xx_tim.c"
+Building file: ../StdPeriph_Driver/src/stm32f4xx_usart.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_usart.d" -MT"StdPeriph_Driver/src/stm32f4xx_usart.o" -o "StdPeriph_Driver/src/stm32f4xx_usart.o" "../StdPeriph_Driver/src/stm32f4xx_usart.c"
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_sai.c
+ 
+Building file: ../StdPeriph_Driver/src/stm32f4xx_wwdg.c
 Finished building: ../StdPeriph_Driver/src/stm32f4xx_sdio.c
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_rtc.c
+Invoking: MCU GCC Compiler
+ 
+ 
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_wwdg.d" -MT"StdPeriph_Driver/src/stm32f4xx_wwdg.o" -o "StdPeriph_Driver/src/stm32f4xx_wwdg.o" "../StdPeriph_Driver/src/stm32f4xx_wwdg.c"
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_spdifrx.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_spi.c
 Finished building: ../StdPeriph_Driver/src/stm32f4xx_syscfg.c
  
  
- 
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_rtc.c
-Building file: ../StdPeriph_Driver/src/stm32f4xx_usart.c
- 
- 
-Building file: ../StdPeriph_Driver/src/stm32f4xx_wwdg.c
-Invoking: MCU GCC Compiler
- 
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_tim.c
-Invoking: MCU GCC Compiler
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_usart.d" -MT"StdPeriph_Driver/src/stm32f4xx_usart.o" -o "StdPeriph_Driver/src/stm32f4xx_usart.o" "../StdPeriph_Driver/src/stm32f4xx_usart.c"
- 
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_wwdg.d" -MT"StdPeriph_Driver/src/stm32f4xx_wwdg.o" -o "StdPeriph_Driver/src/stm32f4xx_wwdg.o" "../StdPeriph_Driver/src/stm32f4xx_wwdg.c"
-Finished building: ../StdPeriph_Driver/src/stm32f4xx_wwdg.c
 Finished building: ../StdPeriph_Driver/src/stm32f4xx_usart.c
  
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_tim.c
  
-Building target: PerifericsFase2.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
-src/mainF2.o: In function `TIM2_IRQHandler':
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug/../src/mainF2.c:330: undefined reference to `ADC_Read'
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug/../src/mainF2.c:336: undefined reference to `ADC_Read'
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug/../src/mainF2.c:344: undefined reference to `ADC_Read'
-collect2.exe: error: ld returned 1 exit status
-makefile:35: recipe for target 'PerifericsFase2.elf' failed
-make: *** [PerifericsFase2.elf] Error 1
-15:40:03 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
-make -j8 all 
-Building file: ../src/mainF2.c
-Invoking: MCU GCC Compiler
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
-Finished building: ../src/mainF2.c
+Finished building: ../StdPeriph_Driver/src/stm32f4xx_wwdg.c
  
-Building target: PerifericsFase2.elf
+Building target: PerifericsFase3.elf
 Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
-Finished building target: PerifericsFase2.elf
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
  
 make --no-print-directory post-build
 Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
-arm-none-eabi-size "PerifericsFase2.elf"
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
    text	   data	    bss	    dec	    hex	filename
-   4892	   1080	   2324	   8296	   2068	PerifericsFase2.elf
- 
-15:40:15 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
-make -j8 all 
-make: Nothing to be done for 'all'.
-15:46:14 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
-make -j8 all 
-make: Nothing to be done for 'all'.
-15:46:21 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
-make -j8 all 
-make: Nothing to be done for 'all'.
-15:50:30 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
-make -j8 all 
-Building file: ../src/mainF2.c
-Invoking: MCU GCC Compiler
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
-Finished building: ../src/mainF2.c
- 
-Building target: PerifericsFase2.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
-Finished building target: PerifericsFase2.elf
- 
-make --no-print-directory post-build
-Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
-arm-none-eabi-size "PerifericsFase2.elf"
-   text	   data	    bss	    dec	    hex	filename
-   4936	   1080	   2324	   8340	   2094	PerifericsFase2.elf
- 
-15:58:46 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
-make -j8 all 
-Building file: ../src/mainF2.c
-Invoking: MCU GCC Compiler
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
-Finished building: ../src/mainF2.c
- 
-Building target: PerifericsFase2.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
-Finished building target: PerifericsFase2.elf
- 
-make --no-print-directory post-build
-Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
-arm-none-eabi-size "PerifericsFase2.elf"
-   text	   data	    bss	    dec	    hex	filename
-   4936	   1080	   2324	   8340	   2094	PerifericsFase2.elf
- 
-16:47:16 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
-make -j8 all 
-Building file: ../src/mainF2.c
-Invoking: MCU GCC Compiler
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
-Finished building: ../src/mainF2.c
- 
-Building target: PerifericsFase2.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
-Finished building target: PerifericsFase2.elf
- 
-make --no-print-directory post-build
-Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
-arm-none-eabi-size "PerifericsFase2.elf"
-   text	   data	    bss	    dec	    hex	filename
-   4936	   1080	   2324	   8340	   2094	PerifericsFase2.elf
- 
-16:47:44 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
-make -j8 all 
-make: Nothing to be done for 'all'.
-16:51:22 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
-make -j8 all 
-Building file: ../src/mainF2.c
-Invoking: MCU GCC Compiler
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
-../src/mainF2.c: In function 'TIM2_IRQHandler':
-../src/mainF2.c:328:10: warning: unused variable 'adcData' [-Wunused-variable]
-      int adcData = 0;
-          ^~~~~~~
-Finished building: ../src/mainF2.c
- 
-Building target: PerifericsFase2.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
-Finished building target: PerifericsFase2.elf
- 
-make --no-print-directory post-build
-Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
-arm-none-eabi-size "PerifericsFase2.elf"
-   text	   data	    bss	    dec	    hex	filename
-   4956	   1080	   2324	   8360	   20a8	PerifericsFase2.elf
- 
-16:52:13 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
-make -j8 all 
-make: Nothing to be done for 'all'.
-16:52:59 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
-make -j8 all 
-make: Nothing to be done for 'all'.
-16:54:02 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
-make -j8 all 
-Building file: ../src/mainF2.c
-Invoking: MCU GCC Compiler
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
-../src/mainF2.c: In function 'TIM2_IRQHandler':
-../src/mainF2.c:328:10: warning: unused variable 'adcData' [-Wunused-variable]
-      int adcData = 0;
-          ^~~~~~~
-Finished building: ../src/mainF2.c
- 
-Building target: PerifericsFase2.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
-Finished building target: PerifericsFase2.elf
- 
-make --no-print-directory post-build
-Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
-arm-none-eabi-size "PerifericsFase2.elf"
-   text	   data	    bss	    dec	    hex	filename
-   4936	   1080	   2324	   8340	   2094	PerifericsFase2.elf
- 
-16:55:39 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
-make -j8 all 
-make: Nothing to be done for 'all'.
-16:56:42 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
-make -j8 all 
-make: Nothing to be done for 'all'.
-17:26:11 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
-make -j8 all 
-Building file: ../src/mainF2.c
-Invoking: MCU GCC Compiler
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
-../src/mainF2.c: In function 'TIM2_IRQHandler':
-../src/mainF2.c:412:7: warning: implicit declaration of function 'startMemoryToMemoryTransfer' [-Wimplicit-function-declaration]
-       startMemoryToMemoryTransfer();
-       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/mainF2.c:384:10: warning: unused variable 'adcData' [-Wunused-variable]
-      int adcData = 0;
-          ^~~~~~~
-Finished building: ../src/mainF2.c
- 
-Building target: PerifericsFase2.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
-src/mainF2.o: In function `TIM2_IRQHandler':
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug/../src/mainF2.c:412: undefined reference to `startMemoryToMemoryTransfer'
-collect2.exe: error: ld returned 1 exit status
-make: *** [PerifericsFase2.elf] Error 1
-makefile:35: recipe for target 'PerifericsFase2.elf' failed
-17:26:20 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
-make -j8 all 
-Building file: ../src/mainF2.c
-Invoking: MCU GCC Compiler
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
-../src/mainF2.c: In function 'TIM2_IRQHandler':
-../src/mainF2.c:384:10: warning: unused variable 'adcData' [-Wunused-variable]
-      int adcData = 0;
-          ^~~~~~~
-Finished building: ../src/mainF2.c
- 
-Building target: PerifericsFase2.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
-Finished building target: PerifericsFase2.elf
- 
-make --no-print-directory post-build
-Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
-arm-none-eabi-size "PerifericsFase2.elf"
-   text	   data	    bss	    dec	    hex	filename
-   4936	   1080	   2332	   8348	   209c	PerifericsFase2.elf
- 
-17:26:52 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
-make -j8 all 
-make: Nothing to be done for 'all'.
-18:19:50 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
-make -j8 all 
-Building file: ../src/mainF2.c
-Invoking: MCU GCC Compiler
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
-../src/mainF2.c: In function 'startMemoryToMemoryTransfer':
-../src/mainF2.c:78:2: warning: implicit declaration of function 'LEDsInit'; did you mean 'LTDC_Init'? [-Wimplicit-function-declaration]
-  LEDsInit();
-  ^~~~~~~~
-  LTDC_Init
-../src/mainF2.c:80:2: warning: implicit declaration of function 'RCC_AHBPeriphClockCmd'; did you mean 'RCC_AHB3PeriphClockCmd'? [-Wimplicit-function-declaration]
-  RCC_AHBPeriphClockCmd(RCC_AHB1Periph_DMA1, ENABLE);
-  ^~~~~~~~~~~~~~~~~~~~~
-  RCC_AHB3PeriphClockCmd
-In file included from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_conf.h:37:0,
-                 from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device/stm32f4xx.h:12027,
-                 from ../src/mainF2.c:11:
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_DeInit' makes pointer from integer without a cast [-Wint-conversion]
- #define DMA_Channel_1                     ((uint32_t)0x02000000)
-                                           ^
-../src/mainF2.c:84:13: note: in expansion of macro 'DMA_Channel_1'
-  DMA_DeInit(DMA_Channel_1);
-             ^~~~~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:562:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
- void DMA_DeInit(DMA_Stream_TypeDef* DMAy_Streamx);
-      ^~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_Init' makes pointer from integer without a cast [-Wint-conversion]
- #define DMA_Channel_1                     ((uint32_t)0x02000000)
-                                           ^
-../src/mainF2.c:105:11: note: in expansion of macro 'DMA_Channel_1'
-  DMA_Init(DMA_Channel_1, &DMA_InitStructure);
-           ^~~~~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:565:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
- void DMA_Init(DMA_Stream_TypeDef* DMAy_Streamx, DMA_InitTypeDef* DMA_InitStruct);
-      ^~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_ITConfig' makes pointer from integer without a cast [-Wint-conversion]
- #define DMA_Channel_1                     ((uint32_t)0x02000000)
-                                           ^
-../src/mainF2.c:107:15: note: in expansion of macro 'DMA_Channel_1'
-  DMA_ITConfig(DMA_Channel_1, DMA_IT_TC, ENABLE);
-               ^~~~~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:590:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
- void DMA_ITConfig(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_IT, FunctionalState NewState);
-      ^~~~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_Cmd' makes pointer from integer without a cast [-Wint-conversion]
- #define DMA_Channel_1                     ((uint32_t)0x02000000)
-                                           ^
-../src/mainF2.c:118:10: note: in expansion of macro 'DMA_Channel_1'
-  DMA_Cmd(DMA_Channel_1, ENABLE);
-          ^~~~~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:567:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
- void DMA_Cmd(DMA_Stream_TypeDef* DMAy_Streamx, FunctionalState NewState);
-      ^~~~~~~
-../src/mainF2.c: In function 'DMA1_Channel1_IRQHandler':
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:432:43: warning: passing argument 1 of 'DMA_GetITStatus' makes pointer from integer without a cast [-Wint-conversion]
- #define DMA_IT_TC                         ((uint32_t)0x00000010)
-                                           ^
-../src/mainF2.c:128:22: note: in expansion of macro 'DMA_IT_TC'
-   if(DMA_GetITStatus(DMA_IT_TC)){
-                      ^~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:591:10: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
- ITStatus DMA_GetITStatus(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_IT);
-          ^~~~~~~~~~~~~~~
-../src/mainF2.c:128:6: error: too few arguments to function 'DMA_GetITStatus'
-   if(DMA_GetITStatus(DMA_IT_TC)){
-      ^~~~~~~~~~~~~~~
-In file included from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_conf.h:37:0,
-                 from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device/stm32f4xx.h:12027,
-                 from ../src/mainF2.c:11:
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:591:10: note: declared here
- ITStatus DMA_GetITStatus(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_IT);
-          ^~~~~~~~~~~~~~~
-../src/mainF2.c:131:5: error: too few arguments to function 'DMA_ClearITPendingBit'
-     DMA_ClearITPendingBit(DMA1_Stream1);
-     ^~~~~~~~~~~~~~~~~~~~~
-In file included from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_conf.h:37:0,
-                 from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device/stm32f4xx.h:12027,
-                 from ../src/mainF2.c:11:
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:592:6: note: declared here
- void DMA_ClearITPendingBit(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_IT);
-      ^~~~~~~~~~~~~~~~~~~~~
-../src/mainF2.c: In function 'main':
-../src/mainF2.c:310:24: warning: unused variable 'NVIC_InitStructure' [-Wunused-variable]
-  NVIC_InitTypeDef      NVIC_InitStructure;
-                        ^~~~~~~~~~~~~~~~~~
-../src/mainF2.c: In function 'TIM2_IRQHandler':
-../src/mainF2.c:389:10: warning: unused variable 'adcData' [-Wunused-variable]
-      int adcData = 0;
-          ^~~~~~~
-src/subdir.mk:36: recipe for target 'src/mainF2.o' failed
-make: *** [src/mainF2.o] Error 1
-18:20:07 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
-make -j8 all 
-Building file: ../src/mainF2.c
-Invoking: MCU GCC Compiler
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
-../src/mainF2.c: In function 'startMemoryToMemoryTransfer':
-../src/mainF2.c:78:2: warning: implicit declaration of function 'LEDsInit'; did you mean 'LTDC_Init'? [-Wimplicit-function-declaration]
-  LEDsInit();
-  ^~~~~~~~
-  LTDC_Init
-../src/mainF2.c:80:2: warning: implicit declaration of function 'RCC_AHBPeriphClockCmd'; did you mean 'RCC_AHB3PeriphClockCmd'? [-Wimplicit-function-declaration]
-  RCC_AHBPeriphClockCmd(RCC_AHB1Periph_DMA1, ENABLE);
-  ^~~~~~~~~~~~~~~~~~~~~
-  RCC_AHB3PeriphClockCmd
-In file included from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_conf.h:37:0,
-                 from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device/stm32f4xx.h:12027,
-                 from ../src/mainF2.c:11:
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_DeInit' makes pointer from integer without a cast [-Wint-conversion]
- #define DMA_Channel_1                     ((uint32_t)0x02000000)
-                                           ^
-../src/mainF2.c:84:13: note: in expansion of macro 'DMA_Channel_1'
-  DMA_DeInit(DMA_Channel_1);
-             ^~~~~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:562:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
- void DMA_DeInit(DMA_Stream_TypeDef* DMAy_Streamx);
-      ^~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_Init' makes pointer from integer without a cast [-Wint-conversion]
- #define DMA_Channel_1                     ((uint32_t)0x02000000)
-                                           ^
-../src/mainF2.c:105:11: note: in expansion of macro 'DMA_Channel_1'
-  DMA_Init(DMA_Channel_1, &DMA_InitStructure);
-           ^~~~~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:565:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
- void DMA_Init(DMA_Stream_TypeDef* DMAy_Streamx, DMA_InitTypeDef* DMA_InitStruct);
-      ^~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_ITConfig' makes pointer from integer without a cast [-Wint-conversion]
- #define DMA_Channel_1                     ((uint32_t)0x02000000)
-                                           ^
-../src/mainF2.c:107:15: note: in expansion of macro 'DMA_Channel_1'
-  DMA_ITConfig(DMA_Channel_1, DMA_IT_TC, ENABLE);
-               ^~~~~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:590:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
- void DMA_ITConfig(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_IT, FunctionalState NewState);
-      ^~~~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_Cmd' makes pointer from integer without a cast [-Wint-conversion]
- #define DMA_Channel_1                     ((uint32_t)0x02000000)
-                                           ^
-../src/mainF2.c:118:10: note: in expansion of macro 'DMA_Channel_1'
-  DMA_Cmd(DMA_Channel_1, ENABLE);
-          ^~~~~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:567:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
- void DMA_Cmd(DMA_Stream_TypeDef* DMAy_Streamx, FunctionalState NewState);
-      ^~~~~~~
-../src/mainF2.c: In function 'main':
-../src/mainF2.c:310:24: warning: unused variable 'NVIC_InitStructure' [-Wunused-variable]
-  NVIC_InitTypeDef      NVIC_InitStructure;
-                        ^~~~~~~~~~~~~~~~~~
-../src/mainF2.c: In function 'TIM2_IRQHandler':
-../src/mainF2.c:389:10: warning: unused variable 'adcData' [-Wunused-variable]
-      int adcData = 0;
-          ^~~~~~~
-Finished building: ../src/mainF2.c
- 
-Building target: PerifericsFase2.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
-Finished building target: PerifericsFase2.elf
- 
-make --no-print-directory post-build
-Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
-arm-none-eabi-size "PerifericsFase2.elf"
-   text	   data	    bss	    dec	    hex	filename
-   4924	   1080	   2332	   8336	   2090	PerifericsFase2.elf
- 
-18:21:49 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
-make -j8 all 
-Building file: ../src/mainF2.c
-Invoking: MCU GCC Compiler
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
-../src/mainF2.c: In function 'startMemoryToMemoryTransfer':
-../src/mainF2.c:78:2: warning: implicit declaration of function 'LEDsInit'; did you mean 'LTDC_Init'? [-Wimplicit-function-declaration]
-  LEDsInit();
-  ^~~~~~~~
-  LTDC_Init
-../src/mainF2.c:80:2: warning: implicit declaration of function 'RCC_AHBPeriphClockCmd'; did you mean 'RCC_AHB3PeriphClockCmd'? [-Wimplicit-function-declaration]
-  RCC_AHBPeriphClockCmd(RCC_AHB1Periph_DMA1, ENABLE);
-  ^~~~~~~~~~~~~~~~~~~~~
-  RCC_AHB3PeriphClockCmd
-In file included from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_conf.h:37:0,
-                 from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device/stm32f4xx.h:12027,
-                 from ../src/mainF2.c:11:
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_DeInit' makes pointer from integer without a cast [-Wint-conversion]
- #define DMA_Channel_1                     ((uint32_t)0x02000000)
-                                           ^
-../src/mainF2.c:84:13: note: in expansion of macro 'DMA_Channel_1'
-  DMA_DeInit(DMA_Channel_1);
-             ^~~~~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:562:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
- void DMA_DeInit(DMA_Stream_TypeDef* DMAy_Streamx);
-      ^~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_Init' makes pointer from integer without a cast [-Wint-conversion]
- #define DMA_Channel_1                     ((uint32_t)0x02000000)
-                                           ^
-../src/mainF2.c:105:11: note: in expansion of macro 'DMA_Channel_1'
-  DMA_Init(DMA_Channel_1, &DMA_InitStructure);
-           ^~~~~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:565:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
- void DMA_Init(DMA_Stream_TypeDef* DMAy_Streamx, DMA_InitTypeDef* DMA_InitStruct);
-      ^~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_ITConfig' makes pointer from integer without a cast [-Wint-conversion]
- #define DMA_Channel_1                     ((uint32_t)0x02000000)
-                                           ^
-../src/mainF2.c:107:15: note: in expansion of macro 'DMA_Channel_1'
-  DMA_ITConfig(DMA_Channel_1, DMA_IT_TC, ENABLE);
-               ^~~~~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:590:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
- void DMA_ITConfig(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_IT, FunctionalState NewState);
-      ^~~~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_Cmd' makes pointer from integer without a cast [-Wint-conversion]
- #define DMA_Channel_1                     ((uint32_t)0x02000000)
-                                           ^
-../src/mainF2.c:118:10: note: in expansion of macro 'DMA_Channel_1'
-  DMA_Cmd(DMA_Channel_1, ENABLE);
-          ^~~~~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:567:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
- void DMA_Cmd(DMA_Stream_TypeDef* DMAy_Streamx, FunctionalState NewState);
-      ^~~~~~~
-../src/mainF2.c: In function 'DMA1_Channel1_IRQHandler':
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:432:43: warning: passing argument 1 of 'DMA_GetITStatus' makes pointer from integer without a cast [-Wint-conversion]
- #define DMA_IT_TC                         ((uint32_t)0x00000010)
-                                           ^
-../src/mainF2.c:128:22: note: in expansion of macro 'DMA_IT_TC'
-   if(DMA_GetITStatus(DMA_IT_TC)){
-                      ^~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:591:10: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
- ITStatus DMA_GetITStatus(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_IT);
-          ^~~~~~~~~~~~~~~
-../src/mainF2.c:128:6: error: too few arguments to function 'DMA_GetITStatus'
-   if(DMA_GetITStatus(DMA_IT_TC)){
-      ^~~~~~~~~~~~~~~
-In file included from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_conf.h:37:0,
-                 from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device/stm32f4xx.h:12027,
-                 from ../src/mainF2.c:11:
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:591:10: note: declared here
- ITStatus DMA_GetITStatus(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_IT);
-          ^~~~~~~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:456:43: warning: passing argument 1 of 'DMA_ClearITPendingBit' makes pointer from integer without a cast [-Wint-conversion]
- #define DMA_IT_TCIF1                      ((uint32_t)0x10008800)
-                                           ^
-../src/mainF2.c:131:27: note: in expansion of macro 'DMA_IT_TCIF1'
-     DMA_ClearITPendingBit(DMA_IT_TCIF1);
-                           ^~~~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:592:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
- void DMA_ClearITPendingBit(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_IT);
-      ^~~~~~~~~~~~~~~~~~~~~
-../src/mainF2.c:131:5: error: too few arguments to function 'DMA_ClearITPendingBit'
-     DMA_ClearITPendingBit(DMA_IT_TCIF1);
-     ^~~~~~~~~~~~~~~~~~~~~
-In file included from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_conf.h:37:0,
-                 from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device/stm32f4xx.h:12027,
-                 from ../src/mainF2.c:11:
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:592:6: note: declared here
- void DMA_ClearITPendingBit(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_IT);
-      ^~~~~~~~~~~~~~~~~~~~~
-../src/mainF2.c: In function 'main':
-../src/mainF2.c:310:24: warning: unused variable 'NVIC_InitStructure' [-Wunused-variable]
-  NVIC_InitTypeDef      NVIC_InitStructure;
-                        ^~~~~~~~~~~~~~~~~~
-../src/mainF2.c: In function 'TIM2_IRQHandler':
-../src/mainF2.c:382:10: warning: unused variable 'adcData' [-Wunused-variable]
-      int adcData = 0;
-          ^~~~~~~
-src/subdir.mk:36: recipe for target 'src/mainF2.o' failed
-make: *** [src/mainF2.o] Error 1
-18:22:49 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
-make -j8 all 
-Building file: ../src/mainF2.c
-Invoking: MCU GCC Compiler
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
-../src/mainF2.c: In function 'startMemoryToMemoryTransfer':
-../src/mainF2.c:78:2: warning: implicit declaration of function 'LEDsInit'; did you mean 'LTDC_Init'? [-Wimplicit-function-declaration]
-  LEDsInit();
-  ^~~~~~~~
-  LTDC_Init
-../src/mainF2.c:80:2: warning: implicit declaration of function 'RCC_AHBPeriphClockCmd'; did you mean 'RCC_AHB3PeriphClockCmd'? [-Wimplicit-function-declaration]
-  RCC_AHBPeriphClockCmd(RCC_AHB1Periph_DMA1, ENABLE);
-  ^~~~~~~~~~~~~~~~~~~~~
-  RCC_AHB3PeriphClockCmd
-In file included from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_conf.h:37:0,
-                 from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device/stm32f4xx.h:12027,
-                 from ../src/mainF2.c:11:
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_DeInit' makes pointer from integer without a cast [-Wint-conversion]
- #define DMA_Channel_1                     ((uint32_t)0x02000000)
-                                           ^
-../src/mainF2.c:84:13: note: in expansion of macro 'DMA_Channel_1'
-  DMA_DeInit(DMA_Channel_1);
-             ^~~~~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:562:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
- void DMA_DeInit(DMA_Stream_TypeDef* DMAy_Streamx);
-      ^~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_Init' makes pointer from integer without a cast [-Wint-conversion]
- #define DMA_Channel_1                     ((uint32_t)0x02000000)
-                                           ^
-../src/mainF2.c:105:11: note: in expansion of macro 'DMA_Channel_1'
-  DMA_Init(DMA_Channel_1, &DMA_InitStructure);
-           ^~~~~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:565:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
- void DMA_Init(DMA_Stream_TypeDef* DMAy_Streamx, DMA_InitTypeDef* DMA_InitStruct);
-      ^~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_ITConfig' makes pointer from integer without a cast [-Wint-conversion]
- #define DMA_Channel_1                     ((uint32_t)0x02000000)
-                                           ^
-../src/mainF2.c:107:15: note: in expansion of macro 'DMA_Channel_1'
-  DMA_ITConfig(DMA_Channel_1, DMA_IT_TC, ENABLE);
-               ^~~~~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:590:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
- void DMA_ITConfig(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_IT, FunctionalState NewState);
-      ^~~~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_Cmd' makes pointer from integer without a cast [-Wint-conversion]
- #define DMA_Channel_1                     ((uint32_t)0x02000000)
-                                           ^
-../src/mainF2.c:118:10: note: in expansion of macro 'DMA_Channel_1'
-  DMA_Cmd(DMA_Channel_1, ENABLE);
-          ^~~~~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:567:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
- void DMA_Cmd(DMA_Stream_TypeDef* DMAy_Streamx, FunctionalState NewState);
-      ^~~~~~~
-../src/mainF2.c: In function 'main':
-../src/mainF2.c:310:24: warning: unused variable 'NVIC_InitStructure' [-Wunused-variable]
-  NVIC_InitTypeDef      NVIC_InitStructure;
-                        ^~~~~~~~~~~~~~~~~~
-../src/mainF2.c: In function 'TIM2_IRQHandler':
-../src/mainF2.c:382:10: warning: unused variable 'adcData' [-Wunused-variable]
-      int adcData = 0;
-          ^~~~~~~
-Finished building: ../src/mainF2.c
- 
-Building target: PerifericsFase2.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
-Finished building target: PerifericsFase2.elf
- 
-make --no-print-directory post-build
-Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
-arm-none-eabi-size "PerifericsFase2.elf"
-   text	   data	    bss	    dec	    hex	filename
-   4924	   1080	   2332	   8336	   2090	PerifericsFase2.elf
- 
-18:23:14 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
-make -j8 all 
-make: Nothing to be done for 'all'.
-18:26:20 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
-make -j8 all 
-Building file: ../src/mainF2.c
-Invoking: MCU GCC Compiler
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
-../src/mainF2.c: In function 'startMemoryToMemoryTransfer':
-../src/mainF2.c:78:2: warning: implicit declaration of function 'LEDsInit'; did you mean 'LTDC_Init'? [-Wimplicit-function-declaration]
-  LEDsInit();
-  ^~~~~~~~
-  LTDC_Init
-../src/mainF2.c:80:2: warning: implicit declaration of function 'RCC_AHBPeriphClockCmd'; did you mean 'RCC_AHB3PeriphClockCmd'? [-Wimplicit-function-declaration]
-  RCC_AHBPeriphClockCmd(RCC_AHB1Periph_DMA1, ENABLE);
-  ^~~~~~~~~~~~~~~~~~~~~
-  RCC_AHB3PeriphClockCmd
-In file included from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_conf.h:37:0,
-                 from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device/stm32f4xx.h:12027,
-                 from ../src/mainF2.c:11:
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_DeInit' makes pointer from integer without a cast [-Wint-conversion]
- #define DMA_Channel_1                     ((uint32_t)0x02000000)
-                                           ^
-../src/mainF2.c:84:13: note: in expansion of macro 'DMA_Channel_1'
-  DMA_DeInit(DMA_Channel_1);
-             ^~~~~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:562:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
- void DMA_DeInit(DMA_Stream_TypeDef* DMAy_Streamx);
-      ^~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_Init' makes pointer from integer without a cast [-Wint-conversion]
- #define DMA_Channel_1                     ((uint32_t)0x02000000)
-                                           ^
-../src/mainF2.c:105:11: note: in expansion of macro 'DMA_Channel_1'
-  DMA_Init(DMA_Channel_1, &DMA_InitStructure);
-           ^~~~~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:565:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
- void DMA_Init(DMA_Stream_TypeDef* DMAy_Streamx, DMA_InitTypeDef* DMA_InitStruct);
-      ^~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_ITConfig' makes pointer from integer without a cast [-Wint-conversion]
- #define DMA_Channel_1                     ((uint32_t)0x02000000)
-                                           ^
-../src/mainF2.c:107:15: note: in expansion of macro 'DMA_Channel_1'
-  DMA_ITConfig(DMA_Channel_1, DMA_IT_TC, ENABLE);
-               ^~~~~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:590:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
- void DMA_ITConfig(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_IT, FunctionalState NewState);
-      ^~~~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_Cmd' makes pointer from integer without a cast [-Wint-conversion]
- #define DMA_Channel_1                     ((uint32_t)0x02000000)
-                                           ^
-../src/mainF2.c:118:10: note: in expansion of macro 'DMA_Channel_1'
-  DMA_Cmd(DMA_Channel_1, ENABLE);
-          ^~~~~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:567:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
- void DMA_Cmd(DMA_Stream_TypeDef* DMAy_Streamx, FunctionalState NewState);
-      ^~~~~~~
-../src/mainF2.c: In function 'main':
-../src/mainF2.c:310:24: warning: unused variable 'NVIC_InitStructure' [-Wunused-variable]
-  NVIC_InitTypeDef      NVIC_InitStructure;
-                        ^~~~~~~~~~~~~~~~~~
-../src/mainF2.c: In function 'TIM2_IRQHandler':
-../src/mainF2.c:382:10: warning: unused variable 'adcData' [-Wunused-variable]
-      int adcData = 0;
-          ^~~~~~~
-Finished building: ../src/mainF2.c
- 
-Building target: PerifericsFase2.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
-Finished building target: PerifericsFase2.elf
- 
-make --no-print-directory post-build
-Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
-arm-none-eabi-size "PerifericsFase2.elf"
-   text	   data	    bss	    dec	    hex	filename
-   4924	   1080	   2332	   8336	   2090	PerifericsFase2.elf
- 
-18:28:34 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
-make -j8 all 
-Building file: ../src/mainF2.c
-Invoking: MCU GCC Compiler
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
-In file included from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_conf.h:37:0,
-                 from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device/stm32f4xx.h:12027,
-                 from ../src/mainF2.c:11:
-../src/mainF2.c: In function 'startMemoryToMemoryTransfer':
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_DeInit' makes pointer from integer without a cast [-Wint-conversion]
- #define DMA_Channel_1                     ((uint32_t)0x02000000)
-                                           ^
-../src/mainF2.c:82:13: note: in expansion of macro 'DMA_Channel_1'
-  DMA_DeInit(DMA_Channel_1);
-             ^~~~~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:562:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
- void DMA_DeInit(DMA_Stream_TypeDef* DMAy_Streamx);
-      ^~~~~~~~~~
-../src/mainF2.c: In function 'main':
-../src/mainF2.c:308:24: warning: unused variable 'NVIC_InitStructure' [-Wunused-variable]
-  NVIC_InitTypeDef      NVIC_InitStructure;
-                        ^~~~~~~~~~~~~~~~~~
-Finished building: ../src/mainF2.c
- 
-Building target: PerifericsFase2.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
-Finished building target: PerifericsFase2.elf
- 
-make --no-print-directory post-build
-Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
-arm-none-eabi-size "PerifericsFase2.elf"
-   text	   data	    bss	    dec	    hex	filename
-   4912	   1080	   2332	   8324	   2084	PerifericsFase2.elf
- 
-18:29:20 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
-make -j8 all 
-Building file: ../src/mainF2.c
-Invoking: MCU GCC Compiler
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
-In file included from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_conf.h:37:0,
-                 from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device/stm32f4xx.h:12027,
-                 from ../src/mainF2.c:11:
-../src/mainF2.c: In function 'startMemoryToMemoryTransfer':
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_DeInit' makes pointer from integer without a cast [-Wint-conversion]
- #define DMA_Channel_1                     ((uint32_t)0x02000000)
-                                           ^
-../src/mainF2.c:82:13: note: in expansion of macro 'DMA_Channel_1'
-  DMA_DeInit(DMA_Channel_1);
-             ^~~~~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:562:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
- void DMA_DeInit(DMA_Stream_TypeDef* DMAy_Streamx);
-      ^~~~~~~~~~
-../src/mainF2.c: In function 'main':
-../src/mainF2.c:308:24: warning: unused variable 'NVIC_InitStructure' [-Wunused-variable]
-  NVIC_InitTypeDef      NVIC_InitStructure;
-                        ^~~~~~~~~~~~~~~~~~
-Finished building: ../src/mainF2.c
- 
-Building target: PerifericsFase2.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
-Finished building target: PerifericsFase2.elf
- 
-make --no-print-directory post-build
-Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
-arm-none-eabi-size "PerifericsFase2.elf"
-   text	   data	    bss	    dec	    hex	filename
-   5776	   1080	   2332	   9188	   23e4	PerifericsFase2.elf
- 
-18:34:39 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
-make -j8 all 
-Building file: ../src/mainF2.c
-Invoking: MCU GCC Compiler
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
-In file included from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_conf.h:37:0,
-                 from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device/stm32f4xx.h:12027,
-                 from ../src/mainF2.c:11:
-../src/mainF2.c: In function 'startMemoryToMemoryTransfer':
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:142:43: warning: passing argument 1 of 'DMA_DeInit' makes pointer from integer without a cast [-Wint-conversion]
- #define DMA_Channel_1                     ((uint32_t)0x02000000)
-                                           ^
-../src/mainF2.c:82:13: note: in expansion of macro 'DMA_Channel_1'
-  DMA_DeInit(DMA_Channel_1);
-             ^~~~~~~~~~~~~
-C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:562:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
- void DMA_DeInit(DMA_Stream_TypeDef* DMAy_Streamx);
-      ^~~~~~~~~~
-Finished building: ../src/mainF2.c
- 
-Building target: PerifericsFase2.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
-Finished building target: PerifericsFase2.elf
- 
-make --no-print-directory post-build
-Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
-arm-none-eabi-size "PerifericsFase2.elf"
-   text	   data	    bss	    dec	    hex	filename
-   5776	   1080	   2332	   9188	   23e4	PerifericsFase2.elf
- 
-18:35:23 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
-make -j8 all 
-make: Nothing to be done for 'all'.
-18:36:02 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
-make -j8 all 
-Building file: ../src/mainF2.c
-Invoking: MCU GCC Compiler
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
-Finished building: ../src/mainF2.c
- 
-Building target: PerifericsFase2.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
-Finished building target: PerifericsFase2.elf
- 
-make --no-print-directory post-build
-Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
-arm-none-eabi-size "PerifericsFase2.elf"
-   text	   data	    bss	    dec	    hex	filename
-   5776	   1080	   2332	   9188	   23e4	PerifericsFase2.elf
- 
-18:37:04 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
-make -j8 all 
-make: Nothing to be done for 'all'.
-18:37:34 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
-make -j8 all 
-make: Nothing to be done for 'all'.
-18:38:55 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
-make -j8 all 
-Building file: ../src/mainF2.c
-Invoking: MCU GCC Compiler
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
-Finished building: ../src/mainF2.c
- 
-Building target: PerifericsFase2.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
-Finished building target: PerifericsFase2.elf
- 
-make --no-print-directory post-build
-Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
-arm-none-eabi-size "PerifericsFase2.elf"
-   text	   data	    bss	    dec	    hex	filename
-   5760	   1080	   2332	   9172	   23d4	PerifericsFase2.elf
+   5736	   1080	   2332	   9148	   23bc	PerifericsFase3.elf
  

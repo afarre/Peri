@@ -1,14 +1,14 @@
-18:38:55 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+16:50:59 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
 make -j8 all 
 Building file: ../src/mainF2.c
 Invoking: MCU GCC Compiler
-C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+C:\Users\angel\Desktop\3er\Periferics\Practica\Peri-master\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
 Finished building: ../src/mainF2.c
  
 Building target: PerifericsFase2.elf
 Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/Peri-master/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
 Finished building target: PerifericsFase2.elf
  
 make --no-print-directory post-build
@@ -16,8 +16,8 @@ Generating binary and Printing size information:
 arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
 arm-none-eabi-size "PerifericsFase2.elf"
    text	   data	    bss	    dec	    hex	filename
-   5760	   1080	   2332	   9172	   23d4	PerifericsFase2.elf
+   5784	   1080	   2332	   9196	   23ec	PerifericsFase2.elf
  
 
-18:38:57 Build Finished (took 2s.409ms)
+16:51:01 Build Finished (took 2s.501ms)
 

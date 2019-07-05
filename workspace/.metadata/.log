@@ -11312,3 +11312,2527 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
+!SESSION 2019-07-05 16:29:27.887 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-07-05 16:29:43.127
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-07-05 16:29:50.463
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\angel'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY fr.ac6.mcu.ide 1 1 2019-07-05 16:29:52.320
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:55.955
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.db.ShortString.<init>(ShortString.java:43)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.newString(Database.java:569)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.newString(Database.java:553)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:135)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:55.957
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.004
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.004
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.040
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.041
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.089
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.090
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.109
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.109
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.140
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.140
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.182
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.183
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.205
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.205
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.222
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.223
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.243
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.243
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.253
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.253
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.279
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.279
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.315
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.316
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.347
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.348
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.378
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.378
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.433
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.434
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.471
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.471
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.504
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.504
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.542
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.542
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.579
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.580
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.618
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.618
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.648
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.648
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.668
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.669
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.688
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.688
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.710
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.710
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.721
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.721
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.746
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.746
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.769
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.769
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.801
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.801
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.828
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.828
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.867
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.868
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.913
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.913
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.944
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.945
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.972
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:56.972
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:57.014
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:57.014
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:57.029
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:57.030
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:57.076
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:57.076
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:57.112
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:57.113
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:57.143
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:57.143
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:57.163
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:57.164
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:57.201
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:57.201
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:57.221
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:57.221
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:57.230
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:57.231
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:57.248
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:57.248
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:57.266
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:57.266
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:57.283
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:57.284
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:57.304
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:57.304
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:57.324
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:57.324
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:57.340
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:57.340
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:57.357
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:57.357
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:58.974
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:58.974
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:58.989
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:58.990
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.004
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.004
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.012
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.012
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.019
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.019
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.030
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.030
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.048
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.049
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.057
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.057
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.066
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.066
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.075
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.076
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.082
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.083
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.097
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.098
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.110
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.110
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.122
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.122
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.131
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.131
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.139
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.139
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.147
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.148
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.158
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.158
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.167
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.167
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.182
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.182
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.191
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.191
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.199
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.199
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.208
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.208
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.216
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.217
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.227
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.227
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.236
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.236
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.246
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.246
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.254
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.254
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.263
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.263
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.275
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.275
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.284
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.285
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.293
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.293
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.309
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.310
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.317
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.318
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.345
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.346
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.354
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.354
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.363
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.363
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.372
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.372
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.382
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.382
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.390
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.390
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.413
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.414
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.430
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.430
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.441
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.441
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.452
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.452
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.462
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.462
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.475
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.475
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.486
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.486
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.495
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.495
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.503
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.503
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.511
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMUpdateTask.run(PDOMUpdateTask.java:94)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:29:59.511
+!MESSAGE Error
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-07-05 16:32:39.801
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-07-05 16:32:39.803
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.core.resources 4 372 2019-07-05 16:32:39.807
+!MESSAGE Resource '/TIM_Pwm_STM32F4_Discovery' is not open.
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:32:40.977
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:32:40.977
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:32:44.384
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:32:44.384
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:50:58.701
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:50:58.701
+!MESSAGE Error
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-05 16:51:01.632
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error
+	at org.eclipse.cdt.internal.core.pdom.db.Database.databaseCorruptionDetected(Database.java:295)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:275)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.malloc(Database.java:327)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMFile.<init>(PDOMFile.java:131)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.addUncommittedFile(WritablePDOM.java:85)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.addUncommittedFile(WritableCIndex.java:62)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeFileInIndex(PDOMWriter.java:588)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.storeSymbolsInIndex(PDOMWriter.java:320)
+	at org.eclipse.cdt.internal.core.pdom.PDOMWriter.addSymbols(PDOMWriter.java:279)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.writeToIndex(AbstractIndexerTask.java:1297)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseFile(AbstractIndexerTask.java:1104)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:899)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2019-07-05 16:51:01.632
+!MESSAGE Error

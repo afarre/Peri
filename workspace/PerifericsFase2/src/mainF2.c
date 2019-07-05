@@ -114,7 +114,7 @@ void startMemoryToMemoryTransfer(){
 
 	//Enable DMA1 Channel transfer
 	DMA_Cmd(DMA1_Stream1, ENABLE);
-//	while(status == 0) {};
+	while(status == 0) {};
 	    for (i=0; i < ARRAYSIZE; i++){
 	        destination[i] = totalMostres[i];
 	    }
@@ -404,9 +404,10 @@ void TIM2_IRQHandler(){
     		totalMostres[mostres] = ADC3ConvertedValue;
     		mostres++;
     	}else{
+    		ADC_DMACmd(ADC3, DISABLE);
+    		TIM_Cmd(TIM2, DISABLE);
+    		GPIO_ResetBits(GPIOG, GPIO_Pin_14);
     		startMemoryToMemoryTransfer();
-        	GPIO_ResetBits(GPIOG, GPIO_Pin_14);
-        	TIM_Cmd(TIM2, DISABLE);
         }
         // Clears the TIM2 interrupt pending bit
         TIM_ClearITPendingBit(TIM2, TIM_IT_Update);
