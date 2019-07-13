@@ -16,6 +16,10 @@
 #include "delay.h"
 #include "clock.h"
 #include "tm_stm32f4_disco.h"
+#include "stm32f4xx_sdram.h"
+#include "stm32f429i_discovery_lcd.h"
+
+#define SDRAM_USE_STM324x9_EVAL
 
 int fastLED = 0;
 int count = 0;
@@ -26,50 +30,59 @@ volatile uint32_t i;
 __IO uint16_t ADC3ConvertedValue = 0;
 __IO uint32_t ADC3ConvertedVoltage = 0;
 
+unsigned long *sdram = (unsigned long *)0xD0000000;
+
 #define ADC3_DR_ADDRESS    ((uint32_t)0x4001224C)
 #define ARRAYSIZE 300
+#define LCD_COLOR_BLUE 0x001F
+
+#define SDRAM_BANK FMC_Bank2_SDRAM
+
+static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+
+#define MARC_X 10
+#define MARC_Y 10
+
+typedef enum {
+	NO_OK = 0 ,
+	OK = !NO_OK
+
+} RetSt;
 
 
-/*
-uint16_t ADC_Read(void){
-    // Start ADC conversion
-    ADC_SoftwareStartConv(ADC1);
-    // Wait until conversion is finish
-    while (!ADC_GetFlagStatus(ADC1, ADC_FLAG_EOC));
-
-    return ADC_GetConversionValue(ADC1);
+RetSt SetPixel (uint16_t col, uint16_t row, uint8_t alpha, uint8_t red, uint8_t green, uint8_t blue){
+	if (col > 320 || row > 240) return NO_OK;
+	else{
+		uint16_t color = ((0x01 & (alpha)) <<15) | ((0x1f & (red)) <<10) | ((0x1f & (green)) <<5)| ((0x1f & (blue)) );
+		LCD_SetTextColor(color);
+		LCD_DrawLine(col,row, 1, LCD_DIR_HORIZONTAL);
+		return OK;
+	}
 }
 
-void ADC_Config(void){
-    // Enable clock for ADC1
-    RCC_APB2PeriphClockCmd(RCC_APB2Periph_ADC1, ENABLE);
+void pintaMarc(){
 
-    // Init GPIOB for ADC input
-    GPIO_InitTypeDef GPIO_InitStruct;
-    GPIO_InitStruct.GPIO_Mode = GPIO_Mode_AN;
-    GPIO_InitStruct.GPIO_Pin = GPIO_Pin_1;
-    GPIO_InitStruct.GPIO_PuPd = GPIO_PuPd_NOPULL;
-    GPIO_Init(GPIOB, &GPIO_InitStruct);
-
-    // Init ADC1
-    ADC_InitTypeDef ADC_InitStruct;
-    ADC_InitStruct.ADC_ContinuousConvMode = DISABLE;
-    ADC_InitStruct.ADC_DataAlign = ADC_DataAlign_Right;
-    ADC_InitStruct.ADC_ExternalTrigConv = DISABLE;
-    ADC_InitStruct.ADC_ExternalTrigConvEdge =
-        ADC_ExternalTrigConvEdge_None;
-    ADC_InitStruct.ADC_NbrOfConversion = 1;
-    ADC_InitStruct.ADC_Resolution = ADC_Resolution_12b;
-    ADC_InitStruct.ADC_ScanConvMode = DISABLE;
-    ADC_Init(ADC1, &ADC_InitStruct);
-    ADC_Cmd(ADC1, ENABLE);
-
-    // Select input channel for ADC1
-    // ADC1 channel 9 is on PB1
-    ADC_RegularChannelConfig(ADC1, ADC_Channel_9, 1,
-        ADC_SampleTime_84Cycles);
 }
-*/
+
+
+void pintaEixos(){
+
+}
+
+
+
+void pintaPantalla(){
+	// Disable write protection
+	FMC_SDRAMWriteProtectionConfig(SDRAM_BANK, DISABLE);
+	pintaMarc();
+	pintaEixos();
+
+	for(int i = 0; i < 500; i++) {
+			SetPixel(i, i, 1, 0, 0, 1);
+	}
+
+}
+
 
 void startMemoryToMemoryTransfer(){
 	//initialize destination arrays
@@ -114,20 +127,11 @@ void startMemoryToMemoryTransfer(){
 
 	//Enable DMA1 Channel transfer
 	DMA_Cmd(DMA1_Stream1, ENABLE);
-	while(status == 0) {};
-		status = 1;
-
-
-	    TIM_ClearITPendingBit(TIM2, TIM_IT_Update);
-}
-
-void DMA1_Channel1_IRQHandler(void){
-  //Test on DMA1 Channel1 Transfer Complete interrupt
-  if(DMA_GetITStatus(DMA1_Stream1, DMA_IT_TCIF1)){
-      status=1;
-   //Clear DMA1 Channel1 Half Transfer, Transfer Complete and Global interrupt pending bits
-    DMA_ClearITPendingBit(DMA1_Stream1, DMA_IT_TCIF1);
-  }
+		for (i=0; i < ARRAYSIZE; i++){
+			destination[i] = totalMostres[i];
+		}
+		TIM_ClearITPendingBit(TIM2, TIM_IT_Update);
+		pintaPantalla();
 }
 
 /**
@@ -320,6 +324,21 @@ int main(void){
 	BUTTON_Configure();
 	ADC3_CH7_DMA_Config();
 	//ADC3_CH7_DMA_Config source: https://github.com/Dima-Meln/stm32-cmake/blob/master/stm32f4/libs/STM32F4xx_DSP_StdPeriph_Lib_V1.0.0/Project/STM32F4xx_StdPeriph_Examples/ADC/ADC3_DMA/main.c
+
+	// Inicialitzacions Necessaries
+		SystemInit();
+		/* LCD initialization */
+		 LCD_Init();
+		/* LCD Layer initialization */
+		LCD_LayerInit();
+		 // Enable Layer1
+		LTDC_LayerCmd(LTDC_Layer1, ENABLE);
+	    /* Enable the LTDC */
+		LTDC_Cmd(ENABLE);
+		/* Set LCD foreground layer */
+		 LCD_SetLayer(LCD_FOREGROUND_LAYER);
+		LCD_Clear(LCD_COLOR_WHITE);
+	SDRAM_Init();
 
 	//	ADC_Config();
 	//ADC config source 1: http://electronicatk.blogspot.com/2016/01/adc-stm32f4-discovery.html

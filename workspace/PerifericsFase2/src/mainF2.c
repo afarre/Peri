@@ -29,105 +29,105 @@ __IO uint32_t ADC3ConvertedVoltage = 0;
 #define ADC3_DR_ADDRESS    ((uint32_t)0x4001224C)
 #define ARRAYSIZE 300
 
+//initialize destination arrays
+	uint32_t destination[ARRAYSIZE];
 
-/*
-uint16_t ADC_Read(void){
-    // Start ADC conversion
-    ADC_SoftwareStartConv(ADC1);
-    // Wait until conversion is finish
-    while (!ADC_GetFlagStatus(ADC1, ADC_FLAG_EOC));
+	/*
+void startMemoryToMemoryTransfer(){
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_SYSCFG, ENABLE);
 
-    return ADC_GetConversionValue(ADC1);
+	DMA_InitTypeDef  DMA_InitStructure;
+
+	DMA_InitStructure.DMA_Channel = DMA_Channel_2;
+	DMA_InitStructure.DMA_PeripheralBaseAddr = (uint32_t)&totalMostres;
+	DMA_InitStructure.DMA_Memory0BaseAddr = (uint32_t)&destination;
+	DMA_InitStructure.DMA_DIR = DMA_DIR_MemoryToMemory;
+	DMA_InitStructure.DMA_BufferSize = ARRAYSIZE;
+	DMA_InitStructure.DMA_PeripheralInc = DMA_PeripheralInc_Enable;
+	DMA_InitStructure.DMA_MemoryInc = DMA_MemoryInc_Enable;
+	DMA_InitStructure.DMA_PeripheralDataSize = DMA_PeripheralDataSize_HalfWord;
+	DMA_InitStructure.DMA_MemoryDataSize = DMA_MemoryDataSize_HalfWord;
+	DMA_InitStructure.DMA_Mode = DMA_Mode_Normal;
+	DMA_InitStructure.DMA_Priority = DMA_Priority_Medium;
+	DMA_InitStructure.DMA_FIFOMode = DMA_FIFOMode_Enable;
+	DMA_InitStructure.DMA_FIFOThreshold = DMA_FIFOThreshold_Full;
+	DMA_InitStructure.DMA_MemoryBurst = DMA_MemoryBurst_INC8;
+	DMA_InitStructure.DMA_PeripheralBurst = DMA_PeripheralBurst_INC8;
+	DMA_Init(DMA2_Stream3, &DMA_InitStructure);
+
+	NVIC_InitTypeDef NVIC_InitStructure;
+	NVIC_InitStructure.NVIC_IRQChannel = DMA2_Stream3_IRQn;
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
+	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+	NVIC_Init(&NVIC_InitStructure);
 }
 
-void ADC_Config(void){
-    // Enable clock for ADC1
-    RCC_APB2PeriphClockCmd(RCC_APB2Periph_ADC1, ENABLE);
+void DMA2_Stream3_IRQHandler(void) {
 
-    // Init GPIOB for ADC input
-    GPIO_InitTypeDef GPIO_InitStruct;
-    GPIO_InitStruct.GPIO_Mode = GPIO_Mode_AN;
-    GPIO_InitStruct.GPIO_Pin = GPIO_Pin_1;
-    GPIO_InitStruct.GPIO_PuPd = GPIO_PuPd_NOPULL;
-    GPIO_Init(GPIOB, &GPIO_InitStruct);
+	if(DMA_GetFlagStatus(DMA2_Stream3, DMA_FLAG_TCIF3)) {
+		DMA_Cmd(DMA2_Stream3, DISABLE);
 
-    // Init ADC1
-    ADC_InitTypeDef ADC_InitStruct;
-    ADC_InitStruct.ADC_ContinuousConvMode = DISABLE;
-    ADC_InitStruct.ADC_DataAlign = ADC_DataAlign_Right;
-    ADC_InitStruct.ADC_ExternalTrigConv = DISABLE;
-    ADC_InitStruct.ADC_ExternalTrigConvEdge =
-        ADC_ExternalTrigConvEdge_None;
-    ADC_InitStruct.ADC_NbrOfConversion = 1;
-    ADC_InitStruct.ADC_Resolution = ADC_Resolution_12b;
-    ADC_InitStruct.ADC_ScanConvMode = DISABLE;
-    ADC_Init(ADC1, &ADC_InitStruct);
-    ADC_Cmd(ADC1, ENABLE);
-
-    // Select input channel for ADC1
-    // ADC1 channel 9 is on PB1
-    ADC_RegularChannelConfig(ADC1, ADC_Channel_9, 1,
-        ADC_SampleTime_84Cycles);
+		DMA_ClearITPendingBit(DMA2_Stream3, DMA_FLAG_TCIF3);
+	}
 }
+
 */
 
+
 void startMemoryToMemoryTransfer(){
-	//initialize destination arrays
-	uint32_t destination[ARRAYSIZE];
-	//enable DMA1 clock
-	RCC_AHB3PeriphClockCmd(RCC_AHB1Periph_DMA1, ENABLE);
+	//enable DMA2 clock
+	RCC_AHB3PeriphClockCmd(RCC_AHB1Periph_DMA2, ENABLE);
 	//create DMA structure
 	DMA_InitTypeDef  DMA_InitStructure;
-	//reset DMA1 channe1 to default values;
-	DMA_DeInit(DMA1_Stream1);
+	//reset DMA2 channe2 to default values;
+	DMA_DeInit(DMA_Channel_2);
 	//channel will be used for memory to memory transfer
 	//DMA_InitStructure.DMA_M2M = DMA_M2M_Enable;
 	//setting normal mode (non circular)
 	DMA_InitStructure.DMA_Mode = DMA_Mode_Normal;
 	//medium priority
-	DMA_InitStructure.DMA_Priority = DMA_Priority_Medium;
+	DMA_InitStructure.DMA_Priority = DMA_Priority_High;
 	//source and destination data size word=32bit
-	DMA_InitStructure.DMA_PeripheralDataSize = DMA_PeripheralDataSize_Word;
-	DMA_InitStructure.DMA_MemoryDataSize = DMA_MemoryDataSize_Word;
+	DMA_InitStructure.DMA_PeripheralDataSize = DMA_PeripheralDataSize_HalfWord;
+	DMA_InitStructure.DMA_MemoryDataSize = DMA_MemoryDataSize_HalfWord;
 	//automatic memory increment enable. Destination and source
 	DMA_InitStructure.DMA_MemoryInc = DMA_MemoryInc_Enable;
 	DMA_InitStructure.DMA_PeripheralInc = DMA_PeripheralInc_Enable;
 	//Location assigned to peripheral register will be source
-	DMA_InitStructure.DMA_DIR = DMA_DIR_PeripheralToMemory;
+	DMA_InitStructure.DMA_DIR = DMA_DIR_MemoryToMemory;
 	//chunk of data to be transfered
 	DMA_InitStructure.DMA_BufferSize = ARRAYSIZE;
 	//source and destination start addresses
 	DMA_InitStructure.DMA_PeripheralBaseAddr = (uint32_t)totalMostres;
 	DMA_InitStructure.DMA_Memory0BaseAddr = (uint32_t)destination;
 	//send values to DMA registers
-	DMA_Init(DMA1_Stream1, &DMA_InitStructure);
-	// Enable DMA1 Channel Transfer Complete interrupt
-	DMA_ITConfig(DMA1_Stream1, DMA_IT_TC, ENABLE);
+	DMA_Init(DMA2_Stream3, &DMA_InitStructure);
+	// Enable DMA2 Channel Transfer Complete interrupt
+	DMA_ITConfig(DMA_Channel_2, DMA_IT_TC, ENABLE);
 
 	NVIC_InitTypeDef NVIC_InitStructure;
 	//Enable DMA1 channel IRQ Channel */
-	NVIC_InitStructure.NVIC_IRQChannel = DMA1_Stream1_IRQn;
+	NVIC_InitStructure.NVIC_IRQChannel = DMA2_Stream3_IRQn;
 	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
 	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
 	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
 	NVIC_Init(&NVIC_InitStructure);
 
+	//LED on before transfer
 	//Enable DMA1 Channel transfer
-	DMA_Cmd(DMA1_Stream1, ENABLE);
-	while(status == 0) {};
-	    for (i=0; i < ARRAYSIZE; i++){
-	        destination[i] = totalMostres[i];
-	    }
-	    TIM_ClearITPendingBit(TIM2, TIM_IT_Update);
+	DMA_Cmd(DMA_Channel_2, ENABLE);
 }
 
-void DMA1_Channel1_IRQHandler(void){
-  //Test on DMA1 Channel1 Transfer Complete interrupt
-  if(DMA_GetITStatus(DMA1_Stream1, DMA_IT_TCIF1)){
-      status=1;
-   //Clear DMA1 Channel1 Half Transfer, Transfer Complete and Global interrupt pending bits
-    DMA_ClearITPendingBit(DMA1_Stream1, DMA_IT_TCIF1);
-  }
+void DMA2_Stream3_IRQHandler(void) {
+
+	if(DMA_GetFlagStatus(DMA2_Stream3, DMA_FLAG_TCIF3)) {
+		DMA_Cmd(DMA2_Stream3, DISABLE);
+		//CALL DAC
+
+		DMA_ClearITPendingBit(DMA2_Stream3, DMA_FLAG_TCIF3);
+
+	}
 }
 
 /**
@@ -156,7 +156,7 @@ void ADC3_CH7_DMA_Config(void){
   DMA_InitStructure.DMA_PeripheralDataSize = DMA_PeripheralDataSize_HalfWord;
   DMA_InitStructure.DMA_MemoryDataSize = DMA_MemoryDataSize_HalfWord;
   DMA_InitStructure.DMA_Mode = DMA_Mode_Circular;
-  DMA_InitStructure.DMA_Priority = DMA_Priority_High;
+  DMA_InitStructure.DMA_Priority = DMA_Priority_Medium;
   DMA_InitStructure.DMA_FIFOMode = DMA_FIFOMode_Disable;
   DMA_InitStructure.DMA_FIFOThreshold = DMA_FIFOThreshold_HalfFull;
   DMA_InitStructure.DMA_MemoryBurst = DMA_MemoryBurst_Single;
