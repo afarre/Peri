@@ -40,8 +40,11 @@ unsigned long *sdram = (unsigned long *)0xD0000000;
 
 static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
 
-#define MARC_X 10
-#define MARC_Y 10
+#define MARC 10
+
+
+#define MAX_Y 240
+#define MAX_X 320
 
 typedef enum {
 	NO_OK = 0 ,
@@ -50,23 +53,56 @@ typedef enum {
 } RetSt;
 
 
-RetSt SetPixel (uint16_t col, uint16_t row, uint8_t alpha, uint8_t red, uint8_t green, uint8_t blue){
-	if (col > 320 || row > 240) return NO_OK;
-	else{
+RetSt SetPixel (uint16_t Y, uint16_t X, uint8_t alpha, uint8_t red, uint8_t green, uint8_t blue){
+	if(Y > MAX_Y || Y < 0 || X > MAX_X || X < 0){
+		return NO_OK;
+	}else{
 		uint16_t color = ((0x01 & (alpha)) <<15) | ((0x1f & (red)) <<10) | ((0x1f & (green)) <<5)| ((0x1f & (blue)) );
 		LCD_SetTextColor(color);
-		LCD_DrawLine(col,row, 1, LCD_DIR_HORIZONTAL);
+		LCD_DrawLine(Y, X, 1, LCD_DIR_HORIZONTAL);
 		return OK;
 	}
 }
 
 void pintaMarc(){
+	//marcs verticals
+	for(uint16_t x = 0; x < MARC; x++) {
+		for(int y = 0; y < MAX_Y; y++){
+			SetPixel(y, x, 1, 1, 1, 1);
+		}
+	}
 
+	for(int x = MAX_X - MARC; x < MAX_X; x++) {
+		for(int y = 0; y < MAX_Y; y++){
+			SetPixel(y, x, 1, 1, 1, 1);
+		}
+	}
+
+	//marcs horitzontals
+	for(uint16_t y = 0; y < MARC; y++) {
+		for(int x = 0; x < MAX_X; x++){
+			SetPixel(y, x, 1, 1, 1, 1);
+		}
+	}
+
+	for(uint16_t y = MAX_Y - MARC; y < MAX_Y; y++) {
+		for(int x = 0; x < MAX_X; x++){
+			SetPixel(y, x, 1, 1, 1, 1);
+		}
+	}
 }
 
 
 void pintaEixos(){
+	//eix X
+	for(uint16_t i = 0; i < MAX_Y; i++) {
+		SetPixel(i, MAX_X/2, 1, 1, 0, 0);
+	}
 
+	//eix Y
+	for(uint16_t i = 0; i < MAX_X; i++) {
+		SetPixel(MAX_Y/2, i, 1, 1, 0, 0);
+	}
 }
 
 
@@ -74,12 +110,8 @@ void pintaEixos(){
 void pintaPantalla(){
 	// Disable write protection
 	FMC_SDRAMWriteProtectionConfig(SDRAM_BANK, DISABLE);
-	pintaMarc();
 	pintaEixos();
-
-	for(int i = 0; i < 500; i++) {
-			SetPixel(i, i, 1, 0, 0, 1);
-	}
+	pintaMarc();
 
 }
 

@@ -1,4 +1,4 @@
-17:55:34 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+18:17:33 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
 make -j8 all 
 Building file: ../src/mainF3.c
 Invoking: MCU GCC Compiler
@@ -19,8 +19,8 @@ Generating binary and Printing size information:
 arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
 arm-none-eabi-size "PerifericsFase3.elf"
    text	   data	    bss	    dec	    hex	filename
-  23356	   1120	   2340	  26816	   68c0	PerifericsFase3.elf
+  23624	   1120	   2340	  27084	   69cc	PerifericsFase3.elf
  
 
-17:55:37 Build Finished (took 2s.776ms)
+18:17:35 Build Finished (took 2s.709ms)
 

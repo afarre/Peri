@@ -832,3 +832,1843 @@ arm-none-eabi-size "PerifericsFase3.elf"
    text	   data	    bss	    dec	    hex	filename
   23356	   1120	   2340	  26816	   68c0	PerifericsFase3.elf
  
+18:07:27 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23364	   1120	   2340	  26824	   68c8	PerifericsFase3.elf
+ 
+18:08:16 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23364	   1120	   2340	  26824	   68c8	PerifericsFase3.elf
+ 
+18:10:42 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23428	   1120	   2340	  26888	   6908	PerifericsFase3.elf
+ 
+18:11:25 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23428	   1120	   2340	  26888	   6908	PerifericsFase3.elf
+ 
+19:03:55 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23448	   1120	   2340	  26908	   691c	PerifericsFase3.elf
+ 
+19:04:16 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23452	   1120	   2340	  26912	   6920	PerifericsFase3.elf
+ 
+19:04:34 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23448	   1120	   2340	  26908	   691c	PerifericsFase3.elf
+ 
+19:06:30 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23448	   1120	   2340	  26908	   691c	PerifericsFase3.elf
+ 
+19:08:20 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23452	   1120	   2340	  26912	   6920	PerifericsFase3.elf
+ 
+19:15:21 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23452	   1120	   2340	  26912	   6920	PerifericsFase3.elf
+ 
+19:17:28 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23452	   1120	   2340	  26912	   6920	PerifericsFase3.elf
+ 
+19:17:47 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23448	   1120	   2340	  26908	   691c	PerifericsFase3.elf
+ 
+19:18:05 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23448	   1120	   2340	  26908	   691c	PerifericsFase3.elf
+ 
+19:19:31 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23448	   1120	   2340	  26908	   691c	PerifericsFase3.elf
+ 
+19:21:43 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23448	   1120	   2340	  26908	   691c	PerifericsFase3.elf
+ 
+19:22:20 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23448	   1120	   2340	  26908	   691c	PerifericsFase3.elf
+ 
+19:24:21 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23448	   1120	   2340	  26908	   691c	PerifericsFase3.elf
+ 
+19:25:01 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23384	   1120	   2340	  26844	   68dc	PerifericsFase3.elf
+ 
+11:50:03 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23484	   1120	   2340	  26944	   6940	PerifericsFase3.elf
+ 
+11:50:59 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23484	   1120	   2340	  26944	   6940	PerifericsFase3.elf
+ 
+11:51:26 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c: In function 'pintaMarc':
+../src/mainF3.c:82:28: error: 'o' undeclared (first use in this function)
+    SetPixel(i, j, 1, 0, 1, o);
+                            ^
+../src/mainF3.c:82:28: note: each undeclared identifier is reported only once for each function it appears in
+At top level:
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+src/subdir.mk:39: recipe for target 'src/mainF3.o' failed
+make: *** [src/mainF3.o] Error 1
+11:51:38 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23484	   1120	   2340	  26944	   6940	PerifericsFase3.elf
+ 
+11:52:25 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23524	   1120	   2340	  26984	   6968	PerifericsFase3.elf
+ 
+11:53:25 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23588	   1120	   2340	  27048	   69a8	PerifericsFase3.elf
+ 
+11:53:50 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23588	   1120	   2340	  27048	   69a8	PerifericsFase3.elf
+ 
+11:54:26 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23588	   1120	   2340	  27048	   69a8	PerifericsFase3.elf
+ 
+11:54:45 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23588	   1120	   2340	  27048	   69a8	PerifericsFase3.elf
+ 
+11:56:11 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c: In function 'SetPixel':
+../src/mainF3.c:59:12: warning: unused variable 'color' [-Wunused-variable]
+   uint16_t color = ((0x01 & (alpha)) <<15) | ((0x1f & (red)) <<10) | ((0x1f & (green)) <<5)| ((0x1f & (blue)) );
+            ^~~~~
+At top level:
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23548	   1120	   2340	  27008	   6980	PerifericsFase3.elf
+ 
+12:01:53 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23468	   1128	   2340	  26936	   6938	PerifericsFase3.elf
+ 
+12:05:42 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23420	   1120	   2340	  26880	   6900	PerifericsFase3.elf
+ 
+12:05:55 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23588	   1120	   2340	  27048	   69a8	PerifericsFase3.elf
+ 
+12:07:30 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23600	   1120	   2340	  27060	   69b4	PerifericsFase3.elf
+ 
+12:18:28 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23664	   1120	   2340	  27124	   69f4	PerifericsFase3.elf
+ 
+12:18:49 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+12:19:00 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23624	   1120	   2340	  27084	   69cc	PerifericsFase3.elf
+ 
+12:19:32 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23628	   1120	   2340	  27088	   69d0	PerifericsFase3.elf
+ 
+12:19:47 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23624	   1120	   2340	  27084	   69cc	PerifericsFase3.elf
+ 
+12:20:08 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23628	   1120	   2340	  27088	   69d0	PerifericsFase3.elf
+ 
+12:21:28 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23664	   1120	   2340	  27124	   69f4	PerifericsFase3.elf
+ 
+12:22:51 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23664	   1120	   2340	  27124	   69f4	PerifericsFase3.elf
+ 
+12:23:15 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23664	   1120	   2340	  27124	   69f4	PerifericsFase3.elf
+ 
+12:23:51 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23664	   1120	   2340	  27124	   69f4	PerifericsFase3.elf
+ 
+12:32:55 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23664	   1120	   2340	  27124	   69f4	PerifericsFase3.elf
+ 
+12:34:34 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23664	   1120	   2340	  27124	   69f4	PerifericsFase3.elf
+ 
+12:35:16 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23668	   1120	   2340	  27128	   69f8	PerifericsFase3.elf
+ 
+12:35:45 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23668	   1120	   2340	  27128	   69f8	PerifericsFase3.elf
+ 
+12:40:21 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+In file included from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_conf.h:37:0,
+                 from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device/stm32f4xx.h:12027,
+                 from ../src/mainF2.c:11:
+../src/mainF2.c: In function 'startMemoryToMemoryTransfer':
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:143:43: warning: passing argument 1 of 'DMA_DeInit' makes pointer from integer without a cast [-Wint-conversion]
+ #define DMA_Channel_2                     ((uint32_t)0x04000000)
+                                           ^
+../src/mainF2.c:84:13: note: in expansion of macro 'DMA_Channel_2'
+  DMA_DeInit(DMA_Channel_2);
+             ^~~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:562:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
+ void DMA_DeInit(DMA_Stream_TypeDef* DMAy_Streamx);
+      ^~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:143:43: warning: passing argument 1 of 'DMA_ITConfig' makes pointer from integer without a cast [-Wint-conversion]
+ #define DMA_Channel_2                     ((uint32_t)0x04000000)
+                                           ^
+../src/mainF2.c:107:15: note: in expansion of macro 'DMA_Channel_2'
+  DMA_ITConfig(DMA_Channel_2, DMA_IT_TC, ENABLE);
+               ^~~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:590:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
+ void DMA_ITConfig(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_IT, FunctionalState NewState);
+      ^~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:143:43: warning: passing argument 1 of 'DMA_Cmd' makes pointer from integer without a cast [-Wint-conversion]
+ #define DMA_Channel_2                     ((uint32_t)0x04000000)
+                                           ^
+../src/mainF2.c:119:10: note: in expansion of macro 'DMA_Channel_2'
+  DMA_Cmd(DMA_Channel_2, ENABLE);
+          ^~~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:567:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
+ void DMA_Cmd(DMA_Stream_TypeDef* DMAy_Streamx, FunctionalState NewState);
+      ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5940	   1080	   3532	  10552	   2938	PerifericsFase2.elf
+ 
+12:50:22 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+12:51:40 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+12:52:15 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+12:53:58 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+In file included from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_conf.h:37:0,
+                 from C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device/stm32f4xx.h:12027,
+                 from ../src/mainF2.c:11:
+../src/mainF2.c: In function 'startMemoryToMemoryTransfer':
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:143:43: warning: passing argument 1 of 'DMA_ITConfig' makes pointer from integer without a cast [-Wint-conversion]
+ #define DMA_Channel_2                     ((uint32_t)0x04000000)
+                                           ^
+../src/mainF2.c:107:15: note: in expansion of macro 'DMA_Channel_2'
+  DMA_ITConfig(DMA_Channel_2, DMA_IT_TC, ENABLE);
+               ^~~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:590:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
+ void DMA_ITConfig(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_IT, FunctionalState NewState);
+      ^~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:143:43: warning: passing argument 1 of 'DMA_Cmd' makes pointer from integer without a cast [-Wint-conversion]
+ #define DMA_Channel_2                     ((uint32_t)0x04000000)
+                                           ^
+../src/mainF2.c:119:10: note: in expansion of macro 'DMA_Channel_2'
+  DMA_Cmd(DMA_Channel_2, ENABLE);
+          ^~~~~~~~~~~~~
+C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc/stm32f4xx_dma.h:567:6: note: expected 'DMA_Stream_TypeDef * {aka struct <anonymous> *}' but argument is of type 'long unsigned int'
+ void DMA_Cmd(DMA_Stream_TypeDef* DMAy_Streamx, FunctionalState NewState);
+      ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5508	   1080	   3532	  10120	   2788	PerifericsFase2.elf
+ 
+12:54:34 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+13:10:04 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6076	   1080	   3532	  10688	   29c0	PerifericsFase2.elf
+ 
+13:10:15 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6076	   1080	   3532	  10688	   29c0	PerifericsFase2.elf
+ 
+13:10:35 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+13:10:42 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+13:12:19 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+13:15:33 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'startMemoryToMemoryTransfer':
+../src/mainF2.c:137:3: warning: implicit declaration of function 'MX_GPIO_Init'; did you mean 'TM_GPIO_Init'? [-Wimplicit-function-declaration]
+   MX_GPIO_Init();
+   ^~~~~~~~~~~~
+   TM_GPIO_Init
+../src/mainF2.c:138:6: warning: implicit declaration of function 'SDRAM_Init'; did you mean 'SAI_Init'? [-Wimplicit-function-declaration]
+      SDRAM_Init();
+      ^~~~~~~~~~
+      SAI_Init
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+src/mainF2.o: In function `startMemoryToMemoryTransfer':
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug/../src/mainF2.c:137: undefined reference to `MX_GPIO_Init'
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug/../src/mainF2.c:138: undefined reference to `SDRAM_Init'
+collect2.exe: error: ld returned 1 exit status
+makefile:35: recipe for target 'PerifericsFase2.elf' failed
+make: *** [PerifericsFase2.elf] Error 1
+13:15:45 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6080	   1080	   3532	  10692	   29c4	PerifericsFase2.elf
+ 
+13:24:19 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5492	   1080	   3532	  10104	   2778	PerifericsFase2.elf
+ 
+13:25:05 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+13:29:51 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+../src/mainF2.c: In function 'DMA2_Stream3_IRQHandler':
+../src/mainF2.c:229:3: warning: implicit declaration of function 'initDAC' [-Wimplicit-function-declaration]
+   initDAC();
+   ^~~~~~~
+../src/mainF2.c: At top level:
+../src/mainF2.c:233:6: warning: conflicting types for 'initDAC'
+ void initDAC(void){
+      ^~~~~~~
+../src/mainF2.c:229:3: note: previous implicit declaration of 'initDAC' was here
+   initDAC();
+   ^~~~~~~
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6032	   1080	   4732	  11844	   2e44	PerifericsFase2.elf
+ 
+13:30:42 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6032	   1080	   4732	  11844	   2e44	PerifericsFase2.elf
+ 
+15:02:21 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:01:10 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23668	   1120	   2340	  27128	   69f8	PerifericsFase3.elf
+ 
+17:03:31 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:04:06 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23668	   1120	   2340	  27128	   69f8	PerifericsFase3.elf
+ 
+17:04:45 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23668	   1120	   2340	  27128	   69f8	PerifericsFase3.elf
+ 
+17:05:31 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23668	   1120	   2340	  27128	   69f8	PerifericsFase3.elf
+ 
+17:06:32 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23728	   1120	   2340	  27188	   6a34	PerifericsFase3.elf
+ 
+17:06:54 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23728	   1120	   2340	  27188	   6a34	PerifericsFase3.elf
+ 
+17:07:24 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23728	   1120	   2340	  27188	   6a34	PerifericsFase3.elf
+ 
+17:09:37 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23712	   1120	   2340	  27172	   6a24	PerifericsFase3.elf
+ 
+17:10:07 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23712	   1120	   2340	  27172	   6a24	PerifericsFase3.elf
+ 
+17:10:49 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23612	   1120	   2340	  27072	   69c0	PerifericsFase3.elf
+ 
+17:25:59 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6044	   1080	   2932	  10056	   2748	PerifericsFase2.elf
+ 
+17:26:05 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:27:58 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6052	   1080	   2932	  10064	   2750	PerifericsFase2.elf
+ 
+17:39:03 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23628	   1120	   2340	  27088	   69d0	PerifericsFase3.elf
+ 
+17:39:25 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23632	   1120	   2340	  27092	   69d4	PerifericsFase3.elf
+ 
+17:39:40 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23628	   1120	   2340	  27088	   69d0	PerifericsFase3.elf
+ 
+17:39:53 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23628	   1120	   2340	  27088	   69d0	PerifericsFase3.elf
+ 
+17:41:10 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23624	   1120	   2340	  27084	   69cc	PerifericsFase3.elf
+ 
+17:46:40 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23624	   1120	   2340	  27084	   69cc	PerifericsFase3.elf
+ 
+17:47:46 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23624	   1120	   2340	  27084	   69cc	PerifericsFase3.elf
+ 
+17:48:22 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23564	   1120	   2340	  27024	   6990	PerifericsFase3.elf
+ 
+18:14:40 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23624	   1120	   2340	  27084	   69cc	PerifericsFase3.elf
+ 
+18:17:06 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23628	   1120	   2340	  27088	   69d0	PerifericsFase3.elf
+ 
+18:17:33 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:41:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  23624	   1120	   2340	  27084	   69cc	PerifericsFase3.elf
+ 
