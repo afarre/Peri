@@ -34,9 +34,38 @@ __IO uint32_t ADC3ConvertedVoltage = 0;
 	uint16_t destination[ARRAYSIZE];
 
 
+	void initDAC(void){
+		  RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_DMA1, ENABLE);
+		  DMA_InitTypeDef DMA_InitStructure;
+
+
+		  /* DMA1_Stream5 channel7 configuration **************/
+		  DMA_DeInit(DMA1_Stream5);
+		  DMA_InitStructure.DMA_Channel = DMA_Channel_7;
+		  DMA_InitStructure.DMA_PeripheralBaseAddr = (uint32_t)&destination;
+		  DMA_InitStructure.DMA_Memory0BaseAddr = (uint32_t)&dac_array;
+		  DMA_InitStructure.DMA_DIR = DMA_DIR_MemoryToPeripheral; //De memoria al DAC
+		  DMA_InitStructure.DMA_BufferSize = 300;
+		  DMA_InitStructure.DMA_PeripheralInc = DMA_PeripheralInc_Disable;
+		  DMA_InitStructure.DMA_MemoryInc = DMA_MemoryInc_Enable;
+		  DMA_InitStructure.DMA_PeripheralDataSize = DMA_PeripheralDataSize_HalfWord;
+		  DMA_InitStructure.DMA_MemoryDataSize = DMA_MemoryDataSize_HalfWord;
+		  DMA_InitStructure.DMA_Mode = DMA_Mode_Circular;
+		  DMA_InitStructure.DMA_Priority = DMA_Priority_High;
+		  DMA_InitStructure.DMA_FIFOMode = DMA_FIFOMode_Disable;
+		  DMA_InitStructure.DMA_FIFOThreshold = DMA_FIFOThreshold_HalfFull;
+		  DMA_InitStructure.DMA_MemoryBurst = DMA_MemoryBurst_Single;
+		  DMA_InitStructure.DMA_PeripheralBurst = DMA_PeripheralBurst_Single;
+		  DMA_Init(DMA1_Stream5, &DMA_InitStructure);
+
+		  /* Enable DMA1_Stream5 */
+		  DMA_Cmd(DMA1_Stream5, ENABLE);
+	}
+
+
+
+
 void startMemoryToMemoryTransfer(){
-
-
 	NVIC_InitTypeDef NVIC_InitStructure;
 	NVIC_InitStructure.NVIC_IRQChannel = DMA2_Stream3_IRQn;
 	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
@@ -83,35 +112,6 @@ void DMA2_Stream3_IRQHandler(void) {
 		initDAC();
 	}
 }
-
-void initDAC(void){
-	  RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_DMA1, ENABLE);
-	  DMA_InitTypeDef DMA_InitStructure;
-
-
-	  /* DMA1_Stream5 channel7 configuration **************/
-	  DMA_DeInit(DMA1_Stream5);
-	  DMA_InitStructure.DMA_Channel = DMA_Channel_7;
-	  DMA_InitStructure.DMA_PeripheralBaseAddr = (uint32_t)&totalMostres;
-	  DMA_InitStructure.DMA_Memory0BaseAddr = (uint32_t)&dac_array;
-	  DMA_InitStructure.DMA_DIR = DMA_DIR_MemoryToPeripheral; //De memoria al DAC
-	  DMA_InitStructure.DMA_BufferSize = 300;
-	  DMA_InitStructure.DMA_PeripheralInc = DMA_PeripheralInc_Disable;
-	  DMA_InitStructure.DMA_MemoryInc = DMA_MemoryInc_Enable;
-	  DMA_InitStructure.DMA_PeripheralDataSize = DMA_PeripheralDataSize_HalfWord;
-	  DMA_InitStructure.DMA_MemoryDataSize = DMA_MemoryDataSize_HalfWord;
-	  DMA_InitStructure.DMA_Mode = DMA_Mode_Circular;
-	  DMA_InitStructure.DMA_Priority = DMA_Priority_High;
-	  DMA_InitStructure.DMA_FIFOMode = DMA_FIFOMode_Disable;
-	  DMA_InitStructure.DMA_FIFOThreshold = DMA_FIFOThreshold_HalfFull;
-	  DMA_InitStructure.DMA_MemoryBurst = DMA_MemoryBurst_Single;
-	  DMA_InitStructure.DMA_PeripheralBurst = DMA_PeripheralBurst_Single;
-	  DMA_Init(DMA1_Stream5, &DMA_InitStructure);
-
-	  /* Enable DMA1_Stream5 */
-	  DMA_Cmd(DMA1_Stream5, ENABLE);
-}
-
 
 /**
   * @brief  ADC3 channel07 with DMA configuration
@@ -391,7 +391,6 @@ void TIM2_IRQHandler(){
     		TIM_Cmd(TIM2, DISABLE);
     		GPIO_ResetBits(GPIOG, GPIO_Pin_14);
     		startMemoryToMemoryTransfer();
-    		initDAC();
         }
         // Clears the TIM2 interrupt pending bit
         TIM_ClearITPendingBit(TIM2, TIM_IT_Update);
