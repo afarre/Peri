@@ -1,6 +1,26 @@
-18:36:08 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+21:20:49 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
 make -j8 all 
-make: Nothing to be done for 'all'.
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c:42:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  22412	   1120	 155948	 179480	  2bd18	PerifericsFase3.elf
+ 
 
-18:36:09 Build Finished (took 828ms)
+21:20:52 Build Finished (took 2s.818ms)
 

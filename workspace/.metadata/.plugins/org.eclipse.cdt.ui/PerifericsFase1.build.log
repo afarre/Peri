@@ -1,4 +1,4 @@
-21:57:46 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+18:06:39 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
 make -j8 all 
 Building file: ../src/mainF1.c
 Invoking: MCU GCC Compiler
@@ -7,19 +7,6 @@ arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DS
 ../src/mainF1.c:91:2: warning: "/*" within comment [-Wcomment]
   /*
    
-../src/mainF1.c: In function 'EXTI0_IRQHandler':
-../src/mainF1.c:235:16: warning: unused variable 'dif' [-Wunused-variable]
-  unsigned long dif;
-                ^~~
-../src/mainF1.c:234:16: warning: unused variable 'countStop' [-Wunused-variable]
-  unsigned long countStop;
-                ^~~~~~~~~
-../src/mainF1.c:233:16: warning: unused variable 'countStart' [-Wunused-variable]
-  unsigned long countStart;
-                ^~~~~~~~~~
-../src/mainF1.c:232:6: warning: unused variable 'flag' [-Wunused-variable]
-  int flag = 1;
-      ^~~~
 Finished building: ../src/mainF1.c
  
 Building target: PerifericsFase1.elf
@@ -32,8 +19,8 @@ Generating binary and Printing size information:
 arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
 arm-none-eabi-size "PerifericsFase1.elf"
    text	   data	    bss	    dec	    hex	filename
-   6500	   1080	   1108	   8688	   21f0	PerifericsFase1.elf
+   6504	   1080	   1108	   8692	   21f4	PerifericsFase1.elf
  
 
-21:57:49 Build Finished (took 2s.692ms)
+18:06:41 Build Finished (took 2s.719ms)
 

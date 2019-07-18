@@ -229,57 +229,56 @@ void Configure_PB12(void) {
 /* Set interrupt handlers */
 /* Handle PD0 interrupt */
 void EXTI0_IRQHandler(void) {
-	int flag = 1;
-	unsigned long countStart;
-	unsigned long countStop;
-	unsigned long dif;
+//	GPIO_SetBits(GPIOG, GPIO_Pin_14);
 	/* Make sure that interrupt flag is set */
 	if (EXTI_GetITStatus(EXTI_Line0) != RESET) {
 		/* Do your stuff when PD0 is changed */
 		switch(TIM4_Channel2_value){
 		//+140
 		case 590://vel minima endavant
-			TIM3->CCR2 = 450;
+			TIM3->CCR2 = 0;
 			break;
 		case 730:
-			TIM3->CCR2 = 557;
+			TIM3->CCR2 = 450;
 			break;
 		/*case 840:
 			TIM4->CCR1 = 960;
 			break;
 		*/case 870://vel maxima endavant
-			TIM3->CCR2 = 660;
+			TIM3->CCR2 = 557;
 			break;
 
 		case 1080://repos
-			TIM3->CCR2 = 760;
+			TIM3->CCR2 = 660;
 			break;
 
 			//+167
 		case 1247://vel minima enrere
-			TIM3->CCR2 = 951;
+			TIM3->CCR2 = 760;
 			break;
 		case 1414:
-			TIM3->CCR2 = 1078;
+			TIM3->CCR2 = 951;
 			break;
 		case 1581:
-			TIM3->CCR2 = 1205;
+			TIM3->CCR2 = 1078;
 			break;
 		case 1748:
-			TIM3->CCR2 = 1460;
+			TIM3->CCR2 = 1205;
 			break;
 		case 1915://vel maxima enrere
-			TIM3->CCR2 = 0;
+			TIM3->CCR2 = 1460;
 			break;
 		}
 
 		/* Clear interrupt flag */
 		EXTI_ClearITPendingBit(EXTI_Line0);
 	}
+//	GPIO_ResetBits(GPIOG, GPIO_Pin_14);
 }
 
 /* Handle PB12 interrupt */
 void EXTI15_10_IRQHandler(void) {
+//	GPIO_SetBits(GPIOG, GPIO_Pin_14);
 
 	/* Make sure that interrupt flag is set */
 	if (EXTI_GetITStatus(EXTI_Line12) != RESET) {
@@ -287,43 +286,44 @@ void EXTI15_10_IRQHandler(void) {
 		switch(TIM4_Channel1_value){
 		//+140
 		case 590://vel minima endavant
-			TIM3->CCR1 = 450;
+			TIM3->CCR1 = 0;
 			break;
 		case 730:
-			TIM3->CCR1 = 557;
+			TIM3->CCR1 = 450;
 			break;
 		/*case 840:
 			TIM4->CCR1 = 960;
 			break;
 		*/case 870://vel maxima endavant
-			TIM3->CCR1 = 660;
+			TIM3->CCR1 = 557;
 			break;
 
 		case 1080://repos
-			TIM3->CCR1 = 760;
+			TIM3->CCR1 = 660;
 			break;
 
 			//+167
 		case 1247://vel minima enrere
-			TIM3->CCR1 = 951;
+			TIM3->CCR1 = 760;
 			break;
 		case 1414:
-			TIM3->CCR1 = 1078;
+			TIM3->CCR1 = 951;
 			break;
 		case 1581:
-			TIM3->CCR1 = 1205;
+			TIM3->CCR1 = 1078;
 			break;
 		case 1748:
-			TIM3->CCR1 = 1460;
+			TIM3->CCR1 = 1205;
 			break;
 		case 1915://vel maxima enrere
-			TIM3->CCR1 = 0;
+			TIM3->CCR1 = 1460;
 			break;
 		}
 
 		/* Clear interrupt flag */
 		EXTI_ClearITPendingBit(EXTI_Line12);
 	}
+//	GPIO_ResetBits(GPIOG, GPIO_Pin_14);
 }
 
 
@@ -372,7 +372,7 @@ void PWM_TIM4_Init(){
     //     TIM_Pulse = (((8399 + 1) * 25) / 100) - 1 = 2099
     //     TIM_Pulse = (((8399 + 1) * 75) / 100) - 1 = 6299
     // We initialize PWM value with duty cycle of 25%
-    TIM_OCInitStruct.TIM_Pulse = 1080;						//Temps de PWM a 1 (4099 = 50%) (1259 = 1'5ms) (2107 = 2'5ms) (559 = 0'7ms)
+    TIM_OCInitStruct.TIM_Pulse = 1247;						//Temps de PWM a 1 (4099 = 50%) (1259 = 1'5ms) (2107 = 2'5ms) (559 = 0'7ms)
     TIM_OC1Init(TIM4, &TIM_OCInitStruct);
     TIM_OC2Init(TIM4, &TIM_OCInitStruct);
     TIM_OC3Init(TIM4, &TIM_OCInitStruct);// PD14
@@ -407,7 +407,7 @@ void TIM3_Init(){
     TIM_TimeBaseInitStruct.TIM_ClockDivision = TIM_CKD_DIV1;
     TIM_TimeBaseInitStruct.TIM_CounterMode = TIM_CounterMode_Up;
 
-    // Initialize TIM4
+    // Initialize TIM3
     TIM_TimeBaseInit(TIM3, &TIM_TimeBaseInitStruct);
     // Start TIM3
     TIM_Cmd(TIM3, ENABLE);
@@ -428,7 +428,7 @@ void PWM_TIM3_Init(){
     //     TIM_Pulse = (((8399 + 1) * 25) / 100) - 1 = 2099
     //     TIM_Pulse = (((8399 + 1) * 75) / 100) - 1 = 6299
     // We initialize PWM value with duty cycle of 25%
-    TIM_OCInitStruct.TIM_Pulse = 760;						//Temps de PWM a 1 (4099 = 50%) (1259 = 1'5ms) (2107 = 2'5ms) (559 = 0'7ms)
+    TIM_OCInitStruct.TIM_Pulse = 660;						//Temps de PWM a 1 (4099 = 50%) (1259 = 1'5ms) (2107 = 2'5ms) (559 = 0'7ms)
     TIM_OC1Init(TIM3, &TIM_OCInitStruct); //PA6
     TIM_OC2Init(TIM3, &TIM_OCInitStruct); //PA7
 
@@ -566,8 +566,9 @@ int main(void){
 	Configure_PD0();
 	/* Configure PB12 as interrupt */
 	Configure_PB12();
+
+	GPIO_ResetBits(GPIOG, GPIO_Pin_14);
 	/* -------------------------------------------------------------- */
-	GPIO_SetBits(GPIOG, GPIO_Pin_14);
     while (1){
 		// Delay initialization
 		//DELAY_Init();
@@ -575,7 +576,7 @@ int main(void){
     	// Button pressed
     	if (GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0)) {
     		// Save TIM2 start value
-    		GPIO_ToggleBits(GPIOG, GPIO_Pin_14);
+    		//GPIO_ToggleBits(GPIOG, GPIO_Pin_14);
     		unsigned long countStart = TIM_GetCounter(TIM2);
 
     		do{
@@ -585,7 +586,7 @@ int main(void){
 
     		//USer stopped pressing button
 			// Save TIM2 end value
-    		GPIO_ToggleBits(GPIOG, GPIO_Pin_14);
+    		//GPIO_ToggleBits(GPIOG, GPIO_Pin_14);
 			unsigned long countStop = TIM_GetCounter(TIM2);
 
 			if((countStop - countStart) < 60000000){

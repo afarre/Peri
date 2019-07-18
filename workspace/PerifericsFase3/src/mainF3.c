@@ -18,6 +18,7 @@
 #include "tm_stm32f4_disco.h"
 #include "stm32f4xx_sdram.h"
 #include "stm32f429i_discovery_lcd.h"
+#include "stm32f4xx_conf.h"
 
 #define SDRAM_USE_STM324x9_EVAL
 
@@ -39,13 +40,14 @@ unsigned long *sdram = (unsigned long *)0xD0000000;
 #define SDRAM_BANK FMC_Bank2_SDRAM
 
 static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+#define  LCD_PIXEL_WIDTH    ((uint16_t)240)
 
 #define MARC 10
+uint32_t  Xaddress = 0;
 
 
 //initialize destination arrays
 uint16_t destination[ARRAYSIZE];
-
 
 #define MAX_Y 240
 #define MAX_X 320
@@ -56,14 +58,24 @@ typedef enum {
 
 } RetSt;
 
+uint32_t poia[38400];
+
 
 RetSt SetPixel (uint16_t Y, uint16_t X, uint8_t alpha, uint8_t red, uint8_t green, uint8_t blue){
 	if(Y > MAX_Y || Y < 0 || X > MAX_X || X < 0){
 		return NO_OK;
 	}else{
-		uint16_t color = ((0x01 & (alpha)) <<15) | ((0x1f & (red)) <<10) | ((0x1f & (green)) <<5)| ((0x1f & (blue)) );
-		LCD_SetTextColor(color);
-		LCD_DrawLine(Y, X, 1, LCD_DIR_HORIZONTAL);
+		uint32_t xpos = 0;
+		uint32_t  Xaddress = 0;
+
+		xpos = X*LCD_PIXEL_WIDTH*2;
+		Xaddress += Y;
+		uint16_t color = ((0x01 & (alpha)) <<15) | ((0x1f & (red)) <<10) | ((0x1f & (green)) <<5)| ((0x1f & (blue)));
+		//LCD_SetTextColor(color);
+		//LCD_DrawLine(Y, X, 1, LCD_DIR_HORIZONTAL);
+		*(__IO uint16_t*) ((0xD0000000 + 0x50000 +  2*((LCD_PIXEL_WIDTH*(Xaddress)+ xpos)))) = color;
+
+		//draw graph
 		return OK;
 	}
 }
@@ -110,15 +122,18 @@ void pintaEixos(){
 }
 
 
-
 void pintaPantalla(){
 	// Disable write protection
 	FMC_SDRAMWriteProtectionConfig(SDRAM_BANK, DISABLE);
-	pintaEixos();
-	pintaMarc();
+
+	for(int i = 0; i < 500; i++){
+		SetPixel(i, 20, 1, 1, 1, 1);
+	}
+
+	//pintaMarc();
+	//pintaEixos();
 
 }
-
 
 
 void startMemoryToMemoryTransfer(){
@@ -339,7 +354,11 @@ void LEDToggle(){
 	}
 }
 
+
 int main(void){
+	for(int i = 0; i < 3800; i++){
+		poia[i] = 0x82537A53;
+	}
 	//TIM4 config source: http://embeddedsystemengineering.blogspot.com/2015/08/stm32f4-discovery-tutorial-10-pwm.html
 	//TIM4 config source: https://stm32f4-discovery.net/2014/05/stm32f4-stm32f429-discovery-pwm-tutorial/
 
@@ -360,6 +379,22 @@ int main(void){
 	ADC3_CH7_DMA_Config();
 	//ADC3_CH7_DMA_Config source: https://github.com/Dima-Meln/stm32-cmake/blob/master/stm32f4/libs/STM32F4xx_DSP_StdPeriph_Lib_V1.0.0/Project/STM32F4xx_StdPeriph_Examples/ADC/ADC3_DMA/main.c
 
+	// Inicialitzacions Necessaries
+		SystemInit();
+		/* LCD initialization */
+		 LCD_Init();
+		/* LCD Layer initialization */
+		LCD_LayerInit();
+		 // Enable Layer1
+		LTDC_LayerCmd(LTDC_Layer1, ENABLE);
+	    /* Enable the LTDC */
+		LTDC_Cmd(ENABLE);
+		/* Set LCD foreground layer */
+		 LCD_SetLayer(LCD_FOREGROUND_LAYER);
+		LCD_Clear(LCD_COLOR_WHITE);
+		//LCD_SetBackColor(LCD_COLOR_BLACK);
+	    SDRAM_Init();
+
 	//	ADC_Config();
 	//ADC config source 1: http://electronicatk.blogspot.com/2016/01/adc-stm32f4-discovery.html
 	//ADC config source 2: http://embeddedsystemengineering.blogspot.com/2015/07/stm32f4-discovery-tutorial-7-adc.html
@@ -367,6 +402,7 @@ int main(void){
 	/* -------------------------------------------------------------- */
 	GPIO_ResetBits(GPIOG, GPIO_Pin_14);
 	int LED = 1;
+	reconfigTimer2();
     while (1){
 		// Delay initialization
 		//DELAY_Init();

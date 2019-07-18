@@ -2666,8 +2666,6 @@ Discarded input sections
                 0x00000000       0x34 StdPeriph_Driver/src/stm32f4xx_gpio.o
  .text.GPIO_ReadOutputData
                 0x00000000       0x1a StdPeriph_Driver/src/stm32f4xx_gpio.o
- .text.GPIO_ResetBits
-                0x00000000       0x1e StdPeriph_Driver/src/stm32f4xx_gpio.o
  .text.GPIO_WriteBit
                 0x00000000       0x30 StdPeriph_Driver/src/stm32f4xx_gpio.o
  .text.GPIO_Write
@@ -6348,7 +6346,7 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17
                 0x08000000                g_pfnVectors
                 0x080001ac                . = ALIGN (0x4)
 
-.text           0x080001ac     0x17b4
+.text           0x080001ac     0x17b8
                 0x080001ac                . = ALIGN (0x4)
  *(.text)
  .text          0x080001ac       0x40 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
@@ -6374,305 +6372,309 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17
  .text.GPIO_SetBits
                 0x08000538       0x1e StdPeriph_Driver/src/stm32f4xx_gpio.o
                 0x08000538                GPIO_SetBits
+ .text.GPIO_ResetBits
+                0x08000556       0x1e StdPeriph_Driver/src/stm32f4xx_gpio.o
+                0x08000556                GPIO_ResetBits
  .text.GPIO_ToggleBits
-                0x08000556       0x24 StdPeriph_Driver/src/stm32f4xx_gpio.o
-                0x08000556                GPIO_ToggleBits
+                0x08000574       0x24 StdPeriph_Driver/src/stm32f4xx_gpio.o
+                0x08000574                GPIO_ToggleBits
  .text.GPIO_PinAFConfig
-                0x0800057a       0x92 StdPeriph_Driver/src/stm32f4xx_gpio.o
-                0x0800057a                GPIO_PinAFConfig
+                0x08000598       0x92 StdPeriph_Driver/src/stm32f4xx_gpio.o
+                0x08000598                GPIO_PinAFConfig
+ *fill*         0x0800062a        0x2 
  .text.RCC_AHB1PeriphClockCmd
-                0x0800060c       0x40 StdPeriph_Driver/src/stm32f4xx_rcc.o
-                0x0800060c                RCC_AHB1PeriphClockCmd
+                0x0800062c       0x40 StdPeriph_Driver/src/stm32f4xx_rcc.o
+                0x0800062c                RCC_AHB1PeriphClockCmd
  .text.RCC_APB1PeriphClockCmd
-                0x0800064c       0x40 StdPeriph_Driver/src/stm32f4xx_rcc.o
-                0x0800064c                RCC_APB1PeriphClockCmd
+                0x0800066c       0x40 StdPeriph_Driver/src/stm32f4xx_rcc.o
+                0x0800066c                RCC_APB1PeriphClockCmd
  .text.RCC_APB2PeriphClockCmd
-                0x0800068c       0x40 StdPeriph_Driver/src/stm32f4xx_rcc.o
-                0x0800068c                RCC_APB2PeriphClockCmd
+                0x080006ac       0x40 StdPeriph_Driver/src/stm32f4xx_rcc.o
+                0x080006ac                RCC_APB2PeriphClockCmd
  .text.SYSCFG_EXTILineConfig
-                0x080006cc       0x84 StdPeriph_Driver/src/stm32f4xx_syscfg.o
-                0x080006cc                SYSCFG_EXTILineConfig
+                0x080006ec       0x84 StdPeriph_Driver/src/stm32f4xx_syscfg.o
+                0x080006ec                SYSCFG_EXTILineConfig
  .text.TIM_TimeBaseInit
-                0x08000750       0xd8 StdPeriph_Driver/src/stm32f4xx_tim.o
-                0x08000750                TIM_TimeBaseInit
+                0x08000770       0xd8 StdPeriph_Driver/src/stm32f4xx_tim.o
+                0x08000770                TIM_TimeBaseInit
  .text.TIM_GetCounter
-                0x08000828       0x18 StdPeriph_Driver/src/stm32f4xx_tim.o
-                0x08000828                TIM_GetCounter
- .text.TIM_Cmd  0x08000840       0x40 StdPeriph_Driver/src/stm32f4xx_tim.o
-                0x08000840                TIM_Cmd
+                0x08000848       0x18 StdPeriph_Driver/src/stm32f4xx_tim.o
+                0x08000848                TIM_GetCounter
+ .text.TIM_Cmd  0x08000860       0x40 StdPeriph_Driver/src/stm32f4xx_tim.o
+                0x08000860                TIM_Cmd
  .text.TIM_OC1Init
-                0x08000880       0xf4 StdPeriph_Driver/src/stm32f4xx_tim.o
-                0x08000880                TIM_OC1Init
+                0x080008a0       0xf4 StdPeriph_Driver/src/stm32f4xx_tim.o
+                0x080008a0                TIM_OC1Init
  .text.TIM_OC2Init
-                0x08000974      0x110 StdPeriph_Driver/src/stm32f4xx_tim.o
-                0x08000974                TIM_OC2Init
+                0x08000994      0x110 StdPeriph_Driver/src/stm32f4xx_tim.o
+                0x08000994                TIM_OC2Init
  .text.TIM_OC3Init
-                0x08000a84      0x10c StdPeriph_Driver/src/stm32f4xx_tim.o
-                0x08000a84                TIM_OC3Init
+                0x08000aa4      0x10c StdPeriph_Driver/src/stm32f4xx_tim.o
+                0x08000aa4                TIM_OC3Init
  .text.TIM_OC4Init
-                0x08000b90       0xd0 StdPeriph_Driver/src/stm32f4xx_tim.o
-                0x08000b90                TIM_OC4Init
+                0x08000bb0       0xd0 StdPeriph_Driver/src/stm32f4xx_tim.o
+                0x08000bb0                TIM_OC4Init
  .text.TIM_OC1PreloadConfig
-                0x08000c60       0x38 StdPeriph_Driver/src/stm32f4xx_tim.o
-                0x08000c60                TIM_OC1PreloadConfig
+                0x08000c80       0x38 StdPeriph_Driver/src/stm32f4xx_tim.o
+                0x08000c80                TIM_OC1PreloadConfig
  .text.TIM_OC2PreloadConfig
-                0x08000c98       0x3c StdPeriph_Driver/src/stm32f4xx_tim.o
-                0x08000c98                TIM_OC2PreloadConfig
+                0x08000cb8       0x3c StdPeriph_Driver/src/stm32f4xx_tim.o
+                0x08000cb8                TIM_OC2PreloadConfig
  .text.TIM_OC3PreloadConfig
-                0x08000cd4       0x38 StdPeriph_Driver/src/stm32f4xx_tim.o
-                0x08000cd4                TIM_OC3PreloadConfig
+                0x08000cf4       0x38 StdPeriph_Driver/src/stm32f4xx_tim.o
+                0x08000cf4                TIM_OC3PreloadConfig
  .text.TIM_OC4PreloadConfig
-                0x08000d0c       0x3c StdPeriph_Driver/src/stm32f4xx_tim.o
-                0x08000d0c                TIM_OC4PreloadConfig
+                0x08000d2c       0x3c StdPeriph_Driver/src/stm32f4xx_tim.o
+                0x08000d2c                TIM_OC4PreloadConfig
  .text.SysTick_Handler
-                0x08000d48       0x24 src/delay.o
-                0x08000d48                SysTick_Handler
+                0x08000d68       0x24 src/delay.o
+                0x08000d68                SysTick_Handler
  .text.Configure_PD0
-                0x08000d6c       0x80 src/mainF1.o
-                0x08000d6c                Configure_PD0
+                0x08000d8c       0x80 src/mainF1.o
+                0x08000d8c                Configure_PD0
  .text.Configure_PB12
-                0x08000dec       0x84 src/mainF1.o
-                0x08000dec                Configure_PB12
+                0x08000e0c       0x84 src/mainF1.o
+                0x08000e0c                Configure_PB12
  .text.EXTI0_IRQHandler
-                0x08000e70       0xec src/mainF1.o
-                0x08000e70                EXTI0_IRQHandler
+                0x08000e90       0xe4 src/mainF1.o
+                0x08000e90                EXTI0_IRQHandler
  .text.EXTI15_10_IRQHandler
-                0x08000f5c       0xe8 src/mainF1.o
-                0x08000f5c                EXTI15_10_IRQHandler
+                0x08000f74       0xe8 src/mainF1.o
+                0x08000f74                EXTI15_10_IRQHandler
  .text.TIM4_Init
-                0x08001044       0x40 src/mainF1.o
-                0x08001044                TIM4_Init
+                0x0800105c       0x40 src/mainF1.o
+                0x0800105c                TIM4_Init
  .text.PWM_TIM4_Init
-                0x08001084       0x6c src/mainF1.o
-                0x08001084                PWM_TIM4_Init
+                0x0800109c       0x6c src/mainF1.o
+                0x0800109c                PWM_TIM4_Init
  .text.TIM3_Init
-                0x080010f0       0x40 src/mainF1.o
-                0x080010f0                TIM3_Init
+                0x08001108       0x40 src/mainF1.o
+                0x08001108                TIM3_Init
  .text.PWM_TIM3_Init
-                0x08001130       0x48 src/mainF1.o
-                0x08001130                PWM_TIM3_Init
+                0x08001148       0x48 src/mainF1.o
+                0x08001148                PWM_TIM3_Init
  .text.TIM2_Init
-                0x08001178       0x3e src/mainF1.o
-                0x08001178                TIM2_Init
- *fill*         0x080011b6        0x2 
+                0x08001190       0x3e src/mainF1.o
+                0x08001190                TIM2_Init
+ *fill*         0x080011ce        0x2 
  .text.GPIO_Configure
-                0x080011b8      0x110 src/mainF1.o
-                0x080011b8                GPIO_Configure
+                0x080011d0      0x110 src/mainF1.o
+                0x080011d0                GPIO_Configure
  .text.BUTTON_Configure
-                0x080012c8       0x38 src/mainF1.o
-                0x080012c8                BUTTON_Configure
+                0x080012e0       0x38 src/mainF1.o
+                0x080012e0                BUTTON_Configure
  .text.LEDToggle
-                0x08001300       0x74 src/mainF1.o
-                0x08001300                LEDToggle
- .text.main     0x08001374      0x284 src/mainF1.o
-                0x08001374                main
+                0x08001318       0x74 src/mainF1.o
+                0x08001318                LEDToggle
+ .text.main     0x0800138c      0x270 src/mainF1.o
+                0x0800138c                main
  .text.SystemInit
-                0x080015f8       0x6c src/system_stm32f4xx.o
-                0x080015f8                SystemInit
+                0x080015fc       0x6c src/system_stm32f4xx.o
+                0x080015fc                SystemInit
  .text.SetSysClock
-                0x08001664      0x12c src/system_stm32f4xx.o
+                0x08001668      0x12c src/system_stm32f4xx.o
  .text.Reset_Handler
-                0x08001790       0x50 startup/startup_stm32.o
-                0x08001790                Reset_Handler
+                0x08001794       0x50 startup/startup_stm32.o
+                0x08001794                Reset_Handler
  .text.Default_Handler
-                0x080017e0        0x2 startup/startup_stm32.o
-                0x080017e0                RTC_Alarm_IRQHandler
-                0x080017e0                HASH_RNG_IRQHandler
-                0x080017e0                EXTI2_IRQHandler
-                0x080017e0                TIM8_CC_IRQHandler
-                0x080017e0                DebugMon_Handler
-                0x080017e0                UART8_IRQHandler
-                0x080017e0                SPI4_IRQHandler
-                0x080017e0                TIM1_CC_IRQHandler
-                0x080017e0                DMA2_Stream5_IRQHandler
-                0x080017e0                HardFault_Handler
-                0x080017e0                DMA1_Stream5_IRQHandler
-                0x080017e0                PVD_IRQHandler
-                0x080017e0                SDIO_IRQHandler
-                0x080017e0                TAMP_STAMP_IRQHandler
-                0x080017e0                PendSV_Handler
-                0x080017e0                NMI_Handler
-                0x080017e0                CAN2_RX1_IRQHandler
-                0x080017e0                EXTI3_IRQHandler
-                0x080017e0                TIM8_TRG_COM_TIM14_IRQHandler
-                0x080017e0                TIM1_UP_TIM10_IRQHandler
-                0x080017e0                TIM8_UP_TIM13_IRQHandler
-                0x080017e0                I2C3_ER_IRQHandler
-                0x080017e0                LCD_TFT_IRQHandler
-                0x080017e0                I2C2_EV_IRQHandler
-                0x080017e0                DMA1_Stream2_IRQHandler
-                0x080017e0                CAN1_RX0_IRQHandler
-                0x080017e0                FPU_IRQHandler
-                0x080017e0                OTG_HS_WKUP_IRQHandler
-                0x080017e0                UsageFault_Handler
-                0x080017e0                CAN2_SCE_IRQHandler
-                0x080017e0                DMA2_Stream2_IRQHandler
-                0x080017e0                SPI1_IRQHandler
-                0x080017e0                TIM6_DAC_IRQHandler
-                0x080017e0                TIM1_BRK_TIM9_IRQHandler
-                0x080017e0                DCMI_IRQHandler
-                0x080017e0                CAN2_RX0_IRQHandler
-                0x080017e0                DMA2_Stream3_IRQHandler
-                0x080017e0                USART6_IRQHandler
-                0x080017e0                USART3_IRQHandler
-                0x080017e0                CRYP_IRQHandler
-                0x080017e0                CAN1_RX1_IRQHandler
-                0x080017e0                UART5_IRQHandler
-                0x080017e0                DMA2_Stream0_IRQHandler
-                0x080017e0                TIM4_IRQHandler
-                0x080017e0                I2C1_EV_IRQHandler
-                0x080017e0                DMA1_Stream6_IRQHandler
-                0x080017e0                DMA1_Stream1_IRQHandler
-                0x080017e0                UART4_IRQHandler
-                0x080017e0                LCD_TFT_1_IRQHandler
-                0x080017e0                TIM3_IRQHandler
-                0x080017e0                RCC_IRQHandler
-                0x080017e0                TIM8_BRK_TIM12_IRQHandler
-                0x080017e0                Default_Handler
-                0x080017e0                ADC_IRQHandler
-                0x080017e0                DMA1_Stream7_IRQHandler
-                0x080017e0                SPI5_IRQHandler
-                0x080017e0                TIM7_IRQHandler
-                0x080017e0                CAN2_TX_IRQHandler
-                0x080017e0                TIM5_IRQHandler
-                0x080017e0                DMA2_Stream7_IRQHandler
-                0x080017e0                I2C3_EV_IRQHandler
-                0x080017e0                EXTI9_5_IRQHandler
-                0x080017e0                RTC_WKUP_IRQHandler
-                0x080017e0                ETH_WKUP_IRQHandler
-                0x080017e0                SPI2_IRQHandler
-                0x080017e0                OTG_HS_EP1_IN_IRQHandler
-                0x080017e0                MemManage_Handler
-                0x080017e0                DMA1_Stream0_IRQHandler
-                0x080017e0                CAN1_TX_IRQHandler
-                0x080017e0                SVC_Handler
-                0x080017e0                EXTI4_IRQHandler
-                0x080017e0                ETH_IRQHandler
-                0x080017e0                OTG_HS_EP1_OUT_IRQHandler
-                0x080017e0                WWDG_IRQHandler
-                0x080017e0                SPI6_IRQHandler
-                0x080017e0                TIM2_IRQHandler
-                0x080017e0                OTG_FS_WKUP_IRQHandler
-                0x080017e0                TIM1_TRG_COM_TIM11_IRQHandler
-                0x080017e0                OTG_HS_IRQHandler
-                0x080017e0                DMA2D_IRQHandler
-                0x080017e0                EXTI1_IRQHandler
-                0x080017e0                UART7_IRQHandler
-                0x080017e0                USART2_IRQHandler
-                0x080017e0                I2C2_ER_IRQHandler
-                0x080017e0                DMA2_Stream1_IRQHandler
-                0x080017e0                CAN1_SCE_IRQHandler
-                0x080017e0                FLASH_IRQHandler
-                0x080017e0                DMA2_Stream4_IRQHandler
-                0x080017e0                BusFault_Handler
-                0x080017e0                USART1_IRQHandler
-                0x080017e0                OTG_FS_IRQHandler
-                0x080017e0                SPI3_IRQHandler
-                0x080017e0                DMA1_Stream4_IRQHandler
-                0x080017e0                I2C1_ER_IRQHandler
-                0x080017e0                FMC_IRQHandler
-                0x080017e0                DMA2_Stream6_IRQHandler
-                0x080017e0                SAI1_IRQHandler
-                0x080017e0                DMA1_Stream3_IRQHandler
- *fill*         0x080017e2        0x2 
+                0x080017e4        0x2 startup/startup_stm32.o
+                0x080017e4                RTC_Alarm_IRQHandler
+                0x080017e4                HASH_RNG_IRQHandler
+                0x080017e4                EXTI2_IRQHandler
+                0x080017e4                TIM8_CC_IRQHandler
+                0x080017e4                DebugMon_Handler
+                0x080017e4                UART8_IRQHandler
+                0x080017e4                SPI4_IRQHandler
+                0x080017e4                TIM1_CC_IRQHandler
+                0x080017e4                DMA2_Stream5_IRQHandler
+                0x080017e4                HardFault_Handler
+                0x080017e4                DMA1_Stream5_IRQHandler
+                0x080017e4                PVD_IRQHandler
+                0x080017e4                SDIO_IRQHandler
+                0x080017e4                TAMP_STAMP_IRQHandler
+                0x080017e4                PendSV_Handler
+                0x080017e4                NMI_Handler
+                0x080017e4                CAN2_RX1_IRQHandler
+                0x080017e4                EXTI3_IRQHandler
+                0x080017e4                TIM8_TRG_COM_TIM14_IRQHandler
+                0x080017e4                TIM1_UP_TIM10_IRQHandler
+                0x080017e4                TIM8_UP_TIM13_IRQHandler
+                0x080017e4                I2C3_ER_IRQHandler
+                0x080017e4                LCD_TFT_IRQHandler
+                0x080017e4                I2C2_EV_IRQHandler
+                0x080017e4                DMA1_Stream2_IRQHandler
+                0x080017e4                CAN1_RX0_IRQHandler
+                0x080017e4                FPU_IRQHandler
+                0x080017e4                OTG_HS_WKUP_IRQHandler
+                0x080017e4                UsageFault_Handler
+                0x080017e4                CAN2_SCE_IRQHandler
+                0x080017e4                DMA2_Stream2_IRQHandler
+                0x080017e4                SPI1_IRQHandler
+                0x080017e4                TIM6_DAC_IRQHandler
+                0x080017e4                TIM1_BRK_TIM9_IRQHandler
+                0x080017e4                DCMI_IRQHandler
+                0x080017e4                CAN2_RX0_IRQHandler
+                0x080017e4                DMA2_Stream3_IRQHandler
+                0x080017e4                USART6_IRQHandler
+                0x080017e4                USART3_IRQHandler
+                0x080017e4                CRYP_IRQHandler
+                0x080017e4                CAN1_RX1_IRQHandler
+                0x080017e4                UART5_IRQHandler
+                0x080017e4                DMA2_Stream0_IRQHandler
+                0x080017e4                TIM4_IRQHandler
+                0x080017e4                I2C1_EV_IRQHandler
+                0x080017e4                DMA1_Stream6_IRQHandler
+                0x080017e4                DMA1_Stream1_IRQHandler
+                0x080017e4                UART4_IRQHandler
+                0x080017e4                LCD_TFT_1_IRQHandler
+                0x080017e4                TIM3_IRQHandler
+                0x080017e4                RCC_IRQHandler
+                0x080017e4                TIM8_BRK_TIM12_IRQHandler
+                0x080017e4                Default_Handler
+                0x080017e4                ADC_IRQHandler
+                0x080017e4                DMA1_Stream7_IRQHandler
+                0x080017e4                SPI5_IRQHandler
+                0x080017e4                TIM7_IRQHandler
+                0x080017e4                CAN2_TX_IRQHandler
+                0x080017e4                TIM5_IRQHandler
+                0x080017e4                DMA2_Stream7_IRQHandler
+                0x080017e4                I2C3_EV_IRQHandler
+                0x080017e4                EXTI9_5_IRQHandler
+                0x080017e4                RTC_WKUP_IRQHandler
+                0x080017e4                ETH_WKUP_IRQHandler
+                0x080017e4                SPI2_IRQHandler
+                0x080017e4                OTG_HS_EP1_IN_IRQHandler
+                0x080017e4                MemManage_Handler
+                0x080017e4                DMA1_Stream0_IRQHandler
+                0x080017e4                CAN1_TX_IRQHandler
+                0x080017e4                SVC_Handler
+                0x080017e4                EXTI4_IRQHandler
+                0x080017e4                ETH_IRQHandler
+                0x080017e4                OTG_HS_EP1_OUT_IRQHandler
+                0x080017e4                WWDG_IRQHandler
+                0x080017e4                SPI6_IRQHandler
+                0x080017e4                TIM2_IRQHandler
+                0x080017e4                OTG_FS_WKUP_IRQHandler
+                0x080017e4                TIM1_TRG_COM_TIM11_IRQHandler
+                0x080017e4                OTG_HS_IRQHandler
+                0x080017e4                DMA2D_IRQHandler
+                0x080017e4                EXTI1_IRQHandler
+                0x080017e4                UART7_IRQHandler
+                0x080017e4                USART2_IRQHandler
+                0x080017e4                I2C2_ER_IRQHandler
+                0x080017e4                DMA2_Stream1_IRQHandler
+                0x080017e4                CAN1_SCE_IRQHandler
+                0x080017e4                FLASH_IRQHandler
+                0x080017e4                DMA2_Stream4_IRQHandler
+                0x080017e4                BusFault_Handler
+                0x080017e4                USART1_IRQHandler
+                0x080017e4                OTG_FS_IRQHandler
+                0x080017e4                SPI3_IRQHandler
+                0x080017e4                DMA1_Stream4_IRQHandler
+                0x080017e4                I2C1_ER_IRQHandler
+                0x080017e4                FMC_IRQHandler
+                0x080017e4                DMA2_Stream6_IRQHandler
+                0x080017e4                SAI1_IRQHandler
+                0x080017e4                DMA1_Stream3_IRQHandler
+ *fill*         0x080017e6        0x2 
  .text.__libc_init_array
-                0x080017e4       0x48 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-init.o)
-                0x080017e4                __libc_init_array
+                0x080017e8       0x48 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-init.o)
+                0x080017e8                __libc_init_array
  .text.startup.register_fini
-                0x0800182c       0x14 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-__call_atexit.o)
- .text.atexit   0x08001840        0xc c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-atexit.o)
-                0x08001840                atexit
+                0x08001830       0x14 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-__call_atexit.o)
+ .text.atexit   0x08001844        0xc c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-atexit.o)
+                0x08001844                atexit
  .text.__libc_fini_array
-                0x0800184c       0x34 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-fini.o)
-                0x0800184c                __libc_fini_array
+                0x08001850       0x34 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-fini.o)
+                0x08001850                __libc_fini_array
  .text.__retarget_lock_acquire_recursive
-                0x08001880        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-lock.o)
-                0x08001880                __retarget_lock_acquire_recursive
- .text.__retarget_lock_release_recursive
                 0x08001884        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-lock.o)
-                0x08001884                __retarget_lock_release_recursive
+                0x08001884                __retarget_lock_acquire_recursive
+ .text.__retarget_lock_release_recursive
+                0x08001888        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-lock.o)
+                0x08001888                __retarget_lock_release_recursive
  .text.__register_exitproc
-                0x08001888       0xc0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-__atexit.o)
-                0x08001888                __register_exitproc
+                0x0800188c       0xc0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-__atexit.o)
+                0x0800188c                __register_exitproc
  *(.glue_7)
- .glue_7        0x08001948        0x0 linker stubs
+ .glue_7        0x0800194c        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08001948        0x0 linker stubs
+ .glue_7t       0x0800194c        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08001948        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+ .eh_frame      0x0800194c        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
  *(.init)
- .init          0x08001948        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o
-                0x08001948                _init
- .init          0x0800194c        0x8 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
+ .init          0x0800194c        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o
+                0x0800194c                _init
+ .init          0x08001950        0x8 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
  *(.fini)
- .fini          0x08001954        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o
-                0x08001954                _fini
- .fini          0x08001958        0x8 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
-                0x08001960                . = ALIGN (0x4)
-                0x08001960                _etext = .
+ .fini          0x08001958        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o
+                0x08001958                _fini
+ .fini          0x0800195c        0x8 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
+                0x08001964                . = ALIGN (0x4)
+                0x08001964                _etext = .
 
-.vfp11_veneer   0x08001960        0x0
- .vfp11_veneer  0x08001960        0x0 linker stubs
+.vfp11_veneer   0x08001964        0x0
+ .vfp11_veneer  0x08001964        0x0 linker stubs
 
-.v4_bx          0x08001960        0x0
- .v4_bx         0x08001960        0x0 linker stubs
+.v4_bx          0x08001964        0x0
+ .v4_bx         0x08001964        0x0 linker stubs
 
-.iplt           0x08001960        0x0
- .iplt          0x08001960        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+.iplt           0x08001964        0x0
+ .iplt          0x08001964        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
 
-.rodata         0x08001960        0x4
-                0x08001960                . = ALIGN (0x4)
+.rodata         0x08001964        0x4
+                0x08001964                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata._global_impure_ptr
-                0x08001960        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-impure.o)
-                0x08001960                _global_impure_ptr
-                0x08001964                . = ALIGN (0x4)
+                0x08001964        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-impure.o)
+                0x08001964                _global_impure_ptr
+                0x08001968                . = ALIGN (0x4)
 
-.rel.dyn        0x08001964        0x0
- .rel.iplt      0x08001964        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+.rel.dyn        0x08001968        0x0
+ .rel.iplt      0x08001968        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
 
-.ARM.extab      0x08001964        0x0
-                0x08001964                . = ALIGN (0x4)
+.ARM.extab      0x08001968        0x0
+                0x08001968                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08001964                . = ALIGN (0x4)
+                0x08001968                . = ALIGN (0x4)
 
-.ARM            0x08001964        0x0
-                0x08001964                . = ALIGN (0x4)
-                0x08001964                __exidx_start = .
+.ARM            0x08001968        0x0
+                0x08001968                . = ALIGN (0x4)
+                0x08001968                __exidx_start = .
  *(.ARM.exidx*)
-                0x08001964                __exidx_end = .
-                0x08001964                . = ALIGN (0x4)
+                0x08001968                __exidx_end = .
+                0x08001968                . = ALIGN (0x4)
 
-.preinit_array  0x08001964        0x0
-                0x08001964                . = ALIGN (0x4)
-                0x08001964                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x08001968        0x0
+                0x08001968                . = ALIGN (0x4)
+                0x08001968                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x08001964                PROVIDE (__preinit_array_end = .)
-                0x08001964                . = ALIGN (0x4)
+                0x08001968                PROVIDE (__preinit_array_end = .)
+                0x08001968                . = ALIGN (0x4)
 
-.init_array     0x08001964        0x8
-                0x08001964                . = ALIGN (0x4)
-                0x08001964                PROVIDE (__init_array_start = .)
+.init_array     0x08001968        0x8
+                0x08001968                . = ALIGN (0x4)
+                0x08001968                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x08001964        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-__call_atexit.o)
+                0x08001968        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x08001968        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
-                0x0800196c                PROVIDE (__init_array_end = .)
-                0x0800196c                . = ALIGN (0x4)
+ .init_array    0x0800196c        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+                0x08001970                PROVIDE (__init_array_end = .)
+                0x08001970                . = ALIGN (0x4)
 
-.fini_array     0x0800196c        0x4
-                0x0800196c                . = ALIGN (0x4)
-                0x0800196c                PROVIDE (__fini_array_start = .)
+.fini_array     0x08001970        0x4
+                0x08001970                . = ALIGN (0x4)
+                0x08001970                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0800196c        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
-                0x08001970                PROVIDE (__fini_array_end = .)
-                0x08001970                . = ALIGN (0x4)
-                0x08001970                _sidata = LOADADDR (.data)
+ .fini_array    0x08001970        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+                0x08001974                PROVIDE (__fini_array_end = .)
+                0x08001974                . = ALIGN (0x4)
+                0x08001974                _sidata = LOADADDR (.data)
 
-.data           0x20000000      0x42c load address 0x08001970
+.data           0x20000000      0x42c load address 0x08001974
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -6685,11 +6687,11 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17
                 0x2000042c                . = ALIGN (0x4)
                 0x2000042c                _edata = .
 
-.igot.plt       0x2000042c        0x0 load address 0x08001d9c
+.igot.plt       0x2000042c        0x0 load address 0x08001da0
  .igot.plt      0x2000042c        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
                 0x2000042c                . = ALIGN (0x4)
 
-.bss            0x2000042c       0x54 load address 0x08001d9c
+.bss            0x2000042c       0x54 load address 0x08001da0
                 0x2000042c                _sbss = .
                 0x2000042c                __bss_start__ = _sbss
  *(.bss)
@@ -6718,7 +6720,7 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17
                 0x20000480                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x20000480      0x400 load address 0x08001d9c
+                0x20000480      0x400 load address 0x08001da0
                 0x20000480                . = ALIGN (0x8)
                 0x20000480                PROVIDE (end = .)
                 [!provide]                PROVIDE (_end = .)
@@ -6777,7 +6779,7 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17
                 0x000003e4       0x22 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
 OUTPUT(PerifericsFase1.elf elf32-littlearm)
 
-.debug_info     0x00000000     0x5505
+.debug_info     0x00000000     0x54d1
  .debug_info    0x00000000      0x54b StdPeriph_Driver/src/misc.o
  .debug_info    0x0000054b      0x358 StdPeriph_Driver/src/stm32f4xx_exti.o
  .debug_info    0x000008a3      0x62b StdPeriph_Driver/src/stm32f4xx_gpio.o
@@ -6785,11 +6787,11 @@ OUTPUT(PerifericsFase1.elf elf32-littlearm)
  .debug_info    0x00001d44      0x2a6 StdPeriph_Driver/src/stm32f4xx_syscfg.o
  .debug_info    0x00001fea     0x1c73 StdPeriph_Driver/src/stm32f4xx_tim.o
  .debug_info    0x00003c5d      0x728 src/delay.o
- .debug_info    0x00004385      0xb4c src/mainF1.o
- .debug_info    0x00004ed1      0x612 src/system_stm32f4xx.o
- .debug_info    0x000054e3       0x22 startup/startup_stm32.o
+ .debug_info    0x00004385      0xb18 src/mainF1.o
+ .debug_info    0x00004e9d      0x612 src/system_stm32f4xx.o
+ .debug_info    0x000054af       0x22 startup/startup_stm32.o
 
-.debug_abbrev   0x00000000      0xf0b
+.debug_abbrev   0x00000000      0xf09
  .debug_abbrev  0x00000000      0x177 StdPeriph_Driver/src/misc.o
  .debug_abbrev  0x00000177      0x1c3 StdPeriph_Driver/src/stm32f4xx_exti.o
  .debug_abbrev  0x0000033a      0x1bf StdPeriph_Driver/src/stm32f4xx_gpio.o
@@ -6797,9 +6799,9 @@ OUTPUT(PerifericsFase1.elf elf32-littlearm)
  .debug_abbrev  0x000006cd      0x14b StdPeriph_Driver/src/stm32f4xx_syscfg.o
  .debug_abbrev  0x00000818      0x19f StdPeriph_Driver/src/stm32f4xx_tim.o
  .debug_abbrev  0x000009b7      0x1cc src/delay.o
- .debug_abbrev  0x00000b83      0x219 src/mainF1.o
- .debug_abbrev  0x00000d9c      0x15d src/system_stm32f4xx.o
- .debug_abbrev  0x00000ef9       0x12 startup/startup_stm32.o
+ .debug_abbrev  0x00000b83      0x217 src/mainF1.o
+ .debug_abbrev  0x00000d9a      0x15d src/system_stm32f4xx.o
+ .debug_abbrev  0x00000ef7       0x12 startup/startup_stm32.o
 
 .debug_aranges  0x00000000      0x748
  .debug_aranges
@@ -6893,7 +6895,7 @@ OUTPUT(PerifericsFase1.elf elf32-littlearm)
  .debug_macro   0x000114ca       0x82 src/mainF1.o
  .debug_macro   0x0001154c      0x1ed src/system_stm32f4xx.o
 
-.debug_line     0x00000000     0x4e32
+.debug_line     0x00000000     0x4e2f
  .debug_line    0x00000000      0x6d8 StdPeriph_Driver/src/misc.o
  .debug_line    0x000006d8      0x726 StdPeriph_Driver/src/stm32f4xx_exti.o
  .debug_line    0x00000dfe      0x7fe StdPeriph_Driver/src/stm32f4xx_gpio.o
@@ -6901,11 +6903,11 @@ OUTPUT(PerifericsFase1.elf elf32-littlearm)
  .debug_line    0x000020ee      0x6f9 StdPeriph_Driver/src/stm32f4xx_syscfg.o
  .debug_line    0x000027e7      0xf50 StdPeriph_Driver/src/stm32f4xx_tim.o
  .debug_line    0x00003737      0x6ea src/delay.o
- .debug_line    0x00003e21      0x892 src/mainF1.o
- .debug_line    0x000046b3      0x703 src/system_stm32f4xx.o
- .debug_line    0x00004db6       0x7c startup/startup_stm32.o
+ .debug_line    0x00003e21      0x88f src/mainF1.o
+ .debug_line    0x000046b0      0x703 src/system_stm32f4xx.o
+ .debug_line    0x00004db3       0x7c startup/startup_stm32.o
 
-.debug_str      0x00000000    0x67660
+.debug_str      0x00000000    0x6765b
  .debug_str     0x00000000    0x6444a StdPeriph_Driver/src/misc.o
                               0x64649 (size before relaxing)
  .debug_str     0x0006444a      0x1d8 StdPeriph_Driver/src/stm32f4xx_exti.o
@@ -6920,11 +6922,11 @@ OUTPUT(PerifericsFase1.elf elf32-littlearm)
                               0x650e8 (size before relaxing)
  .debug_str     0x0006667d      0x5da src/delay.o
                               0x64a7c (size before relaxing)
- .debug_str     0x00066c57      0x919 src/mainF1.o
-                              0x6577b (size before relaxing)
- .debug_str     0x00067570       0xc7 src/system_stm32f4xx.o
+ .debug_str     0x00066c57      0x914 src/mainF1.o
+                              0x65776 (size before relaxing)
+ .debug_str     0x0006756b       0xc7 src/system_stm32f4xx.o
                               0x64644 (size before relaxing)
- .debug_str     0x00067637       0x29 startup/startup_stm32.o
+ .debug_str     0x00067632       0x29 startup/startup_stm32.o
                                  0x78 (size before relaxing)
 
 .comment        0x00000000       0x7f
@@ -6939,7 +6941,7 @@ OUTPUT(PerifericsFase1.elf elf32-littlearm)
  .comment       0x0000007f       0x80 src/mainF1.o
  .comment       0x0000007f       0x80 src/system_stm32f4xx.o
 
-.debug_frame    0x00000000     0x20f8
+.debug_frame    0x00000000     0x20f0
  .debug_frame   0x00000000       0xd8 StdPeriph_Driver/src/misc.o
  .debug_frame   0x000000d8      0x148 StdPeriph_Driver/src/stm32f4xx_exti.o
  .debug_frame   0x00000220      0x23c StdPeriph_Driver/src/stm32f4xx_gpio.o
@@ -6947,11 +6949,11 @@ OUTPUT(PerifericsFase1.elf elf32-littlearm)
  .debug_frame   0x00000c98      0x11c StdPeriph_Driver/src/stm32f4xx_syscfg.o
  .debug_frame   0x00000db4      0xe54 StdPeriph_Driver/src/stm32f4xx_tim.o
  .debug_frame   0x00001c08       0xe4 src/delay.o
- .debug_frame   0x00001cec      0x1d0 src/mainF1.o
- .debug_frame   0x00001ebc       0x7c src/system_stm32f4xx.o
- .debug_frame   0x00001f38       0x2c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-init.o)
- .debug_frame   0x00001f64       0x5c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-__call_atexit.o)
- .debug_frame   0x00001fc0       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-atexit.o)
- .debug_frame   0x00001fe0       0x34 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-fini.o)
- .debug_frame   0x00002014       0xb0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-lock.o)
- .debug_frame   0x000020c4       0x34 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-__atexit.o)
+ .debug_frame   0x00001cec      0x1c8 src/mainF1.o
+ .debug_frame   0x00001eb4       0x7c src/system_stm32f4xx.o
+ .debug_frame   0x00001f30       0x2c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-init.o)
+ .debug_frame   0x00001f5c       0x5c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-__call_atexit.o)
+ .debug_frame   0x00001fb8       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-atexit.o)
+ .debug_frame   0x00001fd8       0x34 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-fini.o)
+ .debug_frame   0x0000200c       0xb0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-lock.o)
+ .debug_frame   0x000020bc       0x34 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-__atexit.o)
