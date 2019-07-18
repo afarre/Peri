@@ -18,7 +18,7 @@
 #include "tm_stm32f4_disco.h"
 #include "stm32f4xx_sdram.h"
 #include "stm32f429i_discovery_lcd.h"
-#include "stm32f4xx_conf.h"
+//#include "stm32f4xx_conf.h"
 
 #define SDRAM_USE_STM324x9_EVAL
 
@@ -73,7 +73,7 @@ RetSt SetPixel (uint16_t Y, uint16_t X, uint8_t alpha, uint8_t red, uint8_t gree
 		uint16_t color = ((0x01 & (alpha)) <<15) | ((0x1f & (red)) <<10) | ((0x1f & (green)) <<5)| ((0x1f & (blue)));
 		//LCD_SetTextColor(color);
 		//LCD_DrawLine(Y, X, 1, LCD_DIR_HORIZONTAL);
-		*(__IO uint16_t*) ((0xD0000000 + 0x50000 +  2*((LCD_PIXEL_WIDTH*(Xaddress)+ xpos)))) = color;
+		*(__IO uint16_t*) ((0xD0000000 + 0x50000 +  2*((LCD_PIXEL_WIDTH*(X) + Xaddress)))) = color;
 
 		//draw graph
 		return OK;
@@ -84,26 +84,26 @@ void pintaMarc(){
 	//marcs verticals
 	for(uint16_t x = 0; x < MARC; x++) {
 		for(int y = 0; y < MAX_Y; y++){
-			SetPixel(y, x, 1, 1, 1, 1);
+			SetPixel(y, x, 1, 0, 0, 0);
 		}
 	}
 
 	for(int x = MAX_X - MARC; x < MAX_X; x++) {
 		for(int y = 0; y < MAX_Y; y++){
-			SetPixel(y, x, 1, 1, 1, 1);
+			SetPixel(y, x, 1, 0, 0, 1);
 		}
 	}
 
 	//marcs horitzontals
 	for(uint16_t y = 0; y < MARC; y++) {
 		for(int x = 0; x < MAX_X; x++){
-			SetPixel(y, x, 1, 1, 1, 1);
+			SetPixel(y, x, 1, 0, 1, 0);
 		}
 	}
 
 	for(uint16_t y = MAX_Y - MARC; y < MAX_Y; y++) {
 		for(int x = 0; x < MAX_X; x++){
-			SetPixel(y, x, 1, 1, 1, 1);
+			SetPixel(y, x, 1, 0, 1, 1);
 		}
 	}
 }
@@ -117,22 +117,52 @@ void pintaEixos(){
 
 	//eix Y
 	for(uint16_t i = 0; i < MAX_X; i++) {
-		SetPixel(MAX_Y/2, i, 1, 1, 0, 0);
+		SetPixel(MAX_Y/2, i, 1, 1, 0, 1);
+	}
+}
+
+
+void pintaMostres(){
+	/*
+	for (int i = 300; i > 0; i--){
+		for(int j = 220; j > 0; j--){
+			SetPixel(j, i, 1, 1, 1, 1);
+		}
+	}
+	*/
+
+	for (int i = 0; i < 290; i++){
+		SetPixel(destination[i] - 790, 300 - i, 1, 1, 1, 1);
 	}
 }
 
 
 void pintaPantalla(){
+	// Inicialitzacions Necessaries
+			SystemInit();
+			/* LCD initialization */
+			 LCD_Init();
+			/* LCD Layer initialization */
+			LCD_LayerInit();
+			 // Enable Layer1
+			LTDC_LayerCmd(LTDC_Layer1, ENABLE);
+		    /* Enable the LTDC */
+			LTDC_Cmd(ENABLE);
+			/* Set LCD foreground layer */
+			 LCD_SetLayer(LCD_FOREGROUND_LAYER);
+			LCD_Clear(LCD_COLOR_WHITE);
+			//LCD_SetBackColor(LCD_COLOR_BLACK);
+		    SDRAM_Init();
+
 	// Disable write protection
 	FMC_SDRAMWriteProtectionConfig(SDRAM_BANK, DISABLE);
 
-	for(int i = 0; i < 500; i++){
-		SetPixel(i, 20, 1, 1, 1, 1);
-	}
+	//pintaMarcV2();
+	//pintaEixosV2();
 
-	//pintaMarc();
-	//pintaEixos();
-
+	pintaEixos();
+	pintaMarc();
+	pintaMostres();
 }
 
 
@@ -379,21 +409,6 @@ int main(void){
 	ADC3_CH7_DMA_Config();
 	//ADC3_CH7_DMA_Config source: https://github.com/Dima-Meln/stm32-cmake/blob/master/stm32f4/libs/STM32F4xx_DSP_StdPeriph_Lib_V1.0.0/Project/STM32F4xx_StdPeriph_Examples/ADC/ADC3_DMA/main.c
 
-	// Inicialitzacions Necessaries
-		SystemInit();
-		/* LCD initialization */
-		 LCD_Init();
-		/* LCD Layer initialization */
-		LCD_LayerInit();
-		 // Enable Layer1
-		LTDC_LayerCmd(LTDC_Layer1, ENABLE);
-	    /* Enable the LTDC */
-		LTDC_Cmd(ENABLE);
-		/* Set LCD foreground layer */
-		 LCD_SetLayer(LCD_FOREGROUND_LAYER);
-		LCD_Clear(LCD_COLOR_WHITE);
-		//LCD_SetBackColor(LCD_COLOR_BLACK);
-	    SDRAM_Init();
 
 	//	ADC_Config();
 	//ADC config source 1: http://electronicatk.blogspot.com/2016/01/adc-stm32f4-discovery.html
@@ -402,7 +417,7 @@ int main(void){
 	/* -------------------------------------------------------------- */
 	GPIO_ResetBits(GPIOG, GPIO_Pin_14);
 	int LED = 1;
-	reconfigTimer2();
+
     while (1){
 		// Delay initialization
 		//DELAY_Init();
@@ -454,30 +469,35 @@ void TIM2_IRQHandler(){
 //    	int adcData = 0;
 
     	if(mostres < 300){
-    		if (freq == 0){
-    			//freq == 0 -> una mostra cada 10us
-    			//adcData = ADC_Read();
-    			/* Start ADC3 Software Conversion */
-    			ADC_SoftwareStartConv(ADC3);
-    		}else if (freq == 1){
-    			//freq == 1 -> una mostra cada 100us
-    			compt++;
-    			if (compt == 10){
-    				//adcData = ADC_Read();
-    				ADC_SoftwareStartConv(ADC3);
-    				compt = 0;
-    			}
-    		}else if (freq == 2){
-    			//freq == 2 -> una mostra cada 1ms
-    			compt++;
+			if (freq == 0){
+				//freq == 0 -> una mostra cada 10us
+				//adcData = ADC_Read();
+				/* Start ADC3 Software Conversion */
+				ADC_SoftwareStartConv(ADC3);
+				totalMostres[mostres] = ADC3ConvertedValue;
+				mostres++;
+			}else if (freq == 1){
+				//freq == 1 -> una mostra cada 100us
+				compt++;
+				if (compt == 10){
+					//adcData = ADC_Read();
+					ADC_SoftwareStartConv(ADC3);
+					compt = 0;
+					totalMostres[mostres] = ADC3ConvertedValue;
+					mostres++;
+				}
+			}else if (freq == 2){
+				//freq == 2 -> una mostra cada 1ms
+				compt++;
 				if (compt == 100){
 					//adcData = ADC_Read();
 					ADC_SoftwareStartConv(ADC3);
 					compt = 0;
+					totalMostres[mostres] = ADC3ConvertedValue;
+					mostres++;
 				}
-    		}
-    		totalMostres[mostres] = ADC3ConvertedValue;
-    		mostres++;
+			}
+
     	}else{
     		ADC_DMACmd(ADC3, DISABLE);
     		TIM_Cmd(TIM2, DISABLE);
