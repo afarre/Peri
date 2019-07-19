@@ -1,11 +1,11 @@
-00:23:41 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+18:14:14 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
 make -j8 all 
 Building file: ../src/mainF3.c
 Invoking: MCU GCC Compiler
 C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
 ../src/mainF3.c: In function 'SetPixel':
-../src/mainF3.c:68:12: warning: variable 'xpos' set but not used [-Wunused-but-set-variable]
+../src/mainF3.c:66:12: warning: variable 'xpos' set but not used [-Wunused-but-set-variable]
    uint32_t xpos = 0;
             ^~~~
 At top level:
@@ -24,8 +24,8 @@ Generating binary and Printing size information:
 arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
 arm-none-eabi-size "PerifericsFase3.elf"
    text	   data	    bss	    dec	    hex	filename
-  22852	   1120	 155948	 179920	  2bed0	PerifericsFase3.elf
+  22892	   1120	 155948	 179960	  2bef8	PerifericsFase3.elf
  
 
-00:23:44 Build Finished (took 2s.928ms)
+18:14:16 Build Finished (took 2s.742ms)
 

@@ -16,6 +16,11 @@
 #include "delay.h"
 #include "clock.h"
 #include "tm_stm32f4_disco.h"
+#include "stm32f4xx_sdram.h"
+#include "stm32f429i_discovery_lcd.h"
+//#include "stm32f4xx_conf.h"
+
+#define SDRAM_USE_STM324x9_EVAL
 
 int fastLED = 0;
 int count = 0;
@@ -26,55 +31,142 @@ volatile uint32_t i;
 __IO uint16_t ADC3ConvertedValue = 0;
 __IO uint32_t ADC3ConvertedVoltage = 0;
 
+unsigned long *sdram = (unsigned long *)0xD0000000;
+
 #define ADC3_DR_ADDRESS    ((uint32_t)0x4001224C)
 #define ARRAYSIZE 300
+#define LCD_COLOR_BLUE 0x001F
+
+#define SDRAM_BANK FMC_Bank2_SDRAM
+
+static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+#define  LCD_PIXEL_WIDTH    ((uint16_t)240)
+
+#define MARC 10
+uint32_t  Xaddress = 0;
+
 
 //initialize destination arrays
 uint16_t destination[ARRAYSIZE];
 
+#define MAX_Y 240
+#define MAX_X 320
+
 typedef enum {
-		TM_DAC1, /*!< DAC channel 1 */
-		TM_DAC2  /*!< DAC channel 2 */
-	} TM_DAC_Channel_t;
+	NO_OK = 0 ,
+	OK = !NO_OK
 
-void DAC_Inicialitza() {
-	DAC_InitTypeDef DAC_InitStruct;
-	uint16_t GPIO_Pin;
+} RetSt;
 
-	/* Select pin A4 for DAC1 */
-	GPIO_Pin = GPIO_PIN_4;
+uint32_t poia[38400];
 
-	/* Initialize proper GPIO pin */
-	TM_GPIO_Init(GPIOA, GPIO_Pin, TM_GPIO_Mode_AN, TM_GPIO_OType_PP, TM_GPIO_PuPd_NOPULL, TM_GPIO_Speed_Fast);
 
-	/* Enable DAC clock */
-	RCC->APB1ENR |= RCC_APB1ENR_DACEN;
+RetSt SetPixel (uint16_t Y, uint16_t X, uint8_t alpha, uint8_t red, uint8_t green, uint8_t blue){
+	if(Y > MAX_Y || Y < 0 || X > MAX_X || X < 0){
+		return NO_OK;
+	}else{
+		uint32_t xpos = 0;
+		uint32_t  Xaddress = 0;
 
-	/* Set DAC options */
-	DAC_InitStruct.DAC_Trigger = DAC_Trigger_None;
-	DAC_InitStruct.DAC_WaveGeneration = DAC_WaveGeneration_None;
-	DAC_InitStruct.DAC_OutputBuffer = DAC_OutputBuffer_Enable;
+		xpos = X*LCD_PIXEL_WIDTH*2;
+		Xaddress += Y;
+		uint16_t color = ((0x01 & (alpha)) <<15) | ((0x1f & (red)) <<10) | ((0x1f & (green)) <<5)| ((0x1f & (blue)));
+		//LCD_SetTextColor(color);
+		//LCD_DrawLine(Y, X, 1, LCD_DIR_HORIZONTAL);
+		*(__IO uint16_t*) ((0xD0000000 + 0x50000 +  2*((LCD_PIXEL_WIDTH*(X) + Xaddress)))) = color;
 
-	/* Init and enable DAC1 */
-	DAC_Init(DAC_Channel_1, &DAC_InitStruct);
-	/* Enable DAC channel 1 */
-	DAC->CR |= DAC_CR_EN1;
+		//draw graph
+		return OK;
+	}
 }
 
+void pintaMarc(){
+	//marcs verticals
+	for(uint16_t x = 0; x < MARC; x++) {
+		for(int y = 0; y < MAX_Y; y++){
+			SetPixel(y, x, 1, 0, 0, 0);
+		}
+	}
 
-void initDAC(){
-	DAC_Inicialitza();
+	for(int x = MAX_X - MARC; x < MAX_X; x++) {
+		for(int y = 0; y < MAX_Y; y++){
+			SetPixel(y, x, 1, 0, 0, 1);
+		}
+	}
 
-	while(1){
-		for (int i = 0; i < ARRAYSIZE; i++){
-			DAC->DHR12R1 = destination[i];
+	//marcs horitzontals
+	for(uint16_t y = 0; y < MARC; y++) {
+		for(int x = 0; x < MAX_X; x++){
+			SetPixel(y, x, 1, 0, 1, 0);
+		}
+	}
+
+	for(uint16_t y = MAX_Y - MARC; y < MAX_Y; y++) {
+		for(int x = 0; x < MAX_X; x++){
+			SetPixel(y, x, 1, 0, 1, 1);
 		}
 	}
 }
 
 
-void startMemoryToMemoryTransfer(){
+void pintaEixos(){
+	//eix X
+	for(uint16_t i = 0; i < MAX_Y; i++) {
+		SetPixel(i, MAX_X/2, 1, 1, 0, 0);
+	}
 
+	//eix Y
+	for(uint16_t i = 0; i < MAX_X; i++) {
+		SetPixel(MAX_Y/2, i, 1, 1, 0, 1);
+	}
+}
+
+
+void pintaMostres(){
+	/*
+	for (int i = 300; i > 0; i--){
+		for(int j = 220; j > 0; j--){
+			SetPixel(j, i, 1, 1, 1, 1);
+		}
+	}
+	*/
+
+	for (int i = 0; i < 290; i++){
+		SetPixel(destination[i] - 790, 300 - i, 1, 1, 1, 1);
+	}
+}
+
+
+void pintaPantalla(){
+	// Inicialitzacions Necessaries
+			SystemInit();
+			/* LCD initialization */
+			 LCD_Init();
+			/* LCD Layer initialization */
+			LCD_LayerInit();
+			 // Enable Layer1
+			LTDC_LayerCmd(LTDC_Layer1, ENABLE);
+		    /* Enable the LTDC */
+			LTDC_Cmd(ENABLE);
+			/* Set LCD foreground layer */
+			 LCD_SetLayer(LCD_FOREGROUND_LAYER);
+			LCD_Clear(LCD_COLOR_WHITE);
+			//LCD_SetBackColor(LCD_COLOR_BLACK);
+		    SDRAM_Init();
+
+	// Disable write protection
+	FMC_SDRAMWriteProtectionConfig(SDRAM_BANK, DISABLE);
+
+	//pintaMarcV2();
+	//pintaEixosV2();
+
+	pintaEixos();
+	pintaMarc();
+	pintaMostres();
+}
+
+
+void startMemoryToMemoryTransfer(){
 	NVIC_InitTypeDef NVIC_InitStructure;
 	NVIC_InitStructure.NVIC_IRQChannel = DMA2_Stream3_IRQn;
 	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
@@ -107,14 +199,8 @@ void startMemoryToMemoryTransfer(){
 
 	DMA_ITConfig(DMA2_Stream3, DMA_IT_TC, ENABLE);
 
-	  // Enable DMA
+	  /* Enable DMA */
 	  DMA_Cmd(DMA2_Stream3, ENABLE);
-	  /*
-
-	 for (int i = 0; i < 300; i++){
-		 destination[i] = totalMostres[i];
-	 }
-	 */
 
 }
 
@@ -124,7 +210,7 @@ void DMA2_Stream3_IRQHandler(void) {
 	if(DMA_GetFlagStatus(DMA2_Stream3, DMA_FLAG_TCIF3)) {
 		DMA_Cmd(DMA2_Stream3, DISABLE);
 		DMA_ClearITPendingBit(DMA2_Stream3, DMA_FLAG_TCIF3);
-		initDAC();
+		pintaPantalla();
 	}
 }
 
@@ -298,7 +384,11 @@ void LEDToggle(){
 	}
 }
 
+
 int main(void){
+	for(int i = 0; i < 3800; i++){
+		poia[i] = 0x82537A53;
+	}
 	//TIM4 config source: http://embeddedsystemengineering.blogspot.com/2015/08/stm32f4-discovery-tutorial-10-pwm.html
 	//TIM4 config source: https://stm32f4-discovery.net/2014/05/stm32f4-stm32f429-discovery-pwm-tutorial/
 
@@ -327,6 +417,7 @@ int main(void){
 	/* -------------------------------------------------------------- */
 	GPIO_ResetBits(GPIOG, GPIO_Pin_14);
 	int LED = 1;
+
     while (1){
 		// Delay initialization
 		//DELAY_Init();
@@ -356,7 +447,7 @@ int main(void){
 			}else{
 				//button pressed for more than 2.5seconds
 				GPIO_ResetBits(GPIOG, GPIO_Pin_13);
-				//GPIO_SetBits(GPIOG, GPIO_Pin_14);
+				GPIO_SetBits(GPIOG, GPIO_Pin_14);
 				LED = 0;
 				reconfigTimer2();
 				TIM_Cmd(TIM2, ENABLE);
@@ -378,26 +469,26 @@ void TIM2_IRQHandler(){
 //    	int adcData = 0;
 
     	if(mostres < 300){
-    		if (freq == 0){
-    			//freq == 0 -> una mostra cada 10us
-    			//adcData = ADC_Read();
-    			/* Start ADC3 Software Conversion */
-    			ADC_SoftwareStartConv(ADC3);
-    			totalMostres[mostres] = ADC3ConvertedValue;
-    			mostres++;
-    		}else if (freq == 1){
-    			//freq == 1 -> una mostra cada 100us
-    			compt++;
-    			if (compt == 10){
-    				//adcData = ADC_Read();
-    				ADC_SoftwareStartConv(ADC3);
-    				compt = 0;
-    				totalMostres[mostres] = ADC3ConvertedValue;
-    				mostres++;
-    			}
-    		}else if (freq == 2){
-    			//freq == 2 -> una mostra cada 1ms
-    			compt++;
+			if (freq == 0){
+				//freq == 0 -> una mostra cada 10us
+				//adcData = ADC_Read();
+				/* Start ADC3 Software Conversion */
+				ADC_SoftwareStartConv(ADC3);
+				totalMostres[mostres] = ADC3ConvertedValue;
+				mostres++;
+			}else if (freq == 1){
+				//freq == 1 -> una mostra cada 100us
+				compt++;
+				if (compt == 10){
+					//adcData = ADC_Read();
+					ADC_SoftwareStartConv(ADC3);
+					compt = 0;
+					totalMostres[mostres] = ADC3ConvertedValue;
+					mostres++;
+				}
+			}else if (freq == 2){
+				//freq == 2 -> una mostra cada 1ms
+				compt++;
 				if (compt == 100){
 					//adcData = ADC_Read();
 					ADC_SoftwareStartConv(ADC3);
@@ -405,14 +496,13 @@ void TIM2_IRQHandler(){
 					totalMostres[mostres] = ADC3ConvertedValue;
 					mostres++;
 				}
-    		}
+			}
 
     	}else{
     		ADC_DMACmd(ADC3, DISABLE);
     		TIM_Cmd(TIM2, DISABLE);
-    		GPIO_SetBits(GPIOG, GPIO_Pin_14);
-    		startMemoryToMemoryTransfer();
     		GPIO_ResetBits(GPIOG, GPIO_Pin_14);
+    		startMemoryToMemoryTransfer();
         }
         // Clears the TIM2 interrupt pending bit
         TIM_ClearITPendingBit(TIM2, TIM_IT_Update);

@@ -73,7 +73,7 @@ void initDAC(){
 }
 
 
-void startMemoryToMemoryTransfer(){
+ void startMemoryToMemoryTransfer(){
 
 	NVIC_InitTypeDef NVIC_InitStructure;
 	NVIC_InitStructure.NVIC_IRQChannel = DMA2_Stream3_IRQn;

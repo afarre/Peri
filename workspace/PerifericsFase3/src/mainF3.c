@@ -62,9 +62,7 @@ uint32_t poia[38400];
 
 
 RetSt SetPixel (uint16_t Y, uint16_t X, uint8_t alpha, uint8_t red, uint8_t green, uint8_t blue){
-	if(Y > MAX_Y || Y < 0 || X > MAX_X || X < 0){
-		return NO_OK;
-	}else{
+
 		uint32_t xpos = 0;
 		uint32_t  Xaddress = 0;
 
@@ -77,7 +75,7 @@ RetSt SetPixel (uint16_t Y, uint16_t X, uint8_t alpha, uint8_t red, uint8_t gree
 
 		//draw graph
 		return OK;
-	}
+
 }
 
 void pintaMarc(){
@@ -132,7 +130,7 @@ void pintaMostres(){
 	*/
 
 	for (int i = 0; i < 290; i++){
-		SetPixel(destination[i] - 790, 300 - i, 1, 1, 1, 1);
+		SetPixel((destination[i]*220)/4095, 300 - i, 1, 1, 1, 1);
 	}
 }
 
@@ -360,7 +358,6 @@ void GPIO_Configure (void){
 	GPIO_InitDef.GPIO_OType = GPIO_OType_PP;
 	GPIO_InitDef.GPIO_PuPd = GPIO_PuPd_NOPULL;
 	GPIO_Init(GPIOG, &GPIO_InitDef);
-	GPIO_SetBits(GPIOG, GPIO_Pin_13);
 
 	//ADC
 	GPIO_InitTypeDef GPIO_InitStructure;
@@ -447,7 +444,6 @@ int main(void){
 			}else{
 				//button pressed for more than 2.5seconds
 				GPIO_ResetBits(GPIOG, GPIO_Pin_13);
-				GPIO_SetBits(GPIOG, GPIO_Pin_14);
 				LED = 0;
 				reconfigTimer2();
 				TIM_Cmd(TIM2, ENABLE);
@@ -473,7 +469,9 @@ void TIM2_IRQHandler(){
 				//freq == 0 -> una mostra cada 10us
 				//adcData = ADC_Read();
 				/* Start ADC3 Software Conversion */
+				GPIO_SetBits(GPIOG, GPIO_Pin_14);
 				ADC_SoftwareStartConv(ADC3);
+				GPIO_ResetBits(GPIOG, GPIO_Pin_14);
 				totalMostres[mostres] = ADC3ConvertedValue;
 				mostres++;
 			}else if (freq == 1){
@@ -481,7 +479,9 @@ void TIM2_IRQHandler(){
 				compt++;
 				if (compt == 10){
 					//adcData = ADC_Read();
+					GPIO_SetBits(GPIOG, GPIO_Pin_14);
 					ADC_SoftwareStartConv(ADC3);
+					GPIO_ResetBits(GPIOG, GPIO_Pin_14);
 					compt = 0;
 					totalMostres[mostres] = ADC3ConvertedValue;
 					mostres++;
@@ -491,7 +491,9 @@ void TIM2_IRQHandler(){
 				compt++;
 				if (compt == 100){
 					//adcData = ADC_Read();
+					GPIO_SetBits(GPIOG, GPIO_Pin_14);
 					ADC_SoftwareStartConv(ADC3);
+					GPIO_ResetBits(GPIOG, GPIO_Pin_14);
 					compt = 0;
 					totalMostres[mostres] = ADC3ConvertedValue;
 					mostres++;

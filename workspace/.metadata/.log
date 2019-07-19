@@ -6,10 +6,10 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
 Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
 
-This is a continuation of log file C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\.metadata\.bak_1.log
-Created Time: 2019-07-19 00:08:30.894
+This is a continuation of log file C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\.metadata\.bak_4.log
+Created Time: 2019-07-19 18:39:23.668
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:08:30.895
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:39:23.668
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -22,7 +22,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:08:33.885
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:39:26.636
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -35,7 +35,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:08:37.709
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:39:29.635
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -48,7 +48,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:08:41.192
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:39:32.675
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -61,7 +61,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:08:44.698
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:39:36.152
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -74,7 +74,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:08:48.436
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:39:39.085
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -87,7 +87,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:08:51.444
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:39:42.127
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -100,7 +100,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:08:54.988
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:39:45.629
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -113,7 +113,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:08:58.012
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:39:48.684
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -126,7 +126,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:09:01.769
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:39:51.806
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -139,7 +139,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:09:05.022
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:39:54.865
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -152,7 +152,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:09:08.020
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:39:57.927
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -165,7 +165,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:09:11.216
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:40:01.050
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -178,7 +178,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:09:14.239
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:40:04.011
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -191,7 +191,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:09:17.591
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:40:07.029
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -204,7 +204,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:09:20.669
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:40:09.986
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -217,7 +217,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:09:23.674
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:40:12.975
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -230,7 +230,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:09:26.671
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:40:16.062
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -243,7 +243,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:09:30.462
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:40:19.025
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -256,7 +256,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:09:33.476
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:40:21.990
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -269,7 +269,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:09:37.399
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:40:25.058
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -282,7 +282,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:09:40.392
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:40:28.364
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -295,7 +295,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:09:44.057
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:40:31.558
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -308,7 +308,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:09:47.041
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:40:34.619
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -321,7 +321,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:09:50.657
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:40:37.855
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -334,7 +334,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:09:53.725
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:40:40.859
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -347,7 +347,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:09:56.762
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:40:43.794
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -360,7 +360,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:09:59.711
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:40:46.758
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -373,7 +373,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:10:02.973
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:40:49.671
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -386,7 +386,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:10:06.239
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:40:52.714
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -399,7 +399,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:10:09.710
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:40:55.606
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -412,7 +412,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:10:13.271
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:40:58.609
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -425,7 +425,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:10:16.272
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:41:01.605
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -438,7 +438,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:10:19.240
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:41:04.585
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -451,7 +451,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:10:22.660
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:41:07.630
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -464,7 +464,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:10:26.212
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:41:10.587
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -477,7 +477,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:10:29.785
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:41:13.578
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -490,7 +490,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:10:33.546
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:41:16.504
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -503,7 +503,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:10:36.652
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:41:19.506
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -516,7 +516,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:10:40.420
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:41:22.541
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -529,7 +529,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:10:44.013
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:41:25.514
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -542,7 +542,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:10:47.921
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:41:28.452
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -555,7 +555,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:10:51.468
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:41:31.372
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -568,7 +568,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:10:55.449
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:41:34.305
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -581,7 +581,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:10:58.476
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:41:37.228
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -594,7 +594,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:11:02.106
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:41:40.213
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -607,7 +607,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:11:05.519
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:41:43.138
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -620,7 +620,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:11:08.890
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:41:46.081
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -633,7 +633,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:11:12.347
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:41:49.200
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -646,7 +646,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:11:15.808
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:41:52.104
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -659,7 +659,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:11:19.283
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:41:55.029
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -672,7 +672,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:11:22.710
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:41:57.979
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -685,7 +685,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:11:26.123
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:42:00.980
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -698,7 +698,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:11:29.690
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:42:04.029
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -711,7 +711,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:11:33.865
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:42:07.032
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -724,7 +724,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:11:36.806
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:42:10.114
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -737,7 +737,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:11:40.121
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:42:13.160
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -750,7 +750,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:11:44.053
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:42:16.167
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -763,7 +763,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:11:47.872
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:42:19.184
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -776,7 +776,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:11:50.985
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:42:22.165
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -789,7 +789,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:11:54.108
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:42:25.199
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -802,7 +802,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:11:57.364
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:42:28.159
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -815,7 +815,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:12:01.155
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:42:31.080
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -828,7 +828,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:12:04.605
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:42:34.076
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -841,7 +841,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:12:08.345
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:42:37.096
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -854,7 +854,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:12:11.875
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:42:40.074
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -867,7 +867,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:12:15.053
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:42:43.059
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -880,7 +880,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:12:18.655
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:42:46.045
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -893,7 +893,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:12:22.700
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:42:48.997
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -906,7 +906,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:12:25.903
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:42:51.931
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -919,7 +919,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:12:29.118
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:42:54.998
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -932,7 +932,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:12:32.388
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:42:58.100
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -945,7 +945,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:12:36.314
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:43:01.181
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -958,7 +958,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:12:39.276
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:43:04.135
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -971,7 +971,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:12:42.643
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:43:07.013
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -984,7 +984,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:12:45.638
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:43:10.083
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -997,7 +997,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:12:48.607
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:43:13.073
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1010,7 +1010,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:12:51.951
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:43:16.139
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1023,7 +1023,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:12:55.493
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:43:19.204
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1036,7 +1036,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:12:58.424
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:43:22.163
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1049,7 +1049,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:13:01.472
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:43:25.225
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1062,7 +1062,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:13:04.626
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:43:28.194
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1075,7 +1075,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:13:07.609
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:43:31.311
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1088,7 +1088,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:13:10.593
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:43:34.400
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1101,7 +1101,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:13:13.631
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:43:37.409
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1114,7 +1114,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:13:16.664
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:43:40.394
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1127,7 +1127,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:13:19.643
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:43:43.318
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1140,7 +1140,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:13:22.692
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:43:46.298
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1153,7 +1153,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:13:25.751
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:43:49.267
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1166,7 +1166,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:13:28.731
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:43:52.251
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1179,7 +1179,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:13:32.091
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:43:55.284
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1192,7 +1192,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:13:36.253
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:43:58.225
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1205,7 +1205,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:13:39.663
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:44:01.308
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1218,7 +1218,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:13:43.641
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:44:04.349
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1231,7 +1231,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:13:47.388
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:44:07.228
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1244,7 +1244,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:13:50.810
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:44:10.289
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1257,7 +1257,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:13:55.039
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:44:13.239
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1270,7 +1270,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:13:58.445
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:44:16.213
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1283,7 +1283,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:14:01.805
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:44:19.182
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1296,7 +1296,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:14:05.644
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:44:22.304
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1309,7 +1309,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:14:09.028
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:44:25.253
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1322,7 +1322,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:14:12.268
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:44:28.246
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1335,7 +1335,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:14:15.813
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:44:31.409
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1348,7 +1348,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:14:19.221
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:44:34.380
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1361,7 +1361,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:14:22.659
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:44:37.298
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1374,7 +1374,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:14:26.067
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:44:40.282
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1387,7 +1387,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:14:29.476
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:44:43.231
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1400,7 +1400,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:14:32.861
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:44:46.135
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1413,7 +1413,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:14:36.293
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:44:49.084
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1426,7 +1426,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:14:39.687
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:44:51.975
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1439,7 +1439,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:14:42.665
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:44:54.890
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1452,7 +1452,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:14:45.624
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:44:57.798
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1465,7 +1465,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:14:48.580
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:45:00.740
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1478,7 +1478,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:14:51.620
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:45:03.748
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1491,7 +1491,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:14:54.590
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:45:06.631
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1504,7 +1504,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:14:57.607
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:45:09.622
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1517,7 +1517,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:15:00.587
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:45:12.730
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1530,7 +1530,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:15:03.570
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:45:15.713
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1543,7 +1543,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:15:06.554
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:45:18.761
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1556,7 +1556,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:15:09.581
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:45:21.794
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1569,7 +1569,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:15:12.646
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:45:24.849
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1582,7 +1582,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:15:15.623
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:45:27.854
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1595,7 +1595,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:15:18.602
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:45:30.951
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1608,7 +1608,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:15:21.622
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:45:33.941
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1621,7 +1621,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:15:24.646
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:45:36.973
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1634,7 +1634,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:15:27.656
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:45:39.920
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1647,7 +1647,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:15:30.633
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:45:42.903
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1660,7 +1660,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:15:33.660
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:45:45.912
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1673,7 +1673,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:15:36.712
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:45:48.992
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1686,7 +1686,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:15:39.677
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:45:52.000
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1699,7 +1699,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:15:42.700
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:45:55.025
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1712,7 +1712,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:15:45.705
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:45:57.943
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1725,7 +1725,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:15:49.221
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:46:01.037
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1738,7 +1738,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:15:52.266
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:46:04.033
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1751,7 +1751,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:15:55.366
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:46:07.079
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1764,7 +1764,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:15:58.316
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:46:10.122
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1777,7 +1777,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:16:01.346
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:46:13.016
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1790,7 +1790,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:16:04.333
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:46:15.966
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1803,7 +1803,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:16:07.457
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:46:19.224
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1816,7 +1816,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:16:10.408
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:46:22.334
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1829,7 +1829,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:16:13.374
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:46:25.360
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1842,7 +1842,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:16:16.440
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:46:28.510
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1855,7 +1855,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:16:19.418
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:46:31.847
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1868,7 +1868,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:16:22.459
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:46:35.073
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1881,7 +1881,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:16:25.509
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:46:38.208
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1894,7 +1894,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:16:28.513
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:46:41.258
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1907,7 +1907,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:16:31.507
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:46:44.214
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1920,7 +1920,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:16:34.455
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:46:47.149
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1933,7 +1933,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:16:38.009
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:46:50.259
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1946,7 +1946,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:16:41.258
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:46:53.290
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1959,7 +1959,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:16:44.761
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:46:56.169
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1972,7 +1972,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:16:48.138
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:46:59.244
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1985,7 +1985,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:16:51.586
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:47:02.179
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -1998,7 +1998,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:16:55.005
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:47:05.194
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2011,7 +2011,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:16:58.498
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:47:08.182
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2024,7 +2024,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:17:01.899
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:47:11.212
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2037,7 +2037,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:17:05.314
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:47:14.131
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2050,7 +2050,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:17:08.842
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:47:17.039
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2063,7 +2063,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:17:12.566
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:47:20.035
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2076,7 +2076,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:17:15.659
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:47:22.970
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2089,7 +2089,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:17:19.675
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:47:26.033
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2102,7 +2102,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:17:24.439
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:47:28.954
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2115,7 +2115,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:17:27.619
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:47:31.855
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2128,7 +2128,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:17:30.685
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:47:34.904
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2141,7 +2141,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:17:33.876
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:47:37.792
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2154,7 +2154,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:17:36.911
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:47:40.704
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2167,7 +2167,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:17:39.966
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:47:43.617
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2180,7 +2180,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:17:43.060
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:47:46.652
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2193,7 +2193,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:17:46.033
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:47:49.618
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2206,7 +2206,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:17:49.037
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:47:52.528
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2219,7 +2219,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:17:52.204
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:47:55.495
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2232,7 +2232,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:17:55.291
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:47:58.447
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2245,7 +2245,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:17:58.399
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:48:01.467
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2258,7 +2258,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:18:01.340
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:48:04.442
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2271,7 +2271,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:18:04.260
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:48:07.335
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2284,7 +2284,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:18:07.373
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:48:10.304
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2297,7 +2297,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:18:10.280
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:48:13.278
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2310,7 +2310,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:18:13.254
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:48:16.270
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2323,7 +2323,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:18:16.171
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:48:19.154
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2336,7 +2336,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:18:19.231
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:48:22.174
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2349,7 +2349,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:18:22.450
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:48:25.098
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2362,7 +2362,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:18:25.379
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:48:27.986
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2375,7 +2375,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:18:28.475
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:48:30.928
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2388,7 +2388,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:18:31.534
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:48:33.794
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2401,7 +2401,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:18:34.477
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:48:36.771
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2414,7 +2414,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:18:37.496
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:48:39.673
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2427,7 +2427,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:18:40.470
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:48:42.547
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2440,7 +2440,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:18:43.438
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:48:45.448
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2453,7 +2453,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:18:46.455
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:48:48.434
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2466,7 +2466,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:18:49.452
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:48:51.415
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2479,7 +2479,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:18:52.458
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:48:54.345
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2492,7 +2492,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:18:55.408
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:48:57.269
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2505,7 +2505,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:18:58.414
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:49:00.175
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2518,7 +2518,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:19:01.418
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:49:03.180
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2531,7 +2531,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:19:04.385
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:49:06.080
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2544,7 +2544,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:19:07.393
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:49:09.344
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2557,7 +2557,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:19:10.411
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:49:12.730
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2570,7 +2570,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:19:13.577
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:49:15.834
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2583,7 +2583,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:19:16.660
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:49:18.850
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2596,7 +2596,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:19:19.532
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:49:21.812
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2609,7 +2609,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:19:22.599
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:49:24.812
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2622,7 +2622,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:19:25.621
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:49:27.775
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2635,7 +2635,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:19:28.799
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:49:30.790
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2648,7 +2648,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:19:32.057
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:49:33.786
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2661,7 +2661,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:19:35.088
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:49:36.694
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2674,7 +2674,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:19:38.073
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:49:39.743
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2687,7 +2687,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:19:41.042
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:49:42.664
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2700,7 +2700,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:19:44.097
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:49:45.743
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2713,7 +2713,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:19:47.291
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:49:48.682
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2726,7 +2726,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:19:50.523
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:49:51.626
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2739,7 +2739,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:19:53.697
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:49:54.643
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2752,7 +2752,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:19:56.764
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:49:57.595
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2765,7 +2765,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:19:59.783
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:50:00.538
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2778,7 +2778,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:20:02.807
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:50:03.534
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2791,7 +2791,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:20:05.929
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:50:06.462
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2804,7 +2804,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:20:08.847
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:50:09.457
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2817,7 +2817,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:20:11.772
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:50:12.376
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2830,7 +2830,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:20:14.756
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:50:15.414
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2843,7 +2843,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:20:17.674
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:50:18.409
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2856,7 +2856,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:20:20.753
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:50:21.523
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2869,7 +2869,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:20:23.856
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:50:24.438
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2882,7 +2882,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:20:26.815
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:50:27.500
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2895,7 +2895,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:20:29.976
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:50:30.414
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2908,7 +2908,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:20:32.944
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:50:33.368
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2921,7 +2921,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:20:35.929
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:50:36.398
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2934,7 +2934,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:20:38.981
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:50:39.368
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2947,7 +2947,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:20:42.063
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:50:42.336
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2960,7 +2960,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:20:45.218
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:50:45.267
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2973,7 +2973,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:20:48.300
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:50:48.231
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2986,7 +2986,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:20:51.390
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:50:51.268
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -2999,7 +2999,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:20:54.403
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:50:54.252
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3012,7 +3012,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:20:57.332
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:50:57.152
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3025,7 +3025,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:21:00.320
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:51:00.095
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3038,7 +3038,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:21:03.358
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:51:03.048
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3051,7 +3051,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:21:06.369
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:51:06.054
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3064,7 +3064,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:21:09.519
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:51:09.000
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3077,7 +3077,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:21:12.618
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:51:11.986
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3090,7 +3090,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:21:15.600
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:51:14.964
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3103,7 +3103,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:21:18.606
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:51:17.917
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3116,7 +3116,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:21:22.292
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:51:20.876
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3129,7 +3129,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:21:25.445
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:51:23.850
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3142,7 +3142,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:21:28.527
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:51:26.827
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3155,7 +3155,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:21:31.479
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:51:29.762
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3168,7 +3168,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:21:34.409
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:51:32.676
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3181,7 +3181,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:21:37.355
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:51:35.634
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3194,7 +3194,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:21:40.271
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:51:38.598
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3207,7 +3207,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:21:43.132
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:51:41.575
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3220,7 +3220,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:21:45.988
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:51:44.497
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3233,7 +3233,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:21:48.845
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:51:47.464
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3246,7 +3246,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:21:51.752
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:51:50.582
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3259,7 +3259,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:21:54.670
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:51:53.627
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3272,7 +3272,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:21:57.540
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:51:56.603
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3285,7 +3285,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:22:00.656
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:51:59.515
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3298,7 +3298,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:22:03.600
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:52:02.490
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3311,7 +3311,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:22:06.584
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:52:05.419
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3324,7 +3324,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:22:09.632
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:52:08.369
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3337,7 +3337,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:22:12.614
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:52:11.368
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3350,7 +3350,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:22:15.506
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:52:14.282
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3363,7 +3363,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:22:18.433
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:52:17.202
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3376,7 +3376,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:22:21.330
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:52:20.149
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3389,7 +3389,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:22:24.250
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:52:23.134
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3402,7 +3402,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:22:27.247
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:52:26.054
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3415,7 +3415,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:22:30.145
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:52:29.014
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3428,7 +3428,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:22:33.163
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:52:31.924
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3441,7 +3441,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:22:36.498
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:52:34.888
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3454,7 +3454,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:22:39.388
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:52:37.985
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3467,7 +3467,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:22:42.277
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:52:40.954
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3480,7 +3480,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:22:45.172
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:52:43.916
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3493,7 +3493,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:22:48.053
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:52:46.904
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3506,7 +3506,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:22:50.940
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:52:49.913
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3519,7 +3519,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:22:53.900
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:52:53.074
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3532,7 +3532,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:22:56.836
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:52:56.497
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3545,7 +3545,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:22:59.807
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:52:59.886
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3558,7 +3558,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:23:02.802
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:53:03.164
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3571,7 +3571,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:23:05.714
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:53:06.165
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3584,7 +3584,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:23:08.659
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:53:09.381
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3597,7 +3597,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:23:11.662
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:53:12.428
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3610,7 +3610,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:23:14.597
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:53:15.623
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3623,7 +3623,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:23:17.552
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:53:18.488
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3636,7 +3636,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:23:20.443
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:53:21.354
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3649,7 +3649,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:23:23.416
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:53:24.562
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3662,7 +3662,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:23:26.373
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:53:27.678
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3675,7 +3675,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:23:29.341
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:53:30.685
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3688,7 +3688,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:23:32.299
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:53:33.654
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3701,7 +3701,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:23:35.305
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:53:37.007
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3714,7 +3714,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:23:38.305
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:53:40.104
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3727,7 +3727,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:23:41.310
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:53:43.109
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3740,7 +3740,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:23:44.306
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:53:46.074
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3753,7 +3753,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:23:47.232
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:53:49.291
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3766,7 +3766,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:23:50.119
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:53:52.423
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3779,7 +3779,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:23:53.055
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:53:55.450
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3792,7 +3792,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:23:56.000
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:53:58.408
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3805,7 +3805,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:23:58.910
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:54:01.611
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3818,7 +3818,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:24:01.826
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:54:05.968
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3831,7 +3831,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:24:04.927
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:54:10.307
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3844,7 +3844,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:24:07.997
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:54:13.318
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3857,7 +3857,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:24:10.963
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:54:16.493
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3870,7 +3870,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:24:14.381
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:54:19.892
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3883,7 +3883,7 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:24:17.453
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:54:22.931
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
@@ -3896,7 +3896,176 @@ Caused by: gnu.io.PortInUseException: Unknown Application
 	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
 	... 3 more
 
-!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 00:24:20.417
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:54:26.186
+!MESSAGE gnu.io.PortInUseException: Unknown Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:54:29.422
+!MESSAGE gnu.io.PortInUseException: Unknown Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:54:32.568
+!MESSAGE gnu.io.PortInUseException: Unknown Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:54:35.681
+!MESSAGE gnu.io.PortInUseException: Unknown Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:54:39.179
+!MESSAGE gnu.io.PortInUseException: Unknown Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:54:43.820
+!MESSAGE gnu.io.PortInUseException: Unknown Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:54:47.987
+!MESSAGE gnu.io.PortInUseException: Unknown Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:54:51.585
+!MESSAGE gnu.io.PortInUseException: Unknown Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:54:55.036
+!MESSAGE gnu.io.PortInUseException: Unknown Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:54:58.597
+!MESSAGE gnu.io.PortInUseException: Unknown Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:55:01.596
+!MESSAGE gnu.io.PortInUseException: Unknown Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:55:04.569
+!MESSAGE gnu.io.PortInUseException: Unknown Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:55:07.539
+!MESSAGE gnu.io.PortInUseException: Unknown Application
+!STACK 0
+com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:695)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendDefaultCommand(SerialConsoleManager.java:419)
+	at com.st.stm32ide.mpu.debug.ui.status.MPUWorkbenchWindowControlContribution$UIRefreshJob.run(MPUWorkbenchWindowControlContribution.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: gnu.io.PortInUseException: Unknown Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:474)
+	at com.st.stm32ide.mpu.debug.console.SerialConsoleManager.sendCommand(SerialConsoleManager.java:668)
+	... 3 more
+
+!ENTRY com.st.stm32ide.mpu.debug 4 0 2019-07-19 18:55:10.422
 !MESSAGE gnu.io.PortInUseException: Unknown Application
 !STACK 0
 com.st.stm32ide.mpu.debug.console.SerialConsoleManager$SerialConsoleException: gnu.io.PortInUseException: Unknown Application

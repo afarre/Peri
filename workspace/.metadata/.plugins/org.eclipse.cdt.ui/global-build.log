@@ -10449,3 +10449,431 @@ arm-none-eabi-size "PerifericsFase3.elf"
    text	   data	    bss	    dec	    hex	filename
   22852	   1120	 155948	 179920	  2bed0	PerifericsFase3.elf
  
+16:05:29 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+Building file: ../src/mainF1.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF1.d" -MT"src/mainF1.o" -o "src/mainF1.o" "../src/mainF1.c"
+../src/mainF1.c:91:2: warning: "/*" within comment [-Wcomment]
+  /*
+   
+Finished building: ../src/mainF1.c
+ 
+Building target: PerifericsFase1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase1.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase1.elf" "PerifericsFase1.bin"
+arm-none-eabi-size "PerifericsFase1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6504	   1080	   1108	   8692	   21f4	PerifericsFase1.elf
+ 
+16:08:13 **** Incremental Build of configuration Debug for project PerifericsFase1 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:36:48 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:36:53 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:37:30 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+Building file: ../src/mainF2.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF2.d" -MT"src/mainF2.o" -o "src/mainF2.o" "../src/mainF2.c"
+Finished building: ../src/mainF2.c
+ 
+Building target: PerifericsFase2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase2.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase2.elf" "PerifericsFase2.bin"
+arm-none-eabi-size "PerifericsFase2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6212	   1080	   2356	   9648	   25b0	PerifericsFase2.elf
+ 
+16:40:49 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:41:45 **** Incremental Build of configuration Debug for project PerifericsFase2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:05:32 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:11:36 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c: In function 'SetPixel':
+../src/mainF3.c:68:12: warning: variable 'xpos' set but not used [-Wunused-but-set-variable]
+   uint32_t xpos = 0;
+            ^~~~
+At top level:
+../src/mainF3.c:42:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  22852	   1120	 155948	 179920	  2bed0	PerifericsFase3.elf
+ 
+17:16:29 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c: In function 'SetPixel':
+../src/mainF3.c:68:12: warning: variable 'xpos' set but not used [-Wunused-but-set-variable]
+   uint32_t xpos = 0;
+            ^~~~
+At top level:
+../src/mainF3.c:42:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  22844	   1120	 155948	 179912	  2bec8	PerifericsFase3.elf
+ 
+17:20:14 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c: In function 'SetPixel':
+../src/mainF3.c:68:12: warning: variable 'xpos' set but not used [-Wunused-but-set-variable]
+   uint32_t xpos = 0;
+            ^~~~
+At top level:
+../src/mainF3.c:42:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  22860	   1120	 155948	 179928	  2bed8	PerifericsFase3.elf
+ 
+17:21:09 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c: In function 'SetPixel':
+../src/mainF3.c:68:12: warning: variable 'xpos' set but not used [-Wunused-but-set-variable]
+   uint32_t xpos = 0;
+            ^~~~
+At top level:
+../src/mainF3.c:42:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  22852	   1120	 155948	 179920	  2bed0	PerifericsFase3.elf
+ 
+17:21:18 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:21:45 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c: In function 'SetPixel':
+../src/mainF3.c:68:12: warning: variable 'xpos' set but not used [-Wunused-but-set-variable]
+   uint32_t xpos = 0;
+            ^~~~
+At top level:
+../src/mainF3.c:42:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  22852	   1120	 155948	 179920	  2bed0	PerifericsFase3.elf
+ 
+17:23:30 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c: In function 'SetPixel':
+../src/mainF3.c:68:12: warning: variable 'xpos' set but not used [-Wunused-but-set-variable]
+   uint32_t xpos = 0;
+            ^~~~
+At top level:
+../src/mainF3.c:42:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  22868	   1120	 155948	 179936	  2bee0	PerifericsFase3.elf
+ 
+17:24:14 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c: In function 'SetPixel':
+../src/mainF3.c:68:12: warning: variable 'xpos' set but not used [-Wunused-but-set-variable]
+   uint32_t xpos = 0;
+            ^~~~
+At top level:
+../src/mainF3.c:42:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  22868	   1120	 155948	 179936	  2bee0	PerifericsFase3.elf
+ 
+17:25:32 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c: In function 'SetPixel':
+../src/mainF3.c:68:12: warning: variable 'xpos' set but not used [-Wunused-but-set-variable]
+   uint32_t xpos = 0;
+            ^~~~
+At top level:
+../src/mainF3.c:42:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  22868	   1120	 155948	 179936	  2bee0	PerifericsFase3.elf
+ 
+17:26:41 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c: In function 'SetPixel':
+../src/mainF3.c:66:12: warning: variable 'xpos' set but not used [-Wunused-but-set-variable]
+   uint32_t xpos = 0;
+            ^~~~
+At top level:
+../src/mainF3.c:42:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  22848	   1120	 155948	 179916	  2becc	PerifericsFase3.elf
+ 
+17:28:01 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c: In function 'SetPixel':
+../src/mainF3.c:66:12: warning: variable 'xpos' set but not used [-Wunused-but-set-variable]
+   uint32_t xpos = 0;
+            ^~~~
+At top level:
+../src/mainF3.c:42:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  22852	   1120	 155948	 179920	  2bed0	PerifericsFase3.elf
+ 
+17:28:34 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c: In function 'SetPixel':
+../src/mainF3.c:66:12: warning: variable 'xpos' set but not used [-Wunused-but-set-variable]
+   uint32_t xpos = 0;
+            ^~~~
+At top level:
+../src/mainF3.c:42:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  22852	   1120	 155948	 179920	  2bed0	PerifericsFase3.elf
+ 
+18:00:27 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c: In function 'SetPixel':
+../src/mainF3.c:66:12: warning: variable 'xpos' set but not used [-Wunused-but-set-variable]
+   uint32_t xpos = 0;
+            ^~~~
+At top level:
+../src/mainF3.c:42:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  22872	   1120	 155948	 179940	  2bee4	PerifericsFase3.elf
+ 
+18:14:14 **** Incremental Build of configuration Debug for project PerifericsFase3 ****
+make -j8 all 
+Building file: ../src/mainF3.c
+Invoking: MCU GCC Compiler
+C:\Users\angel\Desktop\3er\Periferics\Practica\workspace\PerifericsFase3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F429ZITx -DSTM32F429I_DISC1 -DDEBUG -DSTM32F429_439xx -DUSE_STDPERIPH_DRIVER -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/StdPeriph_Driver/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/inc" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/device" -I"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/mainF3.d" -MT"src/mainF3.o" -o "src/mainF3.o" "../src/mainF3.c"
+../src/mainF3.c: In function 'SetPixel':
+../src/mainF3.c:66:12: warning: variable 'xpos' set but not used [-Wunused-but-set-variable]
+   uint32_t xpos = 0;
+            ^~~~
+At top level:
+../src/mainF3.c:42:17: warning: 'CurrentFrameBuffer' defined but not used [-Wunused-variable]
+ static uint32_t CurrentFrameBuffer = LCD_FRAME_BUFFER;
+                 ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/mainF3.c
+ 
+Building target: PerifericsFase3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:/Users/angel/Desktop/3er/Periferics/Practica/workspace/PerifericsFase3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "PerifericsFase3.elf" @"objects.list"   -lm
+Finished building target: PerifericsFase3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "PerifericsFase3.elf" "PerifericsFase3.bin"
+arm-none-eabi-size "PerifericsFase3.elf"
+   text	   data	    bss	    dec	    hex	filename
+  22892	   1120	 155948	 179960	  2bef8	PerifericsFase3.elf
+ 
